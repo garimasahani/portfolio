@@ -136,3 +136,8 @@ button{font:inherit;color:inherit}
 .gframe.oval img{aspect-ratio:1/1}
 .gframe figcaption{font:1.3rem/1.1 var(--hand);text-align:center;color:var(--brown-deep);margin-top:10px}
 .gframe .knob{position:absolute;width:16px;height:16px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#FFF3C8,#D4A84A 55%,#8A6420);box-shadow:0 2px 3px rgba(74,50,32,.45)}
+
+/* Wand cursor: the tip of the wand (top right) is the hotspot */
+html,body,#lab,#lab *{cursor:url(../../public/assets/icons/wand-cursor.png) 35 14,auto}
+a,button,summary,label,select,[role=button],[tabindex]:not([tabindex="-1"]),.book,.potion,.house,.orb,.hatbtn,.card,#lab button,#lab .ccard,#lab [onclick]{cursor:url(../../public/assets/icons/wand-cursor.png) 35 14,pointer}
+input:not([type=range]):not([type=checkbox]):not([type=radio]):not([type=submit]),textarea{cursor:text}
