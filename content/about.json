@@ -1,0 +1,140 @@
+{
+  "hatLines": [
+    "Hmm. Difficult. Very difficult.",
+    "A product marketer who owns the whole funnel, first click to paid plan.",
+    "Product-led growth, launches, campaigns that make tech feel fun.",
+    "Born left-handed, taught to write right. Both sides of the brain, wide awake.",
+    "Built a hotel in ninety days. Pitches campaigns nobody asked for.",
+    "Plenty of nerve, I see. Better be…"
+  ],
+  "verdict": "GRYFFINDOR!",
+  "intro": "I'm Garima, a product marketer who specialises in product-led growth campaigns and go-to-market. I own the full funnel, from the first click to the paid plan, and I make marketing fun in tech. I was born left-handed and made to switch to my right, and I like to think that's why both sides of my brain show up to work with equal energy.",
+  "traits": [
+    {
+      "name": "Courage",
+      "front": "Taking on what I've never done before.",
+      "story": "TODO: your story of taking on performance marketing from scratch or launching a new channel. Meanwhile: I'm learning performance marketing now, and built CRAN to read ad creatives faster."
+    },
+    {
+      "name": "Daring",
+      "front": "Pitching campaigns nobody asked for.",
+      "story": "Airbnb × ZNMD, Sarvam's Diwali voice line, a Spotify ad for everyone who lost the Coldplay ticket queue. 17 spec campaigns and counting."
+    },
+    {
+      "name": "Nerve",
+      "front": "Owning launches and live metrics under pressure.",
+      "story": "My dad called after my Siemens internship: build our family hotel. Ninety days later, a bare-shell building was a brand. At PICE, PICEPay and credit features hit a 25–30% adoption uplift in 60 days."
+    },
+    {
+      "name": "Chivalry",
+      "front": "Building community and teaching others.",
+      "story": "A 20,000-student community at Apli.ai. A Coohom session for design students at Presidency University. TODO: add your training webinars."
+    },
+    {
+      "name": "Determination",
+      "front": "Showing up every week.",
+      "story": "TODO: your weekly growth plan ritual. Also true: after a post hit 70K views I stopped posting, then came back with one rule. No more running behind the reach."
+    }
+  ],
+  "wand": [
+    {
+      "label": "Wood",
+      "value": "TODO: e.g. Vine, for someone always chasing a bigger idea"
+    },
+    {
+      "label": "Core",
+      "value": "TODO"
+    },
+    {
+      "label": "Length",
+      "value": "TODO"
+    },
+    {
+      "label": "Flexibility",
+      "value": "Ambidextrous at heart: born left-handed, writes right"
+    }
+  ],
+  "patronus": "TODO: pick your patronus",
+  "favouriteSpell": "TODO: pick your favourite spell",
+  "facts": [
+    "Born left-handed, taught to write with my right.",
+    "Travel geek. Team dogs.",
+    "A good run and dancing are my stress-busters.",
+    "Introvert who started a public Instagram anyway: @findingglory_withgarima.",
+    "Self-declared \"AI Paglu\". I use AI for speed and keep the curiosity and taste for myself.",
+    "Currently learning: performance marketing."
+  ],
+  "heading": "A Little About the Wizard Behind the Work",
+  "story": [
+    {
+      "title": "Where I come from",
+      "text": "I was born left-handed and made to switch to my right. I like to think that's why both sides of my brain show up to work with equal energy: one half notices the small human things, the other half wants the numbers.",
+      "photo": {
+        "src": "public/assets/photos/thinking.jpg",
+        "alt": "Garima at her laptop, chin on hand, thinking"
+      }
+    },
+    {
+      "title": "What I studied",
+      "text": "A B.Sc. in Economics at SVKM's NMIMS, then a Master of Global Business in Marketing at SP Jain School of Global Management across Singapore, Sydney and Dubai, where I made the Dean's List.",
+      "photo": {
+        "src": "public/assets/photos/spjain.jpg",
+        "alt": "Garima at SP Jain's Singapore campus"
+      }
+    },
+    {
+      "title": "Where I've worked",
+      "text": "Market research at Nestlé, growth and community at Apli.ai, strategic marketing at Deloitte, GTM as a freelancer, a family hotel built in 90 days, growth and product marketing at PICE, and now India GTM and product-led growth at Coohom.",
+      "photo": {
+        "src": "public/assets/photos/lanyard.jpg",
+        "alt": "Garima smiling with an event lanyard"
+      }
+    },
+    {
+      "title": "How I work",
+      "text": "I own the full funnel, from the first click to the paid plan, and I make marketing fun in tech. I use AI for speed and keep the curiosity and taste for myself. When a brand hasn't asked for an idea, I sometimes make it anyway.",
+      "photo": {
+        "src": "public/assets/photos/freelance.jpg",
+        "alt": "Garima smiling at her desk"
+      }
+    },
+    {
+      "title": "What I'm chasing next",
+      "text": "TODO: one or two lines on the role, team or problem you want to take on next.",
+      "photo": {
+        "src": "public/assets/photos/thumbsup.jpg",
+        "alt": "Garima giving a thumbs up"
+      }
+    }
+  ],
+  "houses": [
+    {
+      "id": "gryffindor",
+      "house": "Gryffindor",
+      "trait": "Courage",
+      "line": "Bold ideas and taking initiative.",
+      "proof": "Spec campaigns for Airbnb, Spotify and Sarvam that nobody asked for, made and shared in public anyway."
+    },
+    {
+      "id": "slytherin",
+      "house": "Slytherin",
+      "trait": "Ambition",
+      "line": "Growth, business impact and strategic thinking.",
+      "proof": "At PICE: activation +28%, D30 retention +18% and a 25–30% feature adoption uplift in 60 days. At Coohom: +30% sign-up rate."
+    },
+    {
+      "id": "ravenclaw",
+      "house": "Ravenclaw",
+      "trait": "Curiosity",
+      "line": "Research, experimentation and learning.",
+      "proof": "Channel research at Nestlé, a published paper on AI hyper-personalisation in travel, and I'm learning performance marketing now."
+    },
+    {
+      "id": "hufflepuff",
+      "house": "Hufflepuff",
+      "trait": "Dedication",
+      "line": "Collaboration, ownership and consistency.",
+      "proof": "A bare-shell building turned into a hotel brand in 90 days, and a 20,000+ student community at Apli.ai."
+    }
+  ]
+}

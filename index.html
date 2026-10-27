@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Garima Sahani · Product Marketer</title>
+<meta name="description" content="Garima Sahani, product marketer and growth strategist. Product-led growth campaigns and GTM that own the full funnel, told as a magical academy.">
+<meta property="og:title" content="Garima Sahani · Product Marketer">
+<meta property="og:description" content="Products, brought to life. Users, enchanted to stay.">
+<meta property="og:image" content="public/assets/icons/castle.png">
+<link rel="icon" href="public/assets/icons/wand.png">
+<script>try{if(localStorage.getItem('ma-theme')==='night')document.documentElement.setAttribute('data-theme','night')}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Hanken+Grotesk:wght@400;500;600;700&family=Cinzel+Decorative:wght@700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=IM+Fell+English&display=swap">
+<link rel="stylesheet" href="assets/css/academy.css?v=13"><link rel="stylesheet" href="assets/css/sections.css?v=13"><link rel="stylesheet" href="assets/css/speclab.css?v=13">
+<script src="assets/js/core.js?v=13" defer></script><script src="assets/js/home.js?v=13" defer></script><script src="assets/js/speclab.js?v=13" defer></script>
+</head>
+<body data-page="home">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Garima Sahani, home"><img src="public/assets/icons/wand.png" alt=""><span>Garima Sahani</span></a>
+    <ul class="links" id="links">
+      <li><a href="#top">Home</a></li><li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="navbtn" id="searchBtn" type="button" aria-label="Accio: search the site (press /)"><img src="public/assets/ornaments/search.png" alt=""></button>
+    <button class="navbtn" id="themeBtn" type="button" aria-pressed="false" aria-label="Nox: darken the room, light it with your wand"><img src="public/assets/icons/moon.png" alt=""></button>
+    <button class="navbtn" id="menuBtn" type="button" aria-expanded="false" aria-controls="links" aria-label="Menu"><img src="public/assets/ornaments/menu.png" alt=""></button>
+  </div>
+</header>
+
+<main id="main">
+  <!-- I. The Entrance -->
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="gate">
+      <div class="frame">
+        <div class="corners" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        <div class="dust" id="dust" aria-hidden="true"></div>
+        <div class="hero-grid">
+          <div>
+            <p class="label kicker"><span class="star" aria-hidden="true"></span><span id="heroKicker"></span></p>
+            <h1 id="heroTitle"></h1>
+            <p class="sub" id="heroSub"></p>
+            <p class="me" id="heroMe"></p>
+            <div class="ctas">
+              <a class="btn" id="explore" href="#map"><span id="ctaPrimary">Explore My World</span><span class="arr" aria-hidden="true">→</span></a>
+              <a class="btn ghost" href="#contact" id="ctaSecondary">Send an Owl</a>
+            </div>
+          </div>
+          <div class="scene">
+            <div class="glow" aria-hidden="true"></div>
+            <figure class="gframe oval portrait-hero"><span class="gf-in"><img id="heroImg" src="public/assets/photos/headshot.jpg" alt="Portrait of Garima Sahani smiling" width="480" height="480"></span></figure>
+            <div class="bit clay float" aria-hidden="true" style="--w:30%;right:-4%;bottom:-2%;animation-delay:-2s"><img src="public/assets/icons/castle.png" alt=""></div>
+            <div class="bit clay float" aria-hidden="true" style="--w:16%;left:0;top:6%;animation-delay:-1s"><img src="public/assets/icons/wand.png" alt=""></div>
+            <div class="bit clay float" aria-hidden="true" style="--w:17%;right:2%;top:0;animation-delay:-3s"><img src="public/assets/icons/moon.png" alt=""></div>
+            <div class="bit clay float" aria-hidden="true" style="--w:19%;left:-2%;bottom:6%;animation-delay:-4s"><img src="public/assets/icons/owl.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- II. The Marauder's Map -->
+  <section id="map" aria-labelledby="mapTitle" style="padding-top:60px">
+    <div class="wrap">
+      <header class="shead">
+        <p class="label"><span class="star"></span>Chapter I<span class="star"></span></p>
+        <h2 id="mapTitle">The Marauder's Map</h2>
+        <p>Pick a corner of the academy. The footsteps will show you the way.</p>
+        <div class="orn" aria-hidden="true"><span class="star"></span></div>
+      </header>
+      <nav class="mapwrap" aria-label="Map of the academy">
+        <div class="mapsheet" id="mapsheet"></div>
+        <ul class="maplist" id="maplist"></ul>
+      </nav>
+    </div>
+  </section>
+
+  <!-- III. The Sorting Hat -->
+  <section id="about" aria-labelledby="aboutTitle">
+    <div class="wrap">
+      <header class="shead">
+        <p class="label"><span class="star"></span>Chapter II · The Great Hall<span class="star"></span></p>
+        <h2 id="aboutTitle">A Little About the Wizard Behind the Work</h2>
+        <p id="aboutIntro"></p>
+      </header>
+      <div class="sorting">
+        <div class="hatbox">
+          <button class="hatbtn" id="hat" type="button" aria-describedby="hatSay"><span class="halo" aria-hidden="true"></span><img class="clay" src="public/assets/icons/hat.png" alt="The Sorting Hat. Press to begin the Sorting Ceremony"></button>
+          <p class="hatsay" id="hatSay" aria-live="polite">Tap the hat to begin the Sorting Ceremony.</p>
+          <div class="houses" id="houses" role="group" aria-label="The four houses"></div>
+          <div class="verdict" id="verdict" aria-live="polite" hidden></div>
+        </div>
+        <div class="story" id="story"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IV. The Library -->
+  <section id="experience" aria-labelledby="expTitle">
+    <div class="wrap">
+      <header class="shead">
+        <p class="label"><span class="star"></span>Chapter III · The Library<span class="star"></span></p>
+        <h2 id="expTitle">The Library of Adventures</h2>
+        <p>Every chapter of my career is a book on this shelf. Pull one out to read it.</p>
+      </header>
+      <div class="shelf"><div class="books" id="books" role="group" aria-label="Career chapters"></div></div>
+      <article class="page" id="bookPage" aria-live="polite"></article>
+    </div>
+  </section>
+
+  <!-- V. The Potion Room -->
+  <section id="skills" aria-labelledby="skillsTitle">
+    <div class="wrap">
+      <header class="shead">
+        <p class="label"><span class="star"></span>Chapter IV · The Potion Room<span class="star"></span></p>
+        <h2 id="skillsTitle">The Magic Behind My Work</h2>
+        <p>Nine potions I brew with most. Pick one to see what's inside.</p>
+      </header>
+      <div class="potshelf" id="potions" role="group" aria-label="Skills"></div>
+      <div class="potcard" id="potcard" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- VI. The Chamber of Creations -->
+  <section id="projects" aria-labelledby="projTitle">
+    <div class="wrap">
+      <header class="shead">
+        <p class="label"><span class="star"></span>Chapter V · The Chamber of Creations<span class="star"></span></p>
+        <h2 id="projTitle">Spells I've Cast in the Real World</h2>
+        <p>Live launches, growth systems, content, and spec campaigns for brands that never asked.</p>
+      </header>
+      <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
+      <div class="cards" id="cards"></div>
+      <p class="more" id="more"></p>
+      <header class="decks-h"><p class="label">The Presentations</p><h3>Decks I've Actually Presented</h3><p>Real decks, research and pitches. Each one opens the real thing.</p></header>
+      <div class="decks" id="decks"></div>
+    </div>
+  </section>
+
+  <!-- VI½. Spec Lab: interactive mocks of spec campaigns -->
+  <section id="lab" aria-labelledby="labTitle">
+    <div class="wrap">
+      <header class="shead">
+        <p class="label"><span class="star"></span>Chapter VI · The Restricted Section<span class="star"></span></p>
+        <h2 id="labTitle">Spells Nobody Asked Me to Cast</h2>
+        <p>Campaigns, research and sales kits I made for brands I love, and shared on LinkedIn. Each one is a working mock of the idea. Tap, toggle and play.</p>
+        <p class="disclaim" style="font-size:1rem;margin-top:10px;font-style:italic">Independent spec work. Not affiliated with or endorsed by these brands.</p>
+      </header>
+<div class="tabs" role="tablist" aria-label="Spec projects">
+      <span class="tabs-label">Campaigns</span>
+      <button class="tab" role="tab" id="t-znmd" aria-controls="p-znmd" data-key="znmd"><b>Airbnb × ZNMD</b><small>Feature launch campaign</small></button>
+      <button class="tab" role="tab" id="t-sarvam" aria-controls="p-sarvam" data-key="sarvam"><b>Sarvam · Diwali</b><small>B2B festive campaign</small></button>
+      <button class="tab" role="tab" id="t-spotads" aria-controls="p-spotads" data-key="spotads"><b>Spotify ads</b><small>Coldplay OOH · Navbeats</small></button>
+      <button class="tab" role="tab" id="t-jio" aria-controls="p-jio" data-key="jio"><b>JioCinema × Paris '24</b><small>Push notifications</small></button>
+      <span class="tabs-label">Strategy</span>
+      <button class="tab" role="tab" id="t-spotify" aria-controls="p-spotify" data-key="spotify"><b>Spotify · Offline</b><small>Research + A/B test</small></button>
+      <button class="tab" role="tab" id="t-premium" aria-controls="p-premium" data-key="premium"><b>Spotify Premium</b><small>Consumer psychology</small></button>
+      <button class="tab" role="tab" id="t-supermoney" aria-controls="p-supermoney" data-key="supermoney"><b>SuperMoney</b><small>Launch OKRs</small></button>
+      <button class="tab" role="tab" id="t-supercard" aria-controls="p-supercard" data-key="supercard"><b>SuperCard</b><small>Sales enablement</small></button>
+      <button class="tab" role="tab" id="t-airbnb" aria-controls="p-airbnb" data-key="airbnb"><b>Airbnb for Work</b><small>Market research</small></button>
+    </div>
+
+
+    <!-- ===== Airbnb x ZNMD ===== -->
+    <article class="stage panel" role="tabpanel" id="p-znmd" aria-labelledby="t-znmd" hidden>
+      <div class="brief">
+        <div class="kicker"><span class="chip">Feature launch</span><span class="chip">Storytelling</span><span class="chip">Nostalgia marketing</span></div>
+        <h3>What if <em>ZNMD</em> was shot in 2025, and planned on Airbnb?</h3>
+        <p>I was rewatching Zindagi Na Milegi Dobara one night, right after booking a stay in Mumbai on Airbnb, and it clicked. The three friends' road trip is the perfect stage to launch Airbnb Experiences and Services. Each character books a different part of the trip, so each feature gets a scene.</p>
+        <div class="hyp">
+          <div><b>Positioning.</b> Airbnb Experiences help you live your dream movie moments: authentic, local, curated travel no hotel can match. <i class="it">#LiveYourZNMDMoment</i></div>
+          <div><b>Activations.</b> Reimagined ZNMD scenes using Airbnb features, a "Live Your ZNMD" Spotify playlist, influencer-led travel recreations and a #LiveYourZNMD UGC challenge.</div>
+          <div><b>Audience.</b> Millennials and Gen Z (18–35), urban culture-curious travellers, group and solo trips, and remote workers exploring "work from anywhere".</div>
+        </div>
+        <div class="stats">
+          <div class="stat"><b>12</b><span>slide launch deck</span></div>
+          <div class="stat"><b>8 wks</b><span>from scripting to retargeting</span></div>
+          <div class="stat"><b>5</b><span>metrics: CTR, bookings, UGC, time on listing, sentiment</span></div>
+        </div>
+        <a class="doc-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7339602126630752256/" target="_blank" rel="noopener">See the deck on LinkedIn ↗</a>
+      </div>
+      <div class="demo">
+        <div class="days" id="znDays" role="group" aria-label="Trip day"></div>
+        <div class="phone">
+          <div class="screen abnb" id="znScreen">
+            <div class="sbar"><span id="znClock">12:48</span><span>▮▮▮</span></div>
+            <div class="top">
+              <div class="pill"><span style="font-size:15px">⌕</span><div><b id="znWhere">Homes in Costa Brava</b><span id="znWhen">3–4 Jun · 3 guests</span></div></div>
+              <div class="cats" id="znCats"><span data-c="stays"><i>🏠</i>Homes</span><span data-c="exp"><i>🎈</i>Experiences</span><span data-c="svc"><i>🛎️</i>Services</span></div>
+            </div>
+            <div class="body" id="znBody"></div>
+            <div class="bar"><div><b id="znPrice">$639</b> <span id="znUnit">night</span></div><button class="reserve" id="znReserve">Reserve</button></div>
+            <div class="endcard" id="znEnd"><b>Movies can now come to life with Airbnb.</b><p>Book your ZNMD trip today, kyunki kya pata Zindagi Na Milegi Doobara…</p><button id="znAgain">Plan it again</button></div>
+          </div>
+        </div>
+        <div class="wk" id="znWk" role="group" aria-label="Launch timeline"><button data-w="0" aria-pressed="true">Wk 1–2</button><button data-w="1" aria-pressed="false">Wk 3–5</button><button data-w="2" aria-pressed="false">Wk 6</button><button data-w="3" aria-pressed="false">Wk 7</button><button data-w="4" aria-pressed="false">Wk 8</button></div>
+        <p class="wk-note" id="znWkNote"></p>
+        <p class="demo-cap">Book each friend's part of the trip. Booking all five days ends the film. Concept campaign, not sponsored by Airbnb.</p>
+      </div>
+    </article>
+
+    <!-- ===== Sarvam ===== -->
+    <article class="stage panel" role="tabpanel" id="p-sarvam" aria-labelledby="t-sarvam" hidden>
+      <div class="brief">
+        <div class="kicker"><span class="chip">B2B campaign</span><span class="chip">Festive marketing</span><span class="chip">Voice AI</span></div>
+        <h3>SaaS brands don't do Diwali. <em>Sarvam should.</em></h3>
+        <p>Most SaaS products have no brand identity and no personality, and festivals pass without a campaign. Sarvam is the exception. Its customers walk into the Diwali sales rush with more support calls, more offers to run, more users to nudge and more leads to chase. They need extra hands, and voice agents are exactly that.</p>
+        <div class="hyp">
+          <div><b>The fit.</b> Sarvam screams India, and India screams Diwali. Few B2B brands have that kind of natural fit.</div>
+          <div><b>The offer.</b> <i class="it">"Launch your Diwali sale voice line in 24 hours."</i> Delayed-order calls, offer reminders and lead qualification, all in the customer's own language.</div>
+          <div><b>Second cohort.</b> Creators: one Diwali reel, dubbed into 11 languages.</div>
+          <div><b>Scale.</b> It doesn't need to be big. A small campaign aimed at businesses would work.</div>
+        </div>
+        <a class="doc-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7519289032623734786/" target="_blank" rel="noopener">Watch the pitch on LinkedIn ↗</a>
+      </div>
+      <div class="demo">
+        <div class="console">
+          <div class="chead"><b>Diwali sale voice line</b><span class="clk" id="svClock">Live in 23:59:59</span></div>
+          <div class="cbody">
+            <div><h5>1 · What should it handle?</h5><div class="uc" id="svUC">
+              <button data-u="0" aria-pressed="true">Delayed orders<small>Calm the rush</small></button>
+              <button data-u="1" aria-pressed="false">Offer reminders<small>Recover carts</small></button>
+              <button data-u="2" aria-pressed="false">Lead qualification<small>Bulk gifting</small></button></div></div>
+            <div><h5>2 · Which language?</h5><div class="langs" id="svLang"></div></div>
+            <div class="golive"><button id="svGo">Go live</button><span id="svNote">Places a sample call in Hindi</span></div>
+            <div class="call" aria-live="polite">
+              <div class="ctop"><span id="svStatus">Waiting for your first call</span><span class="live" id="svLive" hidden>● LIVE</span></div>
+              <div class="wave idle" id="svWave"></div>
+              <div class="tx" id="svTx"></div>
+            </div>
+            <div class="reel"><span class="vid">🪔</span><div><b>Creators · one reel, 11 languages</b><p>The same Diwali reel, dubbed automatically.</p><div class="ticker" id="svTick">शुभ दीपावली</div></div></div>
+          </div>
+        </div>
+        <p class="demo-cap">Concept mock for a spec campaign. Sample call scripts written for this site. Not affiliated with Sarvam.</p>
+      </div>
+    </article>
+
+    <!-- ===== Spotify ads ===== -->
+    <article class="stage panel" role="tabpanel" id="p-spotads" aria-labelledby="t-spotads" hidden>
+      <div class="brief">
+        <div class="kicker"><span class="chip">OOH</span><span class="chip">Moment marketing</span><span class="chip">Cultural moments</span></div>
+        <h3>Two Spotify ideas, born from <em>real FOMO</em></h3>
+        <p><b>Coldplay HomeJam (Nov 2024).</b> I couldn't get Coldplay tickets, again, so I made a Spotify ad instead. Two billboards for the millions stuck in the BookMyShow queue: you may be 965,053 people away from the stadium, but Coldplay is one tap away.</p>
+        <p><b>Navbeats (Oct 2026).</b> Music was everywhere this Navratri, but Spotify's own moment wasn't. I treated it as a product marketing problem: how do you turn an offline cultural moment into app opens, saves and next-day returns? Navbeats meets people on the dance floor and gives them a reason to open the app after.</p>
+        <div class="stats">
+          <div class="stat"><b>6,241</b><span>views on the Coldplay ad post</span></div>
+          <div class="stat"><b>2</b><span>OOH billboards</span></div>
+          <div class="stat"><b>1 min</b><span>Navbeats video pitch</span></div>
+        </div>
+        <div class="kicker">
+          <a class="doc-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7263568989325262848/" target="_blank" rel="noopener">Coldplay ad post ↗</a>
+          <a class="doc-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7517574345196662784/" target="_blank" rel="noopener">Navbeats video ↗</a>
+        </div>
+      </div>
+      <div class="demo">
+        <div class="seg" role="group" aria-label="Campaign">
+          <button aria-pressed="true" data-sa="cold">Coldplay HomeJam</button>
+          <button aria-pressed="false" data-sa="nav">Navbeats</button>
+        </div>
+        <div data-sa-panel="cold" class="board-wrap">
+          <div class="bb"><div class="frame">
+            <div class="me"><b>Me:</b><b>Finallyyyy I'll attend THE COLDPLAY concert!</b><small><span id="q1">490,279</span> people ahead of you!</small></div>
+            <div class="also"><b>Also me:</b><div class="mini" id="miniP"><span class="cov"></span><span>A Head Full of Dreams</span><span class="prog"><i></i></span><span class="pb"><span>⏮</span><button id="miniPlay" aria-label="Play">▶</button><span>⏭</span></span></div></div>
+          </div></div>
+          <div class="bb2"><b><span id="q2">965,053</span> people ahead of you….</b><p>but guess what, Coldplay HomeJam is just a tap away!</p><span class="sp"><i></i>Spotify</span></div>
+          <div class="bb-ctrl"><button id="qJoin">Join the ticket queue</button><button class="go" id="qTap">Tap for HomeJam</button></div>
+        </div>
+        <div data-sa-panel="nav" hidden style="display:flex;flex-direction:column;align-items:center;gap:14px">
+          <a class="nav-vid" href="https://www.linkedin.com/feed/update/urn:li:activity:7517574345196662784/" target="_blank" rel="noopener"><span class="pl">▶</span><b>Navbeats</b><small>An independent concept for Spotify · Navratri 2026 · 1:01</small></a>
+          <div class="kpis3"><span>App opens</span><span>Saves</span><span>Next-day returns</span></div>
+          <p class="demo-cap">The full idea is in the video. Tap to watch it on LinkedIn.</p>
+        </div>
+        <p class="demo-cap">Billboards recreated from my original designs. Independent concepts, not official Spotify campaigns.</p>
+      </div>
+    </article>
+
+    <!-- ===== Spotify offline ===== -->
+    <article class="stage panel" role="tabpanel" id="p-spotify" aria-labelledby="t-spotify" hidden>
+      <div class="brief">
+        <div class="kicker"><span class="chip">User research</span><span class="chip">Segmentation</span><span class="chip">A/B testing</span></div>
+        <h3>Making <em>Download for offline</em> feel like a Premium perk again</h3>
+        <p>Downloads are the second biggest reason people pay for Premium, after ad-free music. Yet in my survey of 26 Premium users (18–35, students and professionals), most found the feature clumsy. I mapped two segments, <b>On-the-go listeners</b> and <b>Music lovers</b>, and designed two A/B tests.</p>
+        <div class="stats">
+          <div class="stat"><b>82%</b><span>listen to music every day</span></div>
+          <div class="stat"><b>65.4%</b><span>download for long trips and flights</span></div>
+          <div class="stat"><b>53.8%</b><span>struggle to manage downloads</span></div>
+        </div>
+        <div>
+          <h4>What users told me</h4>
+          <div class="bars">
+            <div><span>Managing downloaded content is hard</span><b>53.8%</b><i style="--w:53.8%"></i></div>
+            <div><span>Can't download a single song</span><b>30.8%</b><i style="--w:30.8%"></i></div>
+            <div><span>Download button is hard to find</span><b>19.2%</b><i style="--w:19.2%"></i></div>
+            <div><span>Download limit feels unfair</span><b>11.5%</b><i style="--w:11.5%"></i></div>
+          </div>
+        </div>
+        <div class="hyp">
+          <div><b>Test 1 · Button visibility.</b> A prominent download button on the track page lifts download initiation by <b>15%</b>.</div>
+          <div><b>Test 2 · Content management.</b> Smart downloads and auto-expire cut time spent managing by <b>20%</b> and lift satisfaction <b>10%</b>. Ship if p &lt; 0.05.</div>
+        </div>
+        <a class="doc-link" href="https://docs.google.com/document/d/1ka-jNIbmadhP0tv9aIbbtpSaNR2Fzd2QC7J8CZaGL6I/edit?usp=sharing" target="_blank" rel="noopener">Read the full research ↗</a>
+      </div>
+
+      <div class="demo">
+        <div class="seg" role="group" aria-label="A/B variant">
+          <button aria-pressed="true" data-variant="A">A · Control</button>
+          <button aria-pressed="false" data-variant="B">B · Test</button>
+        </div>
+        <div class="phone">
+          <div class="screen spot" id="spotScreen">
+            <div class="sbar"><span>9:41</span><span>5G ▮▮▮</span></div>
+            <div class="views">
+              <div class="view" id="vNow">
+                <div class="np-top"><span>⌄</span><span>Playing from "Road Trip"</span><span>⋯</span></div>
+                <div class="art" id="art"></div>
+                <div class="np-meta">
+                  <div><b>Late Train Home</b><span>Indigo Avenue</span></div>
+                  <div class="np-icons">
+                    <button class="icon-btn dl" id="dlBtn" aria-label="Download this song" hidden>
+                      <svg class="ring" viewBox="0 0 32 32"><circle class="bg" cx="16" cy="16" r="14"/><circle class="fg" cx="16" cy="16" r="14"/></svg>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="dlIcon"><path d="M12 5v12M7 12l5 5 5-5"/></svg>
+                    </button>
+                    <button class="icon-btn" aria-label="Like"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></button>
+                  </div>
+                </div>
+                <div class="scrub" id="scrub"><i></i></div>
+                <div class="times"><span>1:12</span><span>3:34</span></div>
+                <div class="ctrls">
+                  <button class="icon-btn" aria-label="Shuffle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h3l10 10h3M4 17h3l3-3M14 10l3-3h3"/></svg></button>
+                  <button class="icon-btn" aria-label="Previous"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg></button>
+                  <button class="play" id="playBtn" aria-label="Play"><svg viewBox="0 0 24 24" fill="currentColor" id="playIc"><path d="M7 4v16l13-8z"/></svg></button>
+                  <button class="icon-btn" aria-label="Next"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 5h2v14h-2zM4 5v14l11-7z"/></svg></button>
+                  <button class="icon-btn" aria-label="Repeat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 2l3 3-3 3M4 11V9a4 4 0 014-4h12M7 22l-3-3 3-3M20 13v2a4 4 0 01-4 4H4"/></svg></button>
+                </div>
+                <div class="miss" id="missNote">No download on the track page. To save this one song you'd have to download the whole playlist.</div>
+              </div>
+
+              <div class="view lib" id="vLib" hidden>
+                <h5>Downloaded</h5>
+                <div class="quota"><span id="qTxt">28 / 30 songs</span><span id="qWarn">Almost full</span></div>
+                <div class="quota-bar" id="qBar"><i style="width:93%"></i></div>
+                <div class="filters" id="libFilters"><button class="on">All</button><button>Songs</button><button>Podcasts</button></div>
+                <div class="smart" id="smartBox" hidden>
+                  <button class="tog" role="switch" aria-checked="false" id="togSmart"><span><b>Smart downloads</b><small>Auto-save your most played playlist</small></span><span class="sw"></span></button>
+                  <button class="tog" role="switch" aria-checked="false" id="togExpire"><span><b>Auto-expire</b><small>Remove what you haven't played in 30 days</small></span><span class="sw"></span></button>
+                </div>
+                <div id="trkList"></div>
+              </div>
+            </div>
+            <div class="toast" id="toast"><span>Saved for offline</span><span>1 song</span></div>
+            <div class="tabbar">
+              <button class="on" data-view="vNow"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 18V6l11-2v12"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg>Now playing</button>
+              <button data-view="vLib"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Downloads</button>
+            </div>
+          </div>
+        </div>
+        <div class="counter">
+          <div><b id="cInit">0</b>downloads started</div>
+          <div><b id="cTime">–</b>time to first download</div>
+        </div>
+        <p class="demo-cap" id="spotCap">Variant A is today's app. Switch to B, then tap the new download button on the track, and check the Downloads tab.</p>
+      </div>
+    </article>
+
+    <!-- ===== Spotify Premium psychology ===== -->
+    <article class="stage panel" role="tabpanel" id="p-premium" aria-labelledby="t-premium" hidden>
+      <div class="brief">
+        <div class="kicker"><span class="chip">Consumer psychology</span><span class="chip">Campaigns</span><span class="chip">Feature ideas</span><span class="chip">Pricing</span></div>
+        <h3>Spotify Premium, through the lens of <em>how people actually decide</em></h3>
+        <p>One brief, three moments. Before purchase I used emotional storytelling and social proof. During purchase I cut decision load with Hick's Law and created ownership with the endowment effect. After purchase I built habit loops that reward a daily routine.</p>
+        <div class="hyp">
+          <div><b>Ad film · "No Ads, Just Perfect Timing."</b> A surprise birthday, ruined by a car-insurance ad. Tagline: <i class="it">Kahi bhi, Kabhi bhi.</i></div>
+          <div><b>Forgotten Tracks.</b> One nostalgic song a day, chosen from your old favourites, playable in one tap. A single choice in place of a hundred.</div>
+          <div><b>Habit titles.</b> Cue → routine → reward. Play your gym playlist every day and earn "Workout Champ".</div>
+          <div><b>Pricing psychology.</b> Charm pricing at ₹129, a Disney+ Hotstar bundle at ₹149, and one-tap UPI checkout.</div>
+        </div>
+        <a class="doc-link" href="https://docs.google.com/document/d/1fsmWK615gPCRP-gyin-de59fhnRpJkwD6nBxaqNPcgY/edit?usp=sharing" target="_blank" rel="noopener">Read the full strategy ↗</a>
+      </div>
+
+      <div class="demo">
+        <div class="seg" role="group" aria-label="Choose a concept">
+          <button aria-pressed="true" data-psy="film">Ad film</button>
+          <button aria-pressed="false" data-psy="forgot">Forgotten Tracks</button>
+          <button aria-pressed="false" data-psy="habit">Habit titles</button>
+          <button aria-pressed="false" data-psy="price">Pricing</button>
+        </div>
+
+        <div class="psy" data-psy-panel="film" style="width:100%;display:flex;flex-direction:column;align-items:center;gap:14px">
+          <div class="film" id="film" aria-live="polite">
+            <div class="scene s1 on"><div class="vis"></div><div class="ov">The perfect birthday surprise…</div></div>
+            <div class="scene s2"><div class="vis"></div><div class="ov">A moment to remember…</div></div>
+            <div class="scene s3"><div class="vis"></div><div class="adbar">Need car insurance? Call now!<small>Ad · 0:29 · can't skip</small></div><div class="faces">😐 😬 😑 🫠</div><div class="ov">…until an ad ruins the moment.</div></div>
+            <div class="scene s4"><div class="vis"></div><div><div class="ov">Don't let ads ruin your perfect birthday surprises.</div><small>Switch to Spotify Premium. Ad-free music, kahi bhi, kabhi bhi.</small></div></div>
+          </div>
+          <div class="film-ui">
+            <button class="playbtn" id="filmPlay" aria-label="Play storyboard"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4v16l13-8z"/></svg></button>
+            <div class="film-dots" id="filmDots"><button aria-label="Scene 1" class="on"></button><button aria-label="Scene 2"></button><button aria-label="Scene 3"></button><button aria-label="Scene 4"></button></div>
+          </div>
+          <p class="narr" id="filmNarr">Scene 1 · A dim room. Friends and family whisper, waiting for the big reveal.</p>
+        </div>
+
+        <div class="psy" data-psy-panel="forgot" hidden style="display:flex;flex-direction:column;align-items:center;gap:14px">
+          <div class="phone">
+            <div class="screen lock">
+              <div class="sbar"><span></span><span>▮▮▮</span></div>
+              <div class="clock"><small>Saturday, 14 June</small><b>8:02</b></div>
+              <div class="notifs" id="ftArea">
+                <button class="ntf" id="ftPush">
+                  <span class="appic" style="background:#121212;color:#1ED760">♫</span>
+                  <span class="hd"><span>SPOTIFY</span><span>now</span></span>
+                  <span class="bd"><b>Forgotten Track of the Day 🎧</b>You played this 214 times in 2019. Want to hear it again?</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p class="demo-cap">Tap the notification. One pre-picked song from your past, one Play button, no browsing.</p>
+        </div>
+
+        <div class="psy" data-psy-panel="habit" hidden style="display:flex;flex-direction:column;align-items:center;gap:14px;width:100%">
+          <div class="habits" id="habits"></div>
+          <div class="loop" id="loop"></div>
+          <p class="demo-cap">Pick a title to see its habit loop.</p>
+        </div>
+
+        <div class="psy" data-psy-panel="price" hidden style="display:flex;flex-direction:column;align-items:center;gap:14px;width:100%">
+          <div class="price-grid">
+            <div class="pcard">
+              <h5>Charm pricing</h5>
+              <div class="pr num" id="charmPr">₹130<small>per month</small></div>
+              <p id="charmTxt">A round number reads as "₹130".</p>
+              <button class="mini-btn" id="charmBtn">Apply charm pricing</button>
+            </div>
+            <div class="pcard">
+              <h5>Price bundling</h5>
+              <div class="pr num">₹149<small>Premium + Disney+ Hotstar</small></div>
+              <p>More content for ₹20 more, and a cross-sell into a second service.</p>
+            </div>
+            <div class="pcard">
+              <h5>Ease of payment</h5>
+              <p>Subscribe inside the app with the UPI apps people already use.</p>
+              <div class="upi" id="upi"><button>UPI</button><button>Paytm</button><button>PhonePe</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ===== SuperMoney OKRs ===== -->
+    <article class="stage panel" role="tabpanel" id="p-supermoney" aria-labelledby="t-supermoney" hidden>
+      <div class="brief">
+        <div class="kicker"><span class="chip">OKRs</span><span class="chip">KPIs</span><span class="chip">Scoring system</span></div>
+        <h3>A month-one launch scorecard for <em>SuperMoney</em> by Flipkart</h3>
+        <p>SuperMoney's pitch is simple: real cashback on every digital payment. I wrote the launch OKRs around two jobs. Get people transacting fast, and earn trust in a crowded payments market. Every key result maps to KPIs and a Green / Yellow / Orange / Red scoring system so the team knows where to step in.</p>
+        <div class="hyp">
+          <div><b>Objective 1 · Adoption.</b> Tracked through new-user acquisition, MAU, transactions per user, first-transaction conversion and CPA.</div>
+          <div><b>Objective 2 · Brand and credibility.</b> Tracked through partner conversion, app-store rating, #SuperMoneyCashback engagement and NPS.</div>
+        </div>
+        <a class="doc-link" href="https://docs.google.com/document/d/1lfs_2FGelgm3C_41fOFf-Lk_v7tCg0Yc9p_m-Bu4BOM/edit?usp=sharing" target="_blank" rel="noopener">Read the full OKR doc ↗</a>
+      </div>
+
+      <div class="demo">
+        <div class="seg" role="group" aria-label="Load a scenario">
+          <button aria-pressed="true" data-scn="doc">Sample actuals</button>
+          <button aria-pressed="false" data-scn="slow">Slow start</button>
+          <button aria-pressed="false" data-scn="win">Breakout month</button>
+        </div>
+        <div class="dash">
+          <div class="dash-top">
+            <div><b>SuperMoney · Launch control</b><small>Month 1 · drag any slider</small></div>
+            <div class="health"><div class="donut" id="donut" data-v="0%"></div><div><small>Overall</small><span class="score" id="overall"><i></i>–</span></div></div>
+          </div>
+          <div class="obj"><h5>O1 · Strong initial user adoption</h5><div id="o1"></div></div>
+          <div class="obj"><h5>O2 · Brand presence and credibility</h5><div id="o2"></div></div>
+          <div class="legend"><span class="g"><i></i>Green ≥100%</span><span class="y"><i></i>Yellow 75–99%</span><span class="o"><i></i>Orange 50–74%</span><span class="r"><i></i>Red &lt;50%</span></div>
+        </div>
+        <p class="demo-cap">Targets are from the OKR doc. "Sample actuals" uses the worked example from the doc where it gives one.</p>
+      </div>
+    </article>
+
+    <!-- ===== SuperCard sales enablement ===== -->
+    <article class="stage panel" role="tabpanel" id="p-supercard" aria-labelledby="t-supercard" hidden>
+      <div class="brief">
+        <div class="kicker"><span class="chip">Sales enablement</span><span class="chip">Battlecards</span><span class="chip">ICP</span></div>
+        <h3>Arming a sales team to sell <em>SuperCard</em></h3>
+        <p>A full enablement kit for SuperMoney's credit card: a fact sheet for early-stage prospects, a battlecard for the decision stage, ICP definitions, a sales training outline, a lead qualification checklist and a post-sale support plan.</p>
+        <div class="stats">
+          <div class="stat"><b>+30%</b><span>new sign-ups target by Q4</span></div>
+          <div class="stat"><b>−15%</b><span>lead-to-customer time</span></div>
+          <div class="stat"><b>90%</b><span>post-sale CSAT goal</span></div>
+        </div>
+        <div>
+          <h4>Who it's for</h4>
+          <div class="kicker"><span class="chip">Frequent online shoppers</span><span class="chip">Reward seekers</span><span class="chip">Budget-conscious</span><span class="chip">Tech-savvy, digital-first</span></div>
+        </div>
+        <a class="doc-link" href="https://docs.google.com/document/d/1DzqsLKg9u-mBY2WrLD8yWia9XMJ_os6yybs2GDNWsM8/edit?usp=sharing" target="_blank" rel="noopener">Read the full sales kit ↗</a>
+      </div>
+
+      <div class="demo">
+        <div class="ccard-wrap">
+          <button class="ccard" id="ccard" aria-label="Flip the card to see key features">
+            <span class="face front">
+              <span class="brand">super<span>.</span>card</span>
+              <span class="cb">5% cashback</span>
+              <span class="chipc"></span>
+              <span class="pan">4291 •••• •••• 2024</span>
+              <span class="nm">YOUR NAME HERE</span>
+              <span class="lf">LIFETIME<br>FREE</span>
+            </span>
+            <span class="face back">
+              <b>Why SuperCard</b>
+              <ul>
+                <li>Cashback on every transaction, online and offline</li>
+                <li>5% cashback on UPI payments</li>
+                <li>Zero annual fee, lifetime free</li>
+                <li>Deals with Flipkart, Myntra and more</li>
+                <li>Manage and redeem inside the SuperMoney app</li>
+              </ul>
+            </span>
+          </button>
+        </div>
+        <span class="flip-hint">Tap the card to flip it</span>
+        <div class="vs">
+          <div class="vs-head"><b>Battlecard · SuperCard vs</b>
+            <label class="sr" for="rival">Competitor</label>
+            <select id="rival"><option value="0">HDFC Millennia</option><option value="1">SBI Card Elite</option><option value="2">Amazon Pay ICICI</option></select>
+          </div>
+          <div style="overflow-x:auto"><table id="vsTable"></table></div>
+          <div class="vs-foot">✦ marks where SuperCard leads. Comparison as compiled for the 2024 spec.</div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ===== JioCinema ===== -->
+    <article class="stage panel" role="tabpanel" id="p-jio" aria-labelledby="t-jio" hidden>
+      <div class="brief">
+        <div class="kicker"><span class="chip">Campaign Chronicles · Ep 1</span><span class="chip">CRM</span><span class="chip">Push copy</span></div>
+        <h3>The Olympics push <em>I'd actually tap</em></h3>
+        <p>During Paris 2024 I got a JioCinema notification about live matches. I'm a big sports fan and it still didn't land. So I took it apart and rewrote the push strategy to bring more people to the stream: tie each push to a moment, an athlete and the viewer's own history.</p>
+        <div class="hyp">
+          <div><b>Moments over menus.</b> Name the event and the minute it starts.</div>
+          <div><b>Faces over formats.</b> People tune in for athletes, so lead with the athlete's name.</div>
+          <div><b>Use what you know.</b> Personalise using sports the viewer already watched.</div>
+          <div><b>Recover the miss.</b> Turn a missed live event into a highlights tap.</div>
+        </div>
+        <a class="doc-link" href="https://super.page/garima-sahani/cards/72831" target="_blank" rel="noopener">See the original post ↗</a>
+      </div>
+      <div class="demo">
+        <div class="seg" role="group" aria-label="Notification set">
+          <button aria-pressed="true" data-jio="before">The push I got</button>
+          <button aria-pressed="false" data-jio="after">My rewrite</button>
+        </div>
+        <div class="phone">
+          <div class="screen lock jio">
+            <div class="sbar"><span></span><span>▮▮▮</span></div>
+            <div class="clock"><small>Thursday, 8 August</small><b id="jioTime">21:40</b></div>
+            <div class="notifs" id="jioN"></div>
+          </div>
+        </div>
+        <div class="annot" id="jioA" aria-live="polite"></div>
+        <p class="demo-cap">Rewrites shown are sample copy recreated for this site. Tap a notification for the reasoning.</p>
+      </div>
+    </article>
+
+    <!-- ===== Airbnb ===== -->
+    <article class="stage panel" role="tabpanel" id="p-airbnb" aria-labelledby="t-airbnb" hidden>
+      <div class="brief">
+        <div class="kicker"><span class="chip">Market research</span><span class="chip">Competitor analysis</span><span class="chip">Recommendations</span></div>
+        <h3>How Airbnb can win India's <em>corporate stays</em></h3>
+        <p>An 11-slide research deck on how Airbnb for Business could capture corporate travel in India. It covers the market, the competitive set, where Airbnb stands today and what it should do next. The core idea: flexible stays, from a single night to extended assignments, packaged so a company and a travelling employee both say yes.</p>
+        <div class="hyp">
+          <div><b>The mock on the right</b> shows how a business-ready view could surface the things a work traveller filters for. It's a concept visual for this site, not a slide from the deck.</div>
+        </div>
+        <a class="doc-link" href="https://drive.google.com/file/d/1Ub8JGdnG2Bk-80L42XUfZ-WUu5RMj1Qx/view?usp=sharing" target="_blank" rel="noopener">Open the research deck ↗</a>
+      </div>
+      <div class="demo">
+        <div class="browser" id="abBrowser">
+          <div class="bchrome"><i></i><i></i><i></i><span class="url">airbnb.co.in/s/Bengaluru/work-trip</span></div>
+          <div class="bbody">
+            <div class="search"><span>Where<small>Bengaluru, ORR</small></span><span class="sep"></span><span>When<small>Mon–Thu · 3 nights</small></span><span class="sep"></span><span>Who<small>1 guest · work</small></span><button class="go" aria-label="Search"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg></button></div>
+            <button class="worktog" role="switch" aria-checked="false" id="abTog"><span><b>Travelling for work</b><small>Show business-ready stays</small></span><span class="sw"></span></button>
+            <div class="listings">
+              <div class="lst"><div class="ph" style="background:linear-gradient(135deg,#cfd8c4,#8fa688)"><i></i><b>Business-ready</b></div><h6>Studio near Bellandur</h6><p>8 min to tech parks · ★ 4.91</p><div class="badges"><span>Dedicated desk</span><span>Wi-Fi verified</span><span>GST invoice</span></div><p class="pr"><b>₹3,400</b> night <span class="wk">· 15% off weekly</span></p></div>
+              <div class="lst"><div class="ph" style="background:linear-gradient(135deg,#e8dccb,#c49a7a)"><i></i><b>Business-ready</b></div><h6>Serviced 1BHK, Koramangala</h6><p>Self check-in · ★ 4.87</p><div class="badges"><span>Workspace</span><span>Daily cleaning</span><span>Company billing</span></div><p class="pr"><b>₹4,100</b> night <span class="wk">· 20% off monthly</span></p></div>
+            </div>
+          </div>
+        </div>
+        <p class="demo-cap">Flip the "Travelling for work" switch.</p>
+      </div>
+    </article>
+      </div>
+  </section>
+
+  <!-- VII. The Common Room & the Pensieve -->
+  <section id="common" aria-labelledby="commonTitle">
+    <div class="wrap">
+      <header class="shead">
+        <p class="label"><span class="star"></span>Chapter VII · The House Common Room<span class="star"></span></p>
+        <h2 id="commonTitle">A Collection of Memories, Milestones &amp; Magic</h2>
+        <p>A few things about me, then the moments that shaped me. Tap a memory to relive it.</p>
+      </header>
+      <ul class="facts" id="facts"></ul>
+      <div class="pensieve" id="pensieve">
+        <p class="label" style="text-align:center;margin-bottom:30px">The Pensieve · tap a memory</p>
+        <ol class="orbs" id="orbs"></ol>
+        <div class="memory" id="memory" aria-live="polite" hidden></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIII. The Owlery -->
+  <section id="contact" aria-labelledby="contactTitle">
+    <div class="wrap">
+      <header class="shead">
+        <p class="label"><span class="star"></span>Chapter VIII · The Owlery<span class="star"></span></p>
+        <h2 id="contactTitle">Have an Idea Worth Casting a Spell On?</h2>
+        <p>Write me a letter. My owl delivers it straight to my inbox.</p>
+      </header>
+      <div class="desk" id="desk">
+        <div class="left" aria-hidden="true"><span class="candle"><img class="clay" src="public/assets/icons/candle.png" alt=""></span><img class="clay" src="public/assets/icons/quill.png" alt=""></div>
+        <div style="position:relative">
+          <form class="letterform" id="letter" novalidate>
+            <p class="dear">Dear Garima,</p>
+            <div class="row">
+              <div><label for="fName">Your name</label><input id="fName" name="name" autocomplete="name" required></div>
+              <div><label for="fEmail">Your email</label><input id="fEmail" name="email" type="email" autocomplete="email" required></div>
+            </div>
+            <label for="fMsg">Your message</label>
+            <textarea id="fMsg" name="message" required></textarea>
+            <p class="err" id="fErr" role="alert"></p>
+            <div class="send"><span class="sign">Yours magically</span><button class="btn" type="submit">Send My Owl <span class="arr" aria-hidden="true">→</span></button></div>
+          </form>
+          <div class="seal" aria-hidden="true">G</div>
+          <p class="sent" id="sent" aria-live="polite" hidden></p>
+        </div>
+        <div class="right" aria-hidden="true"><img class="clay" src="public/assets/icons/owl.png" alt=""></div>
+      </div>
+      <div class="socials" id="socials"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="orn" aria-hidden="true"><span class="star"></span></div>
+  <p>Garima Sahani · Product marketer, growth strategist &amp; curious creator</p>
+  <p>Mischief managed.</p>
+</footer>
+
+<div class="accio" id="accio" role="dialog" aria-modal="true" aria-labelledby="accioL">
+  <div class="box"><label id="accioL" for="accioQ">Accio…</label><input id="accioQ" type="search" placeholder="a project, a brand, a skill" autocomplete="off"><ul id="accioOut"></ul></div>
+</div>
+</body>
+</html>

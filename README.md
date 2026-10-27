@@ -1,0 +1,46 @@
+# Garima Sahani · Magical Academy portfolio
+
+A static website: plain HTML, CSS and JavaScript, with no build step and nothing to install. All the words, numbers and photos live in `content/`, so you can change the site without touching code.
+
+## Run it on your computer
+
+The pages read `content/*.json`, and browsers only allow that from a web server. From this folder run:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then open http://localhost:8000.
+
+## Put it online
+
+Upload the whole folder to any static host: Netlify (drag and drop), GitHub Pages, Vercel or Cloudflare Pages. Most of them pick up `404.html` automatically.
+
+## Folder map
+
+| Path | What it is |
+|---|---|
+| `index.html` | The one-page academy: Entrance, Map, Sorting Hat, Library, Potion Room, Chamber of Creations, Common Room and Pensieve, Owlery |
+| `case.html` | Case study template (Challenge, Role, Research, Strategy, Execution, Results). Opens as `case.html#project-slug` |
+| `404.html` | Lost-in-the-castle page |
+| `content/site.json` | Hero copy, map destinations, email, socials, resume link |
+| `content/about.json` | About story, the four houses for the Sorting Ceremony, portraits, facts |
+| `content/career.json` | Library books: org, role, responsibilities, impact, skills (`spine` is the short label on the book) |
+| `content/potions.json` | The nine skill potions: expertise, tools, where it was applied, linked projects |
+| `content/projects.json` | Every project and spec campaign (cards, case studies, search) |
+| `content/pensieve.json` | Memory orbs: milestones, with optional photo |
+| `public/assets/icons`, `crests`, `ornaments` | Clay illustrations cut from the Magical Academy brand kit, as transparent PNGs |
+| `public/assets/photos` | Photos |
+| `public/assets/backgrounds` | Parchment texture |
+| `assets/css/academy.css` | Design system: colour and font tokens, buttons, nav, ornaments |
+| `assets/css/sections.css` | Each section's layout and animations |
+| `assets/js/core.js` | Shared: menu, Nox wand-light mode, Accio search (press `/`), sparkles |
+| `assets/js/home.js`, `case.js` | Render the pages from `content/` |
+
+## Editing
+
+- Anything starting with `TODO:` shows on the site as a purple placeholder. Search the `content/` folder for `TODO` to find them all.
+- Contact form: set `FORM_ENDPOINT` at the top of `assets/js/home.js` to a Formspree (or similar) URL to receive letters directly. While it's empty, the form opens the visitor's email app with the letter filled in.
+- Resume: put the PDF in `public/assets/` and set `resume.url` in `content/site.json`. The download link appears automatically.
+- Colours and fonts are the variables at the top of `assets/css/academy.css`.
+- Motion respects the visitor's reduced-motion setting.

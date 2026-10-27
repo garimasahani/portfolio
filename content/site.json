@@ -1,0 +1,121 @@
+{
+  "name": "Garima Sahani",
+  "role": "Product marketer for product-led growth and GTM",
+  "intro": "Product marketer. I build product-led growth campaigns and GTM, own the full funnel, and make marketing fun in tech.",
+  "house": "Gryffindor",
+  "portrait": {
+    "src": "public/assets/photos/headshot.jpg",
+    "alt": "Portrait of Garima Sahani smiling"
+  },
+  "email": "work.garimasahani@gmail.com",
+  "socials": [
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/garima-sahani21/"
+    },
+    {
+      "label": "Instagram",
+      "url": "https://www.instagram.com/findingglory_withgarima/"
+    },
+    {
+      "label": "super.page",
+      "url": "https://super.page/garima-sahani"
+    },
+    {
+      "label": "YouTube",
+      "url": "TODO: add YouTube channel URL"
+    }
+  ],
+  "resume": {
+    "label": "Resume (PDF)",
+    "url": "TODO: add resume PDF to assets/ and put its path here"
+  },
+  "locations": [
+    {
+      "id": "about",
+      "name": "The Great Hall",
+      "label": "About me",
+      "icon": "icons/hat",
+      "href": "#about",
+      "blurb": "Who I am and how I got sorted."
+    },
+    {
+      "id": "experience",
+      "name": "The Library",
+      "label": "Work experience",
+      "icon": "icons/books",
+      "href": "#experience",
+      "blurb": "Every chapter of my career, one book each."
+    },
+    {
+      "id": "skills",
+      "name": "The Potion Room",
+      "label": "Skills",
+      "icon": "icons/potion",
+      "href": "#skills",
+      "blurb": "The magic behind my work."
+    },
+    {
+      "id": "projects",
+      "name": "The Chamber of Creations",
+      "label": "Projects & campaigns",
+      "icon": "icons/spellbook",
+      "href": "#projects",
+      "blurb": "Live campaigns, growth work and spec concepts."
+    },
+    {
+      "id": "common",
+      "name": "The House Common Room",
+      "label": "Personality & interests",
+      "icon": "icons/candle",
+      "href": "#common",
+      "blurb": "Memories, milestones and the person behind the work."
+    },
+    {
+      "id": "contact",
+      "name": "The Owlery",
+      "label": "Contact me",
+      "icon": "icons/owl",
+      "href": "#contact",
+      "blurb": "Send me an owl."
+    }
+  ],
+  "tagline": "I make marketing fun in tech.",
+  "hero": {
+    "kicker": "The Portfolio of a Modern-Day Wizard",
+    "headline": [
+      "Products, brought to life.",
+      "Users, enchanted to stay."
+    ],
+    "sub": "Where strategy meets storytelling, creativity becomes a superpower, and every great idea starts with a little magic.",
+    "intro": "I'm Garima, a product marketer, growth strategist & curious creator.",
+    "primary": "Explore My World",
+    "secondary": "Send an Owl"
+  },
+  "nav": [
+    [
+      "Home",
+      "#top"
+    ],
+    [
+      "About",
+      "#about"
+    ],
+    [
+      "Experience",
+      "#experience"
+    ],
+    [
+      "Skills",
+      "#skills"
+    ],
+    [
+      "Projects",
+      "#projects"
+    ],
+    [
+      "Contact",
+      "#contact"
+    ]
+  ]
+}

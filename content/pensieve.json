@@ -1,0 +1,73 @@
+[
+  {
+    "title": "Born left-handed",
+    "text": "Made to write with my right. Both sides of the brain, wide awake ever since.",
+    "kind": "Personal"
+  },
+  {
+    "title": "B.Sc. Economics",
+    "text": "SVKM's NMIMS.",
+    "kind": "Academic"
+  },
+  {
+    "title": "Nestlé research",
+    "text": "My first marketing internship: how shopping channels shifted before and after COVID in India's West Zone.",
+    "kind": "Career"
+  },
+  {
+    "title": "Winner, Brand Strategy Competition",
+    "text": "IIM Bangalore fest.",
+    "kind": "Achievement"
+  },
+  {
+    "title": "Top 300, Women Startup Program",
+    "text": "NSRCEL, IIM Bangalore.",
+    "kind": "Achievement"
+  },
+  {
+    "title": "Master of Global Business",
+    "text": "Marketing, SP Jain School of Global Management across Singapore, Sydney and Dubai. Dean's List, CGPA 3.77.",
+    "kind": "Academic",
+    "image": {
+      "src": "public/assets/photos/spjain.jpg",
+      "alt": "Garima at SP Jain's Singapore campus"
+    }
+  },
+  {
+    "title": "A research publication",
+    "text": "AI hyper-personalisation in travel, published by IGI Global.",
+    "kind": "Creative"
+  },
+  {
+    "title": "A hotel in 90 days",
+    "text": "My dad called after my Siemens internship: build our family hotel. Ninety days later, a bare-shell building was a brand.",
+    "kind": "Career",
+    "image": {
+      "src": "public/assets/photos/hotellobby.jpg",
+      "alt": "Garima beside the family hotel's gold logo"
+    }
+  },
+  {
+    "title": "Product marketing course",
+    "text": "An 8-week product marketing course with Young Urban Project.",
+    "kind": "Academic",
+    "image": {
+      "src": "public/assets/photos/pmmcert.jpg",
+      "alt": "Garima with her product marketing certificate"
+    }
+  },
+  {
+    "title": "Spec campaigns in public",
+    "text": "Ideas for Airbnb, Spotify and Sarvam, posted on LinkedIn for anyone to judge.",
+    "kind": "Creative"
+  },
+  {
+    "title": "Teaching design students",
+    "text": "A Coohom session for design students at Presidency University.",
+    "kind": "Career",
+    "image": {
+      "src": "public/assets/photos/presidency.jpg",
+      "alt": "Garima with Presidency University faculty at a Coohom campus seminar"
+    }
+  }
+]

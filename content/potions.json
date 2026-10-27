@@ -1,0 +1,176 @@
+[
+  {
+    "name": "Growth Marketing",
+    "color": "#3B6B4F",
+    "expertise": "Acquisition, activation and retention loops across campuses, apps and the web.",
+    "tools": [
+      "Amplitude",
+      "Mixpanel",
+      "Google Analytics",
+      "Google Ads"
+    ],
+    "applied": [
+      "CAC −41.5% and acquisition +40% at Apli.ai",
+      "MAU +15% at PICE"
+    ],
+    "examples": [
+      "apli-community",
+      "pice-lifecycle"
+    ]
+  },
+  {
+    "name": "Product Marketing",
+    "color": "#B82E24",
+    "expertise": "Positioning, launches and feature adoption for SaaS and fintech products.",
+    "tools": [
+      "Figma",
+      "CleverTap",
+      "Plotline"
+    ],
+    "applied": [
+      "Led GTM for PICEPay and credit features: 25–30% adoption uplift in 60 days",
+      "Launched Vastu AI at Coohom"
+    ],
+    "examples": [
+      "picepay-gtm",
+      "vastu-ai"
+    ]
+  },
+  {
+    "name": "Go-to-Market Strategy",
+    "color": "#D4A84A",
+    "expertise": "Market entry plans that own the full funnel, from first click to paid plan.",
+    "tools": [
+      "HubSpot",
+      "Google Analytics",
+      "Figma"
+    ],
+    "applied": [
+      "Leading India GTM at Coohom: +30% sign-up rate",
+      "GTM for fintech SaaS, travel and hospitality launches as a freelancer"
+    ],
+    "examples": [
+      "coohom-india-gtm",
+      "nutralis-gtm"
+    ]
+  },
+  {
+    "name": "Brand Storytelling",
+    "color": "#6C4BA6",
+    "expertise": "Campaigns and brands with a human idea at the centre.",
+    "tools": [
+      "Figma"
+    ],
+    "applied": [
+      "Har Din Diwali, a merchant-first campaign at PICE",
+      "A family hotel brand built in 90 days"
+    ],
+    "examples": [
+      "pice-har-din-diwali",
+      "family-hotel"
+    ],
+    "photo": {
+      "src": "public/assets/photos/hotelteam.jpg",
+      "alt": "The hotel team in chef hats and tricolour scarves",
+      "caption": "The hotel team, on brand"
+    }
+  },
+  {
+    "name": "Customer Research",
+    "color": "#3A5BA9",
+    "expertise": "Surveys, interviews and desk research turned into decisions.",
+    "tools": [
+      "Surveys",
+      "Excel"
+    ],
+    "applied": [
+      "Channel-shift research across food categories at Nestlé",
+      "Research decks for Airbnb for Work and Spotify offline listening"
+    ],
+    "examples": [
+      "airbnb-for-work",
+      "spotify-offline"
+    ]
+  },
+  {
+    "name": "Lifecycle & CRM",
+    "color": "#B82E24",
+    "expertise": "Onboarding and retention journeys across in-app, WhatsApp, email and push.",
+    "tools": [
+      "CleverTap",
+      "Plotline",
+      "WATI",
+      "Mailchimp",
+      "HubSpot"
+    ],
+    "applied": [
+      "Activation +28% and D30 retention +18% at PICE",
+      "CRM and lifecycle across email, WhatsApp and push at Apli.ai"
+    ],
+    "examples": [
+      "pice-lifecycle"
+    ]
+  },
+  {
+    "name": "Marketing Analytics",
+    "color": "#6B4A2F",
+    "expertise": "Dashboards and reporting that make the next decision obvious.",
+    "tools": [
+      "Power BI",
+      "Excel",
+      "Amplitude",
+      "Mixpanel"
+    ],
+    "applied": [
+      "+32% marketing efficiency with Power BI at Deloitte",
+      "CRAN, a dashboard that saves 6 hours every week"
+    ],
+    "examples": [
+      "deloitte-programs",
+      "cran-dashboard"
+    ],
+    "photo": {
+      "src": "public/assets/photos/pout.jpg",
+      "alt": "Garima pulling a playful pout",
+      "caption": "Debugging a dashboard"
+    }
+  },
+  {
+    "name": "Creative Campaigns",
+    "color": "#D4A84A",
+    "expertise": "Ideas that make tech feel fun, made for brands that never asked.",
+    "tools": [
+      "Figma"
+    ],
+    "applied": [
+      "Spec campaigns for Airbnb, Spotify, Sarvam and more"
+    ],
+    "examples": [
+      "sarvam-diwali",
+      "spotify-homejam",
+      "airbnb-znmd"
+    ],
+    "photo": {
+      "src": "public/assets/photos/zepto.jpg",
+      "alt": "Garima holding a fan of Zepto playing cards",
+      "caption": "Content that plays"
+    }
+  },
+  {
+    "name": "AI & Automation",
+    "color": "#6C4BA6",
+    "crystal": true,
+    "expertise": "AI-assisted systems for content, lifecycle, partners and experiments.",
+    "tools": [
+      "Claude"
+    ],
+    "applied": [
+      "Built Growth OS at Coohom",
+      "Built CRAN to read ad creatives faster"
+    ],
+    "examples": [
+      "growth-os",
+      "cran-dashboard"
+    ]
+  }
+]

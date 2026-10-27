@@ -1,0 +1,211 @@
+{
+  "years": [
+    {
+      "year": 1,
+      "title": "Marketing Research Intern",
+      "org": "Nestlé",
+      "did": [
+        "Researched how shopping channels shifted before and after COVID in India's West Zone.",
+        "Ran surveys across food categories and turned them into campaign recommendations."
+      ],
+      "outcomes": [
+        "+70% spike found in select food categories",
+        "−50% decline found in baby products"
+      ],
+      "owls": [
+        "Market research",
+        "Surveys",
+        "Consumer insights"
+      ]
+    },
+    {
+      "year": 2,
+      "title": "Growth & Product Marketing",
+      "org": "Apli.ai",
+      "did": [
+        "Led BTL marketing across 8+ campuses with referrals and offline activations.",
+        "Owned CRM and lifecycle across email, WhatsApp and push.",
+        "Built and scaled Discord, WhatsApp and Instagram communities."
+      ],
+      "outcomes": [
+        "20,000+ student community",
+        "CAC −41.5%",
+        "Acquisition +40%",
+        "60% monthly feature adoption"
+      ],
+      "owls": [
+        "Community",
+        "CRM",
+        "Lifecycle",
+        "BTL"
+      ]
+    },
+    {
+      "year": 3,
+      "title": "Program Associate, Strategic Marketing",
+      "org": "Deloitte",
+      "did": [
+        "Tailored messaging for global L&D programs across 4 product portfolios.",
+        "Wrote email sequences, pitch decks and brochures.",
+        "Ran 12+ cross-channel campaigns."
+      ],
+      "outcomes": [
+        "+25% client engagement",
+        "+32% marketing efficiency with Power BI"
+      ],
+      "owls": [
+        "Messaging",
+        "Campaigns",
+        "Power BI"
+      ]
+    },
+    {
+      "year": 4,
+      "title": "GTM & Product Marketing Freelancer",
+      "org": "Fintech SaaS, travel apps, hospitality",
+      "did": [
+        "Built GTM strategies for product and feature launches.",
+        "Ran branding and lifecycle across WhatsApp, email and push.",
+        "Built hyperlocal growth plans with influencer seeding, print and geo-targeted WhatsApp.",
+        "Set up CRM systems and drip journeys."
+      ],
+      "outcomes": [
+        "TODO: add a freelance outcome with a number"
+      ],
+      "owls": [
+        "GTM",
+        "WATI",
+        "Mailchimp",
+        "Hyperlocal growth"
+      ],
+      "spine": "Freelance GTM"
+    },
+    {
+      "year": 5,
+      "title": "Family hotel launch",
+      "org": "Family business",
+      "did": [
+        "Turned a bare-shell building into a hotel brand in 90 days: themes, interiors, hiring, branding, menus, pricing, SOPs, training, inventory and launch."
+      ],
+      "outcomes": [
+        "90 days from bare shell to brand"
+      ],
+      "owls": [
+        "Ownership",
+        "Operations",
+        "Branding"
+      ],
+      "spine": "Family Hotel",
+      "photo": {
+        "src": "public/assets/photos/hotellobby.jpg",
+        "alt": "Garima beside the family hotel's gold logo",
+        "caption": "The hotel we built"
+      }
+    },
+    {
+      "year": 6,
+      "title": "Growth & Product Marketing Manager",
+      "org": "PICE",
+      "did": [
+        "Owned product and growth marketing for a business payments app.",
+        "Led GTM for PICEPay and credit features.",
+        "Ran merchant-first brand campaigns like Har Din Diwali.",
+        "Built onboarding and CRM journeys across in-app, WhatsApp and push."
+      ],
+      "outcomes": [
+        "MAU +15%",
+        "1.5× transaction volume",
+        "25–30% feature adoption uplift in 60 days",
+        "+30% daily active transacting users",
+        "Activation +28%",
+        "D30 retention +18%"
+      ],
+      "owls": [
+        "Fintech GTM",
+        "Brand campaigns",
+        "Lifecycle",
+        "Acquisition"
+      ]
+    },
+    {
+      "year": 7,
+      "title": "Growth & Product Marketing, India GTM",
+      "org": "Coohom",
+      "did": [
+        "Lead India GTM and product-led growth across the full funnel.",
+        "Launched Vastu AI.",
+        "Built three partner programs and a pipeline of 50+ schools.",
+        "Built Growth OS."
+      ],
+      "outcomes": [
+        "+30% sign-up rate"
+      ],
+      "owls": [
+        "Product-led growth",
+        "Partnerships",
+        "Marketing ops",
+        "AI tools"
+      ],
+      "photo": {
+        "src": "public/assets/photos/presidency.jpg",
+        "alt": "Garima with Presidency University faculty at a Coohom campus seminar",
+        "caption": "A Coohom session for design students"
+      }
+    }
+  ],
+  "trips": [
+    {
+      "after": 0,
+      "title": "B.Sc. Economics",
+      "org": "SVKM's NMIMS"
+    },
+    {
+      "after": 1,
+      "title": "Winner, Brand Strategy Competition",
+      "org": "IIM Bangalore fest"
+    },
+    {
+      "after": 2,
+      "title": "Top 300, Women Startup Program",
+      "org": "NSRCEL, IIM Bangalore"
+    },
+    {
+      "after": 3,
+      "title": "Blue Ocean Strategy · Advanced Excel · Growth Marketing",
+      "org": "Mark Strat · LinkedIn Learning · Growth School"
+    },
+    {
+      "after": 3,
+      "title": "Master of Global Business, Marketing (Dean's List, CGPA 3.77)",
+      "org": "SP Jain School of Global Management · Singapore, Sydney, Dubai",
+      "image": {
+        "src": "public/assets/photos/spjain.jpg",
+        "alt": "Garima at SP Jain's Singapore campus"
+      }
+    },
+    {
+      "after": 3,
+      "title": "Strategy internship",
+      "org": "Siemens Healthineers"
+    },
+    {
+      "after": 3,
+      "title": "Research publication: AI hyper-personalisation in travel",
+      "org": "IGI Global"
+    },
+    {
+      "after": 4,
+      "title": "Product Marketing, 8-week course",
+      "org": "Young Urban Project",
+      "image": {
+        "src": "public/assets/photos/pmmcert.jpg",
+        "alt": "Garima with her product marketing certificate"
+      }
+    },
+    {
+      "after": 4,
+      "title": "Strategy Consulting · Digital Marketing",
+      "org": "BCG · Coursera"
+    }
+  ]
+}
