@@ -9,7 +9,7 @@
   // TODO text renders as a visible, editable placeholder instead of pretending to be content
   function t(s) { return isTodo(s) ? '<span class="todo">' + esc(s) + '</span>' : esc(s); }
   var cache = {};
-  function loadJSON(n) { return cache[n] || (cache[n] = fetch('content/' + n + '.json').then(function (r) { return r.json(); })); }
+  function loadJSON(n) { return cache[n] || (cache[n] = fetch('content/' + n + '.json', { cache: 'no-cache' }).then(function (r) { return r.json(); })); }
   var A = 'public/assets/';
   function icon(name, alt, cls) { return '<img src="' + A + name + '.png" alt="' + esc(alt || '') + '"' + (cls ? ' class="' + cls + '"' : '') + ' loading="lazy" decoding="async">'; }
 

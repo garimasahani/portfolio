@@ -55,3 +55,11 @@ Upload the whole folder to any static host: Netlify (drag and drop), GitHub Page
 ## Sound
 
 Two effects only, both synthesised in the browser with the Web Audio API (`assets/js/core.js`, the `FX` table), so there are no audio files: a wand whoosh on every click, and a paper flip while the cover opens onto the map. Nothing plays until the visitor's first tap or key press, and the menu has a Sound on/off switch that is remembered.
+
+## Where each project lives
+
+Every project in `content/projects.json` appears in exactly one place:
+
+- it has a `workex` field naming a job in `content/career.json` -> shown as a card on that job's book in Experience
+- otherwise, if its categories include `spec` -> the Spec Lab (concepts with a live mock are linked from their mock's tab, the rest are cards under it)
+- otherwise -> the Chamber of Creations (Projects), which also holds the Presentations shelf

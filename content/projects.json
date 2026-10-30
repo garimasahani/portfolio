@@ -3,11 +3,20 @@
     "slug": "coohom-india-gtm",
     "title": "Opening the gates: Coohom India GTM",
     "brand": "Coohom",
-    "categories": ["live", "growth-ops"],
+    "categories": [
+      "live",
+      "growth-ops"
+    ],
     "year": "2026",
     "summary": "I lead India go-to-market and product-led growth for a 3D interior design platform, from first visit to paid plan.",
-    "metric": { "value": "+30%", "label": "sign-up rate" },
-    "image": { "src": "public/assets/photos/presidency.jpg", "alt": "Garima with Presidency University faculty at a Coohom campus seminar" },
+    "metric": {
+      "value": "+30%",
+      "label": "sign-up rate"
+    },
+    "image": {
+      "src": "public/assets/photos/presidency.jpg",
+      "alt": "Garima with Presidency University faculty at a Coohom campus seminar"
+    },
     "prophecy": "Coohom needed an India business built from scratch. Someone had to own the whole funnel: traffic, activation, retention and paid conversion.",
     "ingredients": {
       "audience": "Interior designers, design students and design schools in India. TODO: confirm the full audience list.",
@@ -22,157 +31,364 @@
       "Built Growth OS to run content, lifecycle, partners, experiments and dashboards in one place."
     ],
     "results": [
-      { "value": "+30%", "label": "sign-up rate" },
-      { "value": "3", "label": "partner programs designed" },
-      { "value": "50+", "label": "schools and universities in the pipeline" }
+      {
+        "value": "+30%",
+        "label": "sign-up rate"
+      },
+      {
+        "value": "3",
+        "label": "partner programs designed"
+      },
+      {
+        "value": "50+",
+        "label": "schools and universities in the pipeline"
+      }
     ],
-    "lessons": ["TODO: what building India from scratch taught you."],
-    "links": []
+    "lessons": [
+      "TODO: what building India from scratch taught you."
+    ],
+    "links": [],
+    "workex": "Coohom"
   },
   {
     "slug": "coohom-instagram-launch",
     "title": "A new owl in the feed: Coohom India on Instagram",
     "brand": "Coohom",
-    "categories": ["live", "content"],
+    "categories": [
+      "live",
+      "content"
+    ],
     "year": "TODO: launch date",
     "summary": "TODO: one line on the Coohom India Instagram launch.",
     "metric": null,
     "image": null,
     "prophecy": "TODO: why Coohom India needed its own Instagram, and what it had to achieve.",
-    "ingredients": { "audience": "TODO", "channels": "Instagram. TODO: add supporting channels.", "tools": "TODO", "budget": "TODO" },
-    "spellwork": ["TODO: content pillars, launch plan, first posts."],
-    "results": [{ "value": "TODO", "label": "followers, reach or engagement" }],
-    "lessons": ["TODO"],
-    "links": [{ "label": "Coohom India on Instagram", "url": "TODO: add profile URL" }]
+    "ingredients": {
+      "audience": "TODO",
+      "channels": "Instagram. TODO: add supporting channels.",
+      "tools": "TODO",
+      "budget": "TODO"
+    },
+    "spellwork": [
+      "TODO: content pillars, launch plan, first posts."
+    ],
+    "results": [
+      {
+        "value": "TODO",
+        "label": "followers, reach or engagement"
+      }
+    ],
+    "lessons": [
+      "TODO"
+    ],
+    "links": [
+      {
+        "label": "Coohom India on Instagram",
+        "url": "TODO: add profile URL"
+      }
+    ],
+    "workex": "Coohom"
   },
   {
     "slug": "vastu-ai",
     "title": "Vastu, by AI",
     "brand": "Coohom",
-    "categories": ["live", "growth-ops"],
+    "categories": [
+      "live",
+      "growth-ops"
+    ],
     "year": "2026",
     "summary": "A new product initiative: room-level Vastu pages with in-page 3D sign-up CTAs.",
     "metric": null,
     "image": null,
     "prophecy": "TODO: the gap Vastu AI fills for Indian homeowners and designers.",
-    "ingredients": { "audience": "TODO", "channels": "SEO landing pages. TODO: confirm.", "tools": "TODO", "budget": "TODO" },
-    "spellwork": ["Built room-level Vastu pages, each with an in-page 3D sign-up CTA.", "TODO: how the pages were planned, written and launched."],
-    "results": [{ "value": "TODO", "label": "pages, traffic or sign-ups" }],
-    "lessons": ["TODO"],
-    "links": []
+    "ingredients": {
+      "audience": "TODO",
+      "channels": "SEO landing pages. TODO: confirm.",
+      "tools": "TODO",
+      "budget": "TODO"
+    },
+    "spellwork": [
+      "Built room-level Vastu pages, each with an in-page 3D sign-up CTA.",
+      "TODO: how the pages were planned, written and launched."
+    ],
+    "results": [
+      {
+        "value": "TODO",
+        "label": "pages, traffic or sign-ups"
+      }
+    ],
+    "lessons": [
+      "TODO"
+    ],
+    "links": [],
+    "workex": "Coohom"
   },
   {
     "slug": "growth-os",
     "title": "Growth OS: the Room of Requirement for marketing ops",
     "brand": "Coohom",
-    "categories": ["growth-ops"],
+    "categories": [
+      "growth-ops"
+    ],
     "year": "2026",
     "summary": "An AI-assisted marketing ops platform I built that unifies content, lifecycle, partners, experiments and dashboards.",
     "metric": null,
     "image": null,
     "prophecy": "Marketing ops lived across too many tools and sheets. TODO: confirm the exact pain.",
-    "ingredients": { "audience": "The Coohom India marketing team.", "channels": "Internal tool.", "tools": "AI-assisted. TODO: name the stack.", "budget": "TODO" },
-    "spellwork": ["Unified the content CMS, lifecycle engine, partner CRM, experiment tracker and dashboards into one platform."],
-    "results": [{ "value": "TODO", "label": "hours saved or experiments run" }],
-    "lessons": ["TODO"],
-    "links": []
+    "ingredients": {
+      "audience": "The Coohom India marketing team.",
+      "channels": "Internal tool.",
+      "tools": "AI-assisted. TODO: name the stack.",
+      "budget": "TODO"
+    },
+    "spellwork": [
+      "Unified the content CMS, lifecycle engine, partner CRM, experiment tracker and dashboards into one platform."
+    ],
+    "results": [
+      {
+        "value": "TODO",
+        "label": "hours saved or experiments run"
+      }
+    ],
+    "lessons": [
+      "TODO"
+    ],
+    "links": [],
+    "workex": "Coohom"
   },
   {
     "slug": "coohom-partnerships",
     "title": "Unbreakable vows: India partnerships",
     "brand": "Coohom",
-    "categories": ["partnerships"],
+    "categories": [
+      "partnerships"
+    ],
     "year": "2026",
     "summary": "Three partner programs built from scratch, and a B2B2C pipeline of design schools.",
-    "metric": { "value": "50+", "label": "schools in the pipeline" },
+    "metric": {
+      "value": "50+",
+      "label": "schools in the pipeline"
+    },
     "image": null,
     "prophecy": "Coohom India had no partner channel. Design students are tomorrow's users, so schools were the way in.",
-    "ingredients": { "audience": "Design schools, universities, affiliates and resellers.", "channels": "Partnerships, campus seminars.", "tools": "Partner CRM inside Growth OS.", "budget": "TODO" },
-    "spellwork": ["Designed three programs: affiliate, education partner and reseller.", "Built a tiered pipeline of 50+ design schools and universities for B2B2C acquisition."],
-    "results": [{ "value": "3", "label": "partner programs" }, { "value": "50+", "label": "schools and universities" }],
-    "lessons": ["TODO"],
-    "links": []
+    "ingredients": {
+      "audience": "Design schools, universities, affiliates and resellers.",
+      "channels": "Partnerships, campus seminars.",
+      "tools": "Partner CRM inside Growth OS.",
+      "budget": "TODO"
+    },
+    "spellwork": [
+      "Designed three programs: affiliate, education partner and reseller.",
+      "Built a tiered pipeline of 50+ design schools and universities for B2B2C acquisition."
+    ],
+    "results": [
+      {
+        "value": "3",
+        "label": "partner programs"
+      },
+      {
+        "value": "50+",
+        "label": "schools and universities"
+      }
+    ],
+    "lessons": [
+      "TODO"
+    ],
+    "links": [],
+    "workex": "Coohom"
   },
   {
     "slug": "coohom-webinars",
     "title": "Defence Against the Dark Arts of CAD: training sessions",
     "brand": "Coohom",
-    "categories": ["content", "partnerships"],
+    "categories": [
+      "content",
+      "partnerships"
+    ],
     "year": "2026",
     "summary": "Training webinars and campus seminars that teach designers and students to use Coohom.",
     "metric": null,
-    "image": { "src": "public/assets/photos/presidency.jpg", "alt": "Coohom campus seminar at Presidency University" },
+    "image": {
+      "src": "public/assets/photos/presidency.jpg",
+      "alt": "Coohom campus seminar at Presidency University"
+    },
     "prophecy": "Students and designers needed to see what the tool could do before they would sign up.",
-    "ingredients": { "audience": "Faculty and students of design schools; Coohom users.", "channels": "Campus seminars, webinars. TODO: list webinar series.", "tools": "Coohom and its AI features.", "budget": "TODO" },
+    "ingredients": {
+      "audience": "Faculty and students of design schools; Coohom users.",
+      "channels": "Campus seminars, webinars. TODO: list webinar series.",
+      "tools": "Coohom and its AI features.",
+      "budget": "TODO"
+    },
     "spellwork": [
       "Ran a session with the faculty and students of the School of Design, Presidency University, Bangalore, walking them through Coohom and its new AI features.",
       "I had already redesigned my own home on Coohom in two hours, with no design degree and no CAD training, so I demoed from experience.",
       "TODO: add webinar titles, dates and attendance."
     ],
-    "results": [{ "value": "TODO", "label": "attendees or sign-ups" }],
+    "results": [
+      {
+        "value": "TODO",
+        "label": "attendees or sign-ups"
+      }
+    ],
     "quote": "I'm not an architect. But last week I demoed an interior design tool to a room full of future ones.",
-    "lessons": ["AI won't replace a designer's eye. It removes the hours between an idea and a render."],
-    "links": [{ "label": "The LinkedIn post", "url": "https://www.linkedin.com/in/garima-sahani21/recent-activity/all/" }]
+    "lessons": [
+      "AI won't replace a designer's eye. It removes the hours between an idea and a render."
+    ],
+    "links": [
+      {
+        "label": "The LinkedIn post",
+        "url": "https://www.linkedin.com/in/garima-sahani21/recent-activity/all/"
+      }
+    ],
+    "workex": "Coohom"
   },
   {
     "slug": "pice-har-din-diwali",
     "title": "Har Din Diwali",
     "brand": "PICE",
-    "categories": ["live"],
+    "categories": [
+      "live"
+    ],
     "year": "2024–26",
     "summary": "A merchant-first brand campaign for a business payments app.",
-    "metric": { "value": "+30%", "label": "daily active transacting users" },
+    "metric": {
+      "value": "+30%",
+      "label": "daily active transacting users"
+    },
     "image": null,
     "prophecy": "PICE needed merchants to transact more often, not only during the festive rush.",
-    "ingredients": { "audience": "Indian merchants and small businesses using PICE.", "channels": "TODO", "tools": "TODO", "budget": "TODO" },
-    "spellwork": ["Built a merchant-first brand campaign around the idea that every day can feel like Diwali. TODO: creative and channel details."],
-    "results": [{ "value": "+30%", "label": "daily active transacting users" }, { "value": "Higher", "label": "repeat usage" }],
-    "lessons": ["Merchants don't want features. They want a reason to transact today."],
-    "links": []
+    "ingredients": {
+      "audience": "Indian merchants and small businesses using PICE.",
+      "channels": "TODO",
+      "tools": "TODO",
+      "budget": "TODO"
+    },
+    "spellwork": [
+      "Built a merchant-first brand campaign around the idea that every day can feel like Diwali. TODO: creative and channel details."
+    ],
+    "results": [
+      {
+        "value": "+30%",
+        "label": "daily active transacting users"
+      },
+      {
+        "value": "Higher",
+        "label": "repeat usage"
+      }
+    ],
+    "lessons": [
+      "Merchants don't want features. They want a reason to transact today."
+    ],
+    "links": [],
+    "workex": "PICE"
   },
   {
     "slug": "picepay-gtm",
     "title": "PICEPay and credit features launch",
     "brand": "PICE",
-    "categories": ["live"],
+    "categories": [
+      "live"
+    ],
     "year": "2024–26",
     "summary": "Go-to-market for new payments and credit features.",
-    "metric": { "value": "25–30%", "label": "adoption uplift in 60 days" },
+    "metric": {
+      "value": "25–30%",
+      "label": "adoption uplift in 60 days"
+    },
     "image": null,
     "prophecy": "New features only matter if merchants find and use them.",
-    "ingredients": { "audience": "PICE merchants.", "channels": "In-app, WhatsApp, push. TODO: confirm.", "tools": "TODO", "budget": "TODO" },
-    "spellwork": ["Led GTM for PICEPay and credit features. TODO: positioning and launch steps."],
-    "results": [{ "value": "25–30%", "label": "feature adoption uplift within 60 days" }],
-    "lessons": ["TODO"],
-    "links": []
+    "ingredients": {
+      "audience": "PICE merchants.",
+      "channels": "In-app, WhatsApp, push. TODO: confirm.",
+      "tools": "TODO",
+      "budget": "TODO"
+    },
+    "spellwork": [
+      "Led GTM for PICEPay and credit features. TODO: positioning and launch steps."
+    ],
+    "results": [
+      {
+        "value": "25–30%",
+        "label": "feature adoption uplift within 60 days"
+      }
+    ],
+    "lessons": [
+      "TODO"
+    ],
+    "links": [],
+    "workex": "PICE"
   },
   {
     "slug": "pice-lifecycle",
     "title": "The Sorting Hat for new users: onboarding and CRM",
     "brand": "PICE",
-    "categories": ["growth-ops"],
+    "categories": [
+      "growth-ops"
+    ],
     "year": "2024–26",
     "summary": "Onboarding and CRM journeys across in-app, WhatsApp and push.",
-    "metric": { "value": "+28%", "label": "activation" },
+    "metric": {
+      "value": "+28%",
+      "label": "activation"
+    },
     "image": null,
     "prophecy": "Sign-ups were not turning into active, returning users fast enough.",
-    "ingredients": { "audience": "New PICE users.", "channels": "In-app, WhatsApp, push.", "tools": "CleverTap, Plotline. TODO: confirm.", "budget": "TODO" },
-    "spellwork": ["Built onboarding and CRM journeys across in-app, WhatsApp and push."],
-    "results": [{ "value": "+28%", "label": "activation" }, { "value": "+18%", "label": "D30 retention" }, { "value": "+15%", "label": "MAU" }, { "value": "1.5×", "label": "transaction volume" }],
-    "lessons": ["TODO"],
-    "links": []
+    "ingredients": {
+      "audience": "New PICE users.",
+      "channels": "In-app, WhatsApp, push.",
+      "tools": "CleverTap, Plotline. TODO: confirm.",
+      "budget": "TODO"
+    },
+    "spellwork": [
+      "Built onboarding and CRM journeys across in-app, WhatsApp and push."
+    ],
+    "results": [
+      {
+        "value": "+28%",
+        "label": "activation"
+      },
+      {
+        "value": "+18%",
+        "label": "D30 retention"
+      },
+      {
+        "value": "+15%",
+        "label": "MAU"
+      },
+      {
+        "value": "1.5×",
+        "label": "transaction volume"
+      }
+    ],
+    "lessons": [
+      "TODO"
+    ],
+    "links": [],
+    "workex": "PICE"
   },
   {
     "slug": "apli-community",
     "title": "Dumbledore's Army: a 20,000-student community",
     "brand": "Apli.ai",
-    "categories": ["live", "content"],
+    "categories": [
+      "live",
+      "content"
+    ],
     "year": "2021–22",
     "summary": "My first growth role: campus activations, referrals and a student community that kept growing.",
-    "metric": { "value": "−41.5%", "label": "CAC" },
+    "metric": {
+      "value": "−41.5%",
+      "label": "CAC"
+    },
     "image": null,
     "prophecy": "Apli.ai needed students to download the app and keep coming back.",
-    "ingredients": { "audience": "College students across 8+ campuses.", "channels": "BTL campus activations, referral programs, Discord, WhatsApp, Instagram, email, push.", "tools": "TODO", "budget": "TODO" },
+    "ingredients": {
+      "audience": "College students across 8+ campuses.",
+      "channels": "BTL campus activations, referral programs, Discord, WhatsApp, Instagram, email, push.",
+      "tools": "TODO",
+      "budget": "TODO"
+    },
     "spellwork": [
       "Led BTL marketing across 8+ campuses with referral programs and offline activations.",
       "Built event-led growth loops, contests and content collaborations.",
@@ -180,419 +396,1166 @@
       "Launched features with product, design and content teams."
     ],
     "results": [
-      { "value": "20,000+", "label": "student community" },
-      { "value": "−41.5%", "label": "CAC" },
-      { "value": "+40%", "label": "acquisition" },
-      { "value": "60%", "label": "monthly feature adoption" },
-      { "value": "20K", "label": "Instagram followers" }
+      {
+        "value": "20,000+",
+        "label": "student community"
+      },
+      {
+        "value": "−41.5%",
+        "label": "CAC"
+      },
+      {
+        "value": "+40%",
+        "label": "acquisition"
+      },
+      {
+        "value": "60%",
+        "label": "monthly feature adoption"
+      },
+      {
+        "value": "20K",
+        "label": "Instagram followers"
+      }
     ],
-    "lessons": ["Communities grow when people get something to do together."],
-    "links": []
+    "lessons": [
+      "Communities grow when people get something to do together."
+    ],
+    "links": [],
+    "workex": "Apli.ai"
   },
   {
     "slug": "family-hotel",
     "title": "Ninety days to build a hotel",
     "brand": "Family business",
-    "categories": ["live"],
+    "categories": [
+      "live"
+    ],
     "year": "2024–25",
     "summary": "My dad asked me to turn our family's bare-shell building into a hotel brand. I had 90 days.",
-    "metric": { "value": "90", "label": "days, bare shell to brand" },
-    "image": { "src": "public/assets/photos/hotellobby.jpg", "alt": "Garima beside the hotel's gold logo" },
-    "gallery": [{ "src": "public/assets/photos/hotelteam.jpg", "alt": "The hotel team in chef hats and tricolour scarves" }],
+    "metric": {
+      "value": "90",
+      "label": "days, bare shell to brand"
+    },
+    "image": {
+      "src": "public/assets/photos/hotellobby.jpg",
+      "alt": "Garima beside the hotel's gold logo"
+    },
+    "gallery": [
+      {
+        "src": "public/assets/photos/hotelteam.jpg",
+        "alt": "The hotel team in chef hats and tricolour scarves"
+      }
+    ],
     "prophecy": "My great-grandfather started a quick-service restaurant in a Tier 4 city in Maharashtra. Four generations later, my dad wanted a proper hotel.",
-    "ingredients": { "audience": "Guests and diners in a Tier 4 city.", "channels": "Social media, local launch.", "tools": "SOPs and software integrations.", "budget": "A project worth crores." },
+    "ingredients": {
+      "audience": "Guests and diners in a Tier 4 city.",
+      "channels": "Social media, local launch.",
+      "tools": "SOPs and software integrations.",
+      "budget": "A project worth crores."
+    },
     "spellwork": [
       "Planned the full timeline and gave every corner of the hotel its own theme.",
       "Oversaw interiors, hired across departments, designed logos and menus.",
       "Ran social media, food trials, pricing, budgets, SOPs, staff training, inventory and the launch."
     ],
-    "results": [{ "value": "90", "label": "days" }, { "value": "4", "label": "generations of family business" }],
+    "results": [
+      {
+        "value": "90",
+        "label": "days"
+      },
+      {
+        "value": "4",
+        "label": "generations of family business"
+      }
+    ],
     "quote": "Were all decisions perfect? Definitely not.",
-    "lessons": ["Looking back, my dad was my first freelancing client.", "I can get things done, not just research them."],
-    "links": []
+    "lessons": [
+      "Looking back, my dad was my first freelancing client.",
+      "I can get things done, not just research them."
+    ],
+    "links": [],
+    "workex": "Family business"
   },
   {
     "slug": "deloitte-programs",
     "title": "Owl post at scale: Deloitte L&D marketing",
     "brand": "Deloitte",
-    "categories": ["live", "content"],
+    "categories": [
+      "live",
+      "content"
+    ],
     "year": "2022–23",
     "summary": "Messaging and campaigns for global learning and development programs.",
-    "metric": { "value": "+32%", "label": "marketing efficiency" },
+    "metric": {
+      "value": "+32%",
+      "label": "marketing efficiency"
+    },
     "image": null,
     "prophecy": "Four product portfolios of global L&D programs needed sharper messaging.",
-    "ingredients": { "audience": "Global L&D clients.", "channels": "Email sequences, pitch decks, brochures.", "tools": "Power BI.", "budget": "TODO" },
-    "spellwork": ["Tailored messaging across 4 product portfolios.", "Wrote email sequences, pitch decks and brochures.", "Ran 12+ cross-channel campaigns with integrated marketing teams."],
-    "results": [{ "value": "+25%", "label": "client engagement" }, { "value": "12+", "label": "campaigns" }, { "value": "+32%", "label": "efficiency with Power BI" }],
-    "lessons": ["TODO"],
-    "links": []
+    "ingredients": {
+      "audience": "Global L&D clients.",
+      "channels": "Email sequences, pitch decks, brochures.",
+      "tools": "Power BI.",
+      "budget": "TODO"
+    },
+    "spellwork": [
+      "Tailored messaging across 4 product portfolios.",
+      "Wrote email sequences, pitch decks and brochures.",
+      "Ran 12+ cross-channel campaigns with integrated marketing teams."
+    ],
+    "results": [
+      {
+        "value": "+25%",
+        "label": "client engagement"
+      },
+      {
+        "value": "12+",
+        "label": "campaigns"
+      },
+      {
+        "value": "+32%",
+        "label": "efficiency with Power BI"
+      }
+    ],
+    "lessons": [
+      "TODO"
+    ],
+    "links": [],
+    "workex": "Deloitte"
   },
   {
     "slug": "cran-dashboard",
     "title": "CRAN: a creative analytics charm",
     "brand": "Personal build",
-    "categories": ["growth-ops"],
+    "categories": [
+      "growth-ops"
+    ],
     "year": "2026",
     "summary": "A dashboard I built with Claude that shows how every ad creative performs in one view.",
-    "metric": { "value": "6 hrs", "label": "saved every week" },
+    "metric": {
+      "value": "6 hrs",
+      "label": "saved every week"
+    },
     "image": null,
     "prophecy": "Checking creative performance meant switching tabs and making spreadsheets every week.",
-    "ingredients": { "audience": "Me and other performance marketers.", "channels": "Internal tool.", "tools": "Claude, hosted locally.", "budget": "None" },
-    "spellwork": ["Built a single view of creative performance with change recommendations and alerts."],
-    "results": [{ "value": "6 hrs", "label": "saved per week" }],
+    "ingredients": {
+      "audience": "Me and other performance marketers.",
+      "channels": "Internal tool.",
+      "tools": "Claude, hosted locally.",
+      "budget": "None"
+    },
+    "spellwork": [
+      "Built a single view of creative performance with change recommendations and alerts."
+    ],
+    "results": [
+      {
+        "value": "6 hrs",
+        "label": "saved per week"
+      }
+    ],
     "quote": "No more switching tabs. No more making spreadsheets. No more guessing what worked.",
-    "lessons": ["Coding is no longer a superpower. You can't be an average marketer waiting for things to change."],
-    "links": [{ "label": "The demo post on LinkedIn", "url": "https://www.linkedin.com/feed/update/urn:li:activity:7443181577725210624/" }]
+    "lessons": [
+      "Coding is no longer a superpower. You can't be an average marketer waiting for things to change."
+    ],
+    "links": [
+      {
+        "label": "The demo post on LinkedIn",
+        "url": "https://www.linkedin.com/feed/update/urn:li:activity:7443181577725210624/"
+      }
+    ]
   },
   {
     "slug": "linkedin-content",
     "title": "The Daily Prophet, by me: LinkedIn",
     "brand": "LinkedIn",
-    "categories": ["content"],
+    "categories": [
+      "content"
+    ],
     "year": "2024–26",
     "summary": "Observations, teardowns and lessons, written like a friend telling you what she saw today.",
-    "metric": { "value": "214K+", "label": "impressions" },
-    "image": { "src": "public/assets/photos/zepto.jpg", "alt": "Garima holding a fan of Zepto playing cards" },
+    "metric": {
+      "value": "214K+",
+      "label": "impressions"
+    },
+    "image": {
+      "src": "public/assets/photos/zepto.jpg",
+      "alt": "Garima holding a fan of Zepto playing cards"
+    },
     "prophecy": "I wanted a public notebook for what I notice as a customer and a marketer.",
-    "ingredients": { "audience": "Marketers, founders and recruiters.", "channels": "LinkedIn posts, carousels and video.", "tools": "TODO", "budget": "None" },
-    "spellwork": ["Everyday rants and product observations, campaign teardowns, event takeaways and personal stories.", "Campaign Chronicles: a series of campaign breakdowns."],
-    "results": [{ "value": "214K+", "label": "impressions across 26 posts" }, { "value": "70,236", "label": "views on the Bangalore Airport post" }, { "value": "6,697", "label": "followers" }],
-    "lessons": ["Specific, observed moments beat announcements.", "No more running behind the reach."],
-    "links": [{ "label": "Follow on LinkedIn", "url": "https://www.linkedin.com/in/garima-sahani21/" }]
+    "ingredients": {
+      "audience": "Marketers, founders and recruiters.",
+      "channels": "LinkedIn posts, carousels and video.",
+      "tools": "TODO",
+      "budget": "None"
+    },
+    "spellwork": [
+      "Everyday rants and product observations, campaign teardowns, event takeaways and personal stories.",
+      "Campaign Chronicles: a series of campaign breakdowns."
+    ],
+    "results": [
+      {
+        "value": "214K+",
+        "label": "impressions across 26 posts"
+      },
+      {
+        "value": "70,236",
+        "label": "views on the Bangalore Airport post"
+      },
+      {
+        "value": "6,697",
+        "label": "followers"
+      }
+    ],
+    "lessons": [
+      "Specific, observed moments beat announcements.",
+      "No more running behind the reach."
+    ],
+    "links": [
+      {
+        "label": "Follow on LinkedIn",
+        "url": "https://www.linkedin.com/in/garima-sahani21/"
+      }
+    ]
   },
   {
     "slug": "youtube-content",
     "title": "Moving pictures: YouTube",
     "brand": "YouTube",
-    "categories": ["content"],
+    "categories": [
+      "content"
+    ],
     "year": "TODO",
     "summary": "TODO: what you post on YouTube.",
     "metric": null,
     "image": null,
     "prophecy": "TODO",
-    "ingredients": { "audience": "TODO", "channels": "YouTube", "tools": "TODO", "budget": "TODO" },
-    "spellwork": ["TODO"],
-    "results": [{ "value": "TODO", "label": "views or subscribers" }],
-    "lessons": ["TODO"],
-    "links": [{ "label": "YouTube channel", "url": "TODO: add URL" }]
+    "ingredients": {
+      "audience": "TODO",
+      "channels": "YouTube",
+      "tools": "TODO",
+      "budget": "TODO"
+    },
+    "spellwork": [
+      "TODO"
+    ],
+    "results": [
+      {
+        "value": "TODO",
+        "label": "views or subscribers"
+      }
+    ],
+    "lessons": [
+      "TODO"
+    ],
+    "links": [
+      {
+        "label": "YouTube channel",
+        "url": "TODO: add URL"
+      }
+    ]
   },
   {
     "slug": "nutralis-gtm",
     "title": "Nutralis: a market entry in Dubai",
     "brand": "Nutralis",
-    "categories": ["live"],
+    "categories": [
+      "live"
+    ],
     "year": "2024",
     "summary": "A GTM plan for a nutraceutical app in the UAE, built from scratch.",
     "metric": null,
     "image": null,
     "prophecy": "Buyers worried about transparency and product efficacy.",
-    "ingredients": { "audience": "Health-conscious consumers in the UAE.", "channels": "SEO, SEM, content, influencers, health seminars, gyms and pharmacies.", "tools": "TODO", "budget": "TODO" },
-    "spellwork": ["Ran market analysis and built user personas.", "Wrote a GTM roadmap mixing online and offline tactics.", "Delivered a launch plan with measurable KPIs."],
-    "results": [{ "value": "TODO", "label": "outcome" }],
-    "lessons": ["TODO"],
-    "links": [{ "label": "The GTM deck", "url": "https://docs.google.com/presentation/d/10WN8F1LfZUZ4k_AE7KeyU0VFH7vyH3xV/edit?usp=drive_link" }]
+    "ingredients": {
+      "audience": "Health-conscious consumers in the UAE.",
+      "channels": "SEO, SEM, content, influencers, health seminars, gyms and pharmacies.",
+      "tools": "TODO",
+      "budget": "TODO"
+    },
+    "spellwork": [
+      "Ran market analysis and built user personas.",
+      "Wrote a GTM roadmap mixing online and offline tactics.",
+      "Delivered a launch plan with measurable KPIs."
+    ],
+    "results": [
+      {
+        "value": "TODO",
+        "label": "outcome"
+      }
+    ],
+    "lessons": [
+      "TODO"
+    ],
+    "links": [
+      {
+        "label": "The GTM deck",
+        "url": "https://docs.google.com/presentation/d/10WN8F1LfZUZ4k_AE7KeyU0VFH7vyH3xV/edit?usp=drive_link"
+      }
+    ],
+    "workex": "Fintech SaaS, travel apps, hospitality"
   },
   {
     "slug": "siemens-innolabs",
     "title": "Siemens Healthineers InnoLabs",
     "brand": "Siemens Healthineers",
-    "categories": ["live"],
+    "categories": [
+      "live"
+    ],
     "year": "2024",
     "summary": "Positioning and messaging for an upcoming innovation centre.",
     "metric": null,
     "image": null,
     "prophecy": "A new innovation centre needed a clear story for leaders and visitors.",
-    "ingredients": { "audience": "Senior leadership, innovation teams.", "channels": "Website, dashboard, presentations.", "tools": "Data visualisation tools.", "budget": "TODO" },
-    "spellwork": ["Interviewed leaders about the centre's future.", "Built an innovation dashboard and value proposition metrics.", "Wrote positioning, messaging, website layouts and copy."],
-    "results": [{ "value": "TODO", "label": "outcome" }],
-    "lessons": ["TODO"],
-    "links": [{ "label": "Innovation Think Tank", "url": "https://www.siemens-healthineers.com/innovation-think-tank" }]
+    "ingredients": {
+      "audience": "Senior leadership, innovation teams.",
+      "channels": "Website, dashboard, presentations.",
+      "tools": "Data visualisation tools.",
+      "budget": "TODO"
+    },
+    "spellwork": [
+      "Interviewed leaders about the centre's future.",
+      "Built an innovation dashboard and value proposition metrics.",
+      "Wrote positioning, messaging, website layouts and copy."
+    ],
+    "results": [
+      {
+        "value": "TODO",
+        "label": "outcome"
+      }
+    ],
+    "lessons": [
+      "TODO"
+    ],
+    "links": [
+      {
+        "label": "Innovation Think Tank",
+        "url": "https://www.siemens-healthineers.com/innovation-think-tank"
+      }
+    ],
+    "workex": "Fintech SaaS, travel apps, hospitality"
   },
   {
     "slug": "popcorn-landing",
     "title": "Popcorn: landing page copy",
     "brand": "Popcorn",
-    "categories": ["content"],
+    "categories": [
+      "content"
+    ],
     "year": "2024",
     "summary": "Headlines, value proposition and CTAs that tell a story.",
-    "metric": null, "image": null,
+    "metric": null,
+    "image": null,
     "prophecy": "The landing page had to grab attention and convert.",
-    "ingredients": { "audience": "TODO", "channels": "Website", "tools": "TODO", "budget": "TODO" },
-    "spellwork": ["Wrote attention-grabbing headlines, a clear value proposition and persuasive CTAs with customer-first storytelling."],
-    "results": [{ "value": "TODO", "label": "outcome" }],
-    "lessons": ["TODO"],
-    "links": [{ "label": "See it live", "url": "https://aannuuj.github.io/popcorn1/" }]
+    "ingredients": {
+      "audience": "TODO",
+      "channels": "Website",
+      "tools": "TODO",
+      "budget": "TODO"
+    },
+    "spellwork": [
+      "Wrote attention-grabbing headlines, a clear value proposition and persuasive CTAs with customer-first storytelling."
+    ],
+    "results": [
+      {
+        "value": "TODO",
+        "label": "outcome"
+      }
+    ],
+    "lessons": [
+      "TODO"
+    ],
+    "links": [
+      {
+        "label": "See it live",
+        "url": "https://aannuuj.github.io/popcorn1/"
+      }
+    ],
+    "workex": "Fintech SaaS, travel apps, hospitality"
   },
   {
     "slug": "country-beans",
     "title": "Country Beans Coffee on Shopify",
     "brand": "Country Beans",
-    "categories": ["content"],
+    "categories": [
+      "content"
+    ],
     "year": "TODO",
     "summary": "A Shopify storefront for a coffee brand.",
-    "metric": null, "image": null,
-    "prophecy": "TODO", "ingredients": { "audience": "TODO", "channels": "Shopify", "tools": "Shopify", "budget": "TODO" },
-    "spellwork": ["TODO"], "results": [{ "value": "TODO", "label": "outcome" }], "lessons": ["TODO"],
-    "links": [{ "label": "View project", "url": "https://drive.google.com/file/d/1WHV0NDlAW5r_ex92xaVI0RaTwVrZdQqw/view?usp=drive_link" }]
+    "metric": null,
+    "image": null,
+    "prophecy": "TODO",
+    "ingredients": {
+      "audience": "TODO",
+      "channels": "Shopify",
+      "tools": "Shopify",
+      "budget": "TODO"
+    },
+    "spellwork": [
+      "TODO"
+    ],
+    "results": [
+      {
+        "value": "TODO",
+        "label": "outcome"
+      }
+    ],
+    "lessons": [
+      "TODO"
+    ],
+    "links": [
+      {
+        "label": "View project",
+        "url": "https://drive.google.com/file/d/1WHV0NDlAW5r_ex92xaVI0RaTwVrZdQqw/view?usp=drive_link"
+      }
+    ],
+    "workex": "Fintech SaaS, travel apps, hospitality"
   },
   {
     "slug": "print-media-teardown",
     "title": "Campaign Chronicles: OGs of print media",
     "brand": "Zomato (teardown)",
-    "categories": ["content"],
+    "categories": [
+      "content"
+    ],
     "year": "2024",
     "summary": "What Zomato's print ads teach about copy, humour and a CTA with urgency.",
-    "metric": null, "image": null,
+    "metric": null,
+    "image": null,
     "prophecy": "In a digital-first world, print still packs a punch when done right.",
-    "ingredients": { "audience": "Marketers", "channels": "LinkedIn carousel", "tools": "TODO", "budget": "None" },
-    "spellwork": ["Killer copy, humour tuned to the audience, knowing where the ad will be seen, cross-channel fit, and a clear CTA."],
-    "results": [{ "value": "10", "label": "page teardown" }],
-    "lessons": ["Print isn't going anywhere when it drives action."],
-    "links": [{ "label": "Read the teardown", "url": "https://super.page/garima-sahani/cards/72837" }]
+    "ingredients": {
+      "audience": "Marketers",
+      "channels": "LinkedIn carousel",
+      "tools": "TODO",
+      "budget": "None"
+    },
+    "spellwork": [
+      "Killer copy, humour tuned to the audience, knowing where the ad will be seen, cross-channel fit, and a clear CTA."
+    ],
+    "results": [
+      {
+        "value": "10",
+        "label": "page teardown"
+      }
+    ],
+    "lessons": [
+      "Print isn't going anywhere when it drives action."
+    ],
+    "links": [
+      {
+        "label": "Read the teardown",
+        "url": "https://super.page/garima-sahani/cards/72837"
+      }
+    ]
   },
-
   {
     "slug": "airbnb-znmd",
     "title": "Airbnb × ZNMD",
     "brand": "Airbnb",
-    "categories": ["spec"],
+    "categories": [
+      "spec"
+    ],
     "year": "2025",
     "summary": "What if Zindagi Na Milegi Dobara was shot in 2025, and every plan was booked on Airbnb?",
-    "metric": { "value": "12", "label": "slide launch deck" },
+    "metric": {
+      "value": "12",
+      "label": "slide launch deck"
+    },
     "idea": "Launch Airbnb Experiences and Services through the ZNMD road trip. Each friend books a different part of the trip, so each feature gets a scene: Kabir books a Costa Brava villa, Laila is the scuba instructor on Airbnb Services, Arjun books a flamenco experience in Seville, Imraan hunts art galleries.",
     "why": "I was rewatching ZNMD right after booking a stay in Mumbai on Airbnb, and it clicked. Launch campaigns are my playground.",
-    "visual": { "kicker": "Feature launch campaign", "lines": ["Day 1 · Kabir books a sea-view villa, $639/night", "Day 2–3 · Laila, scuba instructor, from $67", "Day 4–5 · Detour to La Tomatina", "Day 6–8 · Flamenco in Seville, ₹2,429", "Day 9–10 · Imraan hunts art galleries"], "sign": "Kyunki kya pata Zindagi Na Milegi Doobara…" },
+    "visual": {
+      "kicker": "Feature launch campaign",
+      "lines": [
+        "Day 1 · Kabir books a sea-view villa, $639/night",
+        "Day 2–3 · Laila, scuba instructor, from $67",
+        "Day 4–5 · Detour to La Tomatina",
+        "Day 6–8 · Flamenco in Seville, ₹2,429",
+        "Day 9–10 · Imraan hunts art galleries"
+      ],
+      "sign": "Kyunki kya pata Zindagi Na Milegi Doobara…"
+    },
     "prophecy": "Airbnb needed adoption of Experiences and Services, and an emotional reason to try them.",
-    "ingredients": { "audience": "Millennials and Gen Z (18–35), urban culture-curious travellers, group and solo trips, remote workers.", "channels": "Film, Spotify \"Live Your ZNMD\" playlist, influencer travel recreations, #LiveYourZNMD UGC challenge.", "tools": "TODO", "budget": "Spec, unbudgeted" },
-    "spellwork": ["Positioning: Airbnb Experiences help you live your dream movie moments. #LiveYourZNMDMoment", "8-week plan: scripting and licensing (weeks 1–2), production (3–5), teasers (6), launch and media push (7), retargeting (8)."],
-    "results": [{ "value": "5", "label": "launch KPIs: CTR, bookings, UGC, time on listing, sentiment" }],
-    "lessons": ["TODO"],
-    "links": [{ "label": "The deck on LinkedIn", "url": "https://www.linkedin.com/feed/update/urn:li:activity:7339602126630752256/" }]
+    "ingredients": {
+      "audience": "Millennials and Gen Z (18–35), urban culture-curious travellers, group and solo trips, remote workers.",
+      "channels": "Film, Spotify \"Live Your ZNMD\" playlist, influencer travel recreations, #LiveYourZNMD UGC challenge.",
+      "tools": "TODO",
+      "budget": "Spec, unbudgeted"
+    },
+    "spellwork": [
+      "Positioning: Airbnb Experiences help you live your dream movie moments. #LiveYourZNMDMoment",
+      "8-week plan: scripting and licensing (weeks 1–2), production (3–5), teasers (6), launch and media push (7), retargeting (8)."
+    ],
+    "results": [
+      {
+        "value": "5",
+        "label": "launch KPIs: CTR, bookings, UGC, time on listing, sentiment"
+      }
+    ],
+    "lessons": [
+      "TODO"
+    ],
+    "links": [
+      {
+        "label": "The deck on LinkedIn",
+        "url": "https://www.linkedin.com/feed/update/urn:li:activity:7339602126630752256/"
+      }
+    ]
   },
   {
     "slug": "sarvam-diwali",
     "title": "Sarvam: a Diwali voice line",
     "brand": "Sarvam",
-    "categories": ["spec"],
+    "categories": [
+      "spec"
+    ],
     "year": "2026",
     "summary": "SaaS brands don't do Diwali. Sarvam should.",
-    "metric": { "value": "11", "label": "languages" },
+    "metric": {
+      "value": "11",
+      "label": "languages"
+    },
     "idea": "\"Launch your Diwali sale voice line in 24 hours.\" Voice agents handle delayed-order calls, offer reminders and lead qualification, in the customer's own language. Second cohort: creators, with one Diwali reel dubbed into 11 languages.",
     "why": "Most SaaS products have no brand personality. Sarvam screams India, and India screams Diwali. Few B2B brands have that kind of natural fit.",
-    "visual": { "kicker": "B2B festive campaign", "lines": ["Delayed-order calls", "Offer reminders", "Lead qualification", "One reel, 11 languages"], "sign": "Launch your Diwali sale voice line in 24 hours." },
+    "visual": {
+      "kicker": "B2B festive campaign",
+      "lines": [
+        "Delayed-order calls",
+        "Offer reminders",
+        "Lead qualification",
+        "One reel, 11 languages"
+      ],
+      "sign": "Launch your Diwali sale voice line in 24 hours."
+    },
     "prophecy": "Sarvam's customers walk into the Diwali rush with more calls, offers, users and leads than their teams can handle.",
-    "ingredients": { "audience": "Indian businesses running Diwali sales; creators.", "channels": "A small B2B campaign; creator reels.", "tools": "Sarvam voice agents and dubbing.", "budget": "Spec, unbudgeted" },
-    "spellwork": ["Position voice agents as extra hands for the festive rush.", "Offer a 24-hour setup with three use cases."],
-    "results": [{ "value": "0:50", "label": "video pitch" }],
-    "lessons": ["TODO"],
-    "links": [{ "label": "The video pitch", "url": "https://www.linkedin.com/feed/update/urn:li:activity:7519289032623734786/" }]
+    "ingredients": {
+      "audience": "Indian businesses running Diwali sales; creators.",
+      "channels": "A small B2B campaign; creator reels.",
+      "tools": "Sarvam voice agents and dubbing.",
+      "budget": "Spec, unbudgeted"
+    },
+    "spellwork": [
+      "Position voice agents as extra hands for the festive rush.",
+      "Offer a 24-hour setup with three use cases."
+    ],
+    "results": [
+      {
+        "value": "0:50",
+        "label": "video pitch"
+      }
+    ],
+    "lessons": [
+      "TODO"
+    ],
+    "links": [
+      {
+        "label": "The video pitch",
+        "url": "https://www.linkedin.com/feed/update/urn:li:activity:7519289032623734786/"
+      }
+    ]
   },
   {
     "slug": "spotify-homejam",
     "title": "Spotify: Coldplay HomeJam",
     "brand": "Spotify",
-    "categories": ["spec"],
+    "categories": [
+      "spec"
+    ],
     "year": "2024",
     "summary": "I couldn't get Coldplay tickets, so I made a Spotify ad instead.",
-    "metric": { "value": "6,241", "label": "post views" },
+    "metric": {
+      "value": "6,241",
+      "label": "post views"
+    },
     "idea": "Two billboards for everyone stuck in the ticket queue. You may be 965,053 people away from the stadium, but Coldplay is one tap away.",
     "why": "Millions of people were refreshing the same queue I was. That shared pain was the brief.",
-    "visual": { "kicker": "OOH billboard", "lines": ["Me: Finallyyyy I'll attend THE COLDPLAY concert!", "490,279 people ahead of you!", "Also me: (opens Spotify)"], "sign": "965,053 people ahead of you… but Coldplay HomeJam is just a tap away!" },
+    "visual": {
+      "kicker": "OOH billboard",
+      "lines": [
+        "Me: Finallyyyy I'll attend THE COLDPLAY concert!",
+        "490,279 people ahead of you!",
+        "Also me: (opens Spotify)"
+      ],
+      "sign": "965,053 people ahead of you… but Coldplay HomeJam is just a tap away!"
+    },
     "prophecy": "Concert FOMO is a moment Spotify can own.",
-    "ingredients": { "audience": "Fans who missed tickets.", "channels": "Outdoor billboards.", "tools": "TODO", "budget": "Spec, unbudgeted" },
-    "spellwork": ["A split billboard: the hope, then the reality, with Spotify as the fix."],
-    "results": [{ "value": "6,241", "label": "LinkedIn post views" }],
-    "lessons": ["TODO"],
-    "links": [{ "label": "The post", "url": "https://www.linkedin.com/feed/update/urn:li:activity:7263568989325262848/" }]
+    "ingredients": {
+      "audience": "Fans who missed tickets.",
+      "channels": "Outdoor billboards.",
+      "tools": "TODO",
+      "budget": "Spec, unbudgeted"
+    },
+    "spellwork": [
+      "A split billboard: the hope, then the reality, with Spotify as the fix."
+    ],
+    "results": [
+      {
+        "value": "6,241",
+        "label": "LinkedIn post views"
+      }
+    ],
+    "lessons": [
+      "TODO"
+    ],
+    "links": [
+      {
+        "label": "The post",
+        "url": "https://www.linkedin.com/feed/update/urn:li:activity:7263568989325262848/"
+      }
+    ]
   },
   {
     "slug": "spotify-navbeats",
     "title": "Spotify: Navbeats",
     "brand": "Spotify",
-    "categories": ["spec"],
+    "categories": [
+      "spec"
+    ],
     "year": "2026",
     "summary": "Music was everywhere this Navratri. Spotify's own moment wasn't.",
     "metric": null,
     "idea": "Navbeats meets people on the dance floor and gives them a reason to open the app after. TODO: add the mechanics from the video.",
     "why": "How do you turn an offline cultural moment into app opens, saves and next-day returns?",
-    "visual": { "kicker": "Cultural moment", "lines": ["App opens", "Saves", "Next-day returns"], "sign": "Navbeats" },
+    "visual": {
+      "kicker": "Cultural moment",
+      "lines": [
+        "App opens",
+        "Saves",
+        "Next-day returns"
+      ],
+      "sign": "Navbeats"
+    },
     "prophecy": "Spotify was missing from India's biggest dance festival.",
-    "ingredients": { "audience": "Garba and dandiya crowds.", "channels": "TODO", "tools": "TODO", "budget": "Spec, unbudgeted" },
-    "spellwork": ["TODO: the Navbeats mechanics."],
-    "results": [{ "value": "1:01", "label": "video pitch" }],
-    "lessons": ["TODO"],
-    "links": [{ "label": "The video pitch", "url": "https://www.linkedin.com/feed/update/urn:li:activity:7517574345196662784/" }]
+    "ingredients": {
+      "audience": "Garba and dandiya crowds.",
+      "channels": "TODO",
+      "tools": "TODO",
+      "budget": "Spec, unbudgeted"
+    },
+    "spellwork": [
+      "TODO: the Navbeats mechanics."
+    ],
+    "results": [
+      {
+        "value": "1:01",
+        "label": "video pitch"
+      }
+    ],
+    "lessons": [
+      "TODO"
+    ],
+    "links": [
+      {
+        "label": "The video pitch",
+        "url": "https://www.linkedin.com/feed/update/urn:li:activity:7517574345196662784/"
+      }
+    ]
   },
   {
     "slug": "jiocinema-paris",
     "title": "JioCinema × Paris 2024 pushes",
     "brand": "JioCinema",
-    "categories": ["spec"],
+    "categories": [
+      "spec"
+    ],
     "year": "2024",
     "summary": "A push notification I didn't tap, rewritten so I would.",
-    "metric": { "value": "4", "label": "push principles" },
+    "metric": {
+      "value": "4",
+      "label": "push principles"
+    },
     "idea": "Tie every push to a moment, an athlete and the viewer's own history: name the event and the minute it starts, lead with the athlete, personalise from what they watched, and turn a missed event into a highlights tap.",
     "why": "I'm a big sports fan and the generic push still didn't land.",
-    "visual": { "kicker": "Campaign Chronicles · Ep 1", "lines": ["Before: Watch live matches of #ParisOlympics2024", "After: name the moment, the athlete, the minute"], "sign": "Moments over menus." },
+    "visual": {
+      "kicker": "Campaign Chronicles · Ep 1",
+      "lines": [
+        "Before: Watch live matches of #ParisOlympics2024",
+        "After: name the moment, the athlete, the minute"
+      ],
+      "sign": "Moments over menus."
+    },
     "prophecy": "Generic pushes during the Olympics weren't pulling fans to the stream.",
-    "ingredients": { "audience": "Sports fans in India.", "channels": "Push notifications.", "tools": "TODO", "budget": "Spec, unbudgeted" },
-    "spellwork": ["Moments over menus.", "Faces over formats.", "Use what you know.", "Recover the miss."],
-    "results": [{ "value": "4", "label": "page breakdown" }],
-    "lessons": ["TODO"],
-    "links": [{ "label": "The original post", "url": "https://super.page/garima-sahani/cards/72831" }]
+    "ingredients": {
+      "audience": "Sports fans in India.",
+      "channels": "Push notifications.",
+      "tools": "TODO",
+      "budget": "Spec, unbudgeted"
+    },
+    "spellwork": [
+      "Moments over menus.",
+      "Faces over formats.",
+      "Use what you know.",
+      "Recover the miss."
+    ],
+    "results": [
+      {
+        "value": "4",
+        "label": "page breakdown"
+      }
+    ],
+    "lessons": [
+      "TODO"
+    ],
+    "links": [
+      {
+        "label": "The original post",
+        "url": "https://super.page/garima-sahani/cards/72831"
+      }
+    ]
   },
   {
     "slug": "spotify-offline",
     "title": "Spotify: Download for offline",
     "brand": "Spotify",
-    "categories": ["spec"],
+    "categories": [
+      "spec"
+    ],
     "year": "2024",
     "summary": "User research and two A/B tests to make downloads feel like a Premium perk again.",
-    "metric": { "value": "53.8%", "label": "struggle to manage downloads" },
+    "metric": {
+      "value": "53.8%",
+      "label": "struggle to manage downloads"
+    },
     "idea": "Test a visible download button on the track page (+15% initiation expected) and smart downloads with auto-expire (−20% time managing, +10% satisfaction).",
     "why": "Downloads are the second reason people pay for Premium, yet most users I surveyed found the feature clumsy.",
-    "visual": { "kicker": "Research + A/B test", "lines": ["26 Premium users surveyed", "82% listen every day", "65.4% download for trips", "53.8% struggle to manage downloads"], "sign": "Ship if p < 0.05." },
+    "visual": {
+      "kicker": "Research + A/B test",
+      "lines": [
+        "26 Premium users surveyed",
+        "82% listen every day",
+        "65.4% download for trips",
+        "53.8% struggle to manage downloads"
+      ],
+      "sign": "Ship if p < 0.05."
+    },
     "prophecy": "Premium users underuse a feature they pay for.",
-    "ingredients": { "audience": "Premium users aged 18–35, students and professionals; On-the-go listeners and Music lovers.", "channels": "In-app.", "tools": "Survey, A/B test design.", "budget": "Spec, unbudgeted" },
-    "spellwork": ["Survey of 26 Premium users.", "Two segments.", "Two A/B tests with clear hypotheses."],
-    "results": [{ "value": "+15%", "label": "target download initiation" }, { "value": "−20%", "label": "target time managing downloads" }],
-    "lessons": ["TODO"],
-    "links": [{ "label": "The research doc", "url": "https://docs.google.com/document/d/1ka-jNIbmadhP0tv9aIbbtpSaNR2Fzd2QC7J8CZaGL6I/edit?usp=sharing" }]
+    "ingredients": {
+      "audience": "Premium users aged 18–35, students and professionals; On-the-go listeners and Music lovers.",
+      "channels": "In-app.",
+      "tools": "Survey, A/B test design.",
+      "budget": "Spec, unbudgeted"
+    },
+    "spellwork": [
+      "Survey of 26 Premium users.",
+      "Two segments.",
+      "Two A/B tests with clear hypotheses."
+    ],
+    "results": [
+      {
+        "value": "+15%",
+        "label": "target download initiation"
+      },
+      {
+        "value": "−20%",
+        "label": "target time managing downloads"
+      }
+    ],
+    "lessons": [
+      "TODO"
+    ],
+    "links": [
+      {
+        "label": "The research doc",
+        "url": "https://docs.google.com/document/d/1ka-jNIbmadhP0tv9aIbbtpSaNR2Fzd2QC7J8CZaGL6I/edit?usp=sharing"
+      }
+    ]
   },
   {
     "slug": "spotify-premium",
     "title": "Spotify Premium: the psychology",
     "brand": "Spotify",
-    "categories": ["spec"],
+    "categories": [
+      "spec"
+    ],
     "year": "2024",
     "summary": "Consumer psychology across before, during and after purchase.",
     "metric": null,
     "idea": "An ad film where a surprise birthday is ruined by an ad, Forgotten Tracks (one nostalgic song a day), habit titles like \"Workout Champ\", and charm pricing at ₹129 with a ₹149 Disney+ Hotstar bundle.",
     "why": "People don't decide like spreadsheets. I wanted every touchpoint to use how they actually decide.",
-    "visual": { "kicker": "No Ads, Just Perfect Timing", "lines": ["The perfect birthday surprise…", "A moment to remember…", "…until an ad ruins the moment."], "sign": "Kahi bhi, kabhi bhi." },
+    "visual": {
+      "kicker": "No Ads, Just Perfect Timing",
+      "lines": [
+        "The perfect birthday surprise…",
+        "A moment to remember…",
+        "…until an ad ruins the moment."
+      ],
+      "sign": "Kahi bhi, kabhi bhi."
+    },
     "prophecy": "Free users need emotional, low-effort reasons to upgrade and stay.",
-    "ingredients": { "audience": "Spotify free and Premium users in India.", "channels": "Ad film, memes, push, product.", "tools": "TODO", "budget": "Spec, unbudgeted" },
-    "spellwork": ["Emotional storytelling and social proof before purchase.", "Hick's Law and the endowment effect during.", "Habit loops after."],
-    "results": [{ "value": "₹129", "label": "charm price" }],
-    "lessons": ["TODO"],
-    "links": [{ "label": "The strategy doc", "url": "https://docs.google.com/document/d/1fsmWK615gPCRP-gyin-de59fhnRpJkwD6nBxaqNPcgY/edit?usp=sharing" }]
+    "ingredients": {
+      "audience": "Spotify free and Premium users in India.",
+      "channels": "Ad film, memes, push, product.",
+      "tools": "TODO",
+      "budget": "Spec, unbudgeted"
+    },
+    "spellwork": [
+      "Emotional storytelling and social proof before purchase.",
+      "Hick's Law and the endowment effect during.",
+      "Habit loops after."
+    ],
+    "results": [
+      {
+        "value": "₹129",
+        "label": "charm price"
+      }
+    ],
+    "lessons": [
+      "TODO"
+    ],
+    "links": [
+      {
+        "label": "The strategy doc",
+        "url": "https://docs.google.com/document/d/1fsmWK615gPCRP-gyin-de59fhnRpJkwD6nBxaqNPcgY/edit?usp=sharing"
+      }
+    ]
   },
   {
     "slug": "supermoney-okrs",
     "title": "SuperMoney: launch OKRs",
     "brand": "SuperMoney",
-    "categories": ["spec"],
+    "categories": [
+      "spec"
+    ],
     "year": "2024",
     "summary": "A month-one launch scorecard with Green, Yellow, Orange and Red thresholds.",
-    "metric": { "value": "25,000", "label": "month-one sign-up target" },
+    "metric": {
+      "value": "25,000",
+      "label": "month-one sign-up target"
+    },
     "idea": "Two objectives: strong initial adoption (25,000 sign-ups, 20,000 MAU, 50,000 daily transactions) and brand credibility (10 partnerships, 1,000 #SuperMoneyCashback posts, 4.5-star rating).",
     "why": "A launch needs to know where to step in, fast.",
-    "visual": { "kicker": "Launch scorecard", "lines": ["Green ≥ 100%", "Yellow 75–99%", "Orange 50–74%", "Red < 50%"], "sign": "Month one." },
+    "visual": {
+      "kicker": "Launch scorecard",
+      "lines": [
+        "Green ≥ 100%",
+        "Yellow 75–99%",
+        "Orange 50–74%",
+        "Red < 50%"
+      ],
+      "sign": "Month one."
+    },
     "prophecy": "SuperMoney promised real cashback in a crowded payments market.",
-    "ingredients": { "audience": "Digital payment users in India.", "channels": "TODO", "tools": "OKRs, KPIs.", "budget": "Spec, unbudgeted" },
-    "spellwork": ["OKRs mapped to KPIs and a GYOR scoring system."],
-    "results": [{ "value": "6", "label": "key results" }],
-    "lessons": ["TODO"],
-    "links": [{ "label": "The OKR doc", "url": "https://docs.google.com/document/d/1lfs_2FGelgm3C_41fOFf-Lk_v7tCg0Yc9p_m-Bu4BOM/edit?usp=sharing" }]
+    "ingredients": {
+      "audience": "Digital payment users in India.",
+      "channels": "TODO",
+      "tools": "OKRs, KPIs.",
+      "budget": "Spec, unbudgeted"
+    },
+    "spellwork": [
+      "OKRs mapped to KPIs and a GYOR scoring system."
+    ],
+    "results": [
+      {
+        "value": "6",
+        "label": "key results"
+      }
+    ],
+    "lessons": [
+      "TODO"
+    ],
+    "links": [
+      {
+        "label": "The OKR doc",
+        "url": "https://docs.google.com/document/d/1lfs_2FGelgm3C_41fOFf-Lk_v7tCg0Yc9p_m-Bu4BOM/edit?usp=sharing"
+      }
+    ]
   },
   {
     "slug": "supercard-sales",
     "title": "SuperCard: sales enablement kit",
     "brand": "SuperMoney",
-    "categories": ["spec"],
+    "categories": [
+      "spec"
+    ],
     "year": "2024",
     "summary": "A fact sheet, battlecard, ICP, training outline and lead checklist for a credit card.",
-    "metric": { "value": "+30%", "label": "sign-up target by Q4" },
+    "metric": {
+      "value": "+30%",
+      "label": "sign-up target by Q4"
+    },
     "idea": "Arm a sales team to sell a lifetime-free card with 5% UPI cashback against HDFC Millennia, SBI Card Elite and Amazon Pay ICICI.",
     "why": "Salespeople win with clear comparisons, not feature lists.",
-    "visual": { "kicker": "Battlecard", "lines": ["5% cashback on UPI", "Lifetime free", "Built for 100% approval"], "sign": "super.card" },
+    "visual": {
+      "kicker": "Battlecard",
+      "lines": [
+        "5% cashback on UPI",
+        "Lifetime free",
+        "Built for 100% approval"
+      ],
+      "sign": "super.card"
+    },
     "prophecy": "SuperCard needed more sign-ups and faster lead conversion.",
-    "ingredients": { "audience": "Online shoppers, reward seekers, budget-conscious and tech-savvy users.", "channels": "Sales team.", "tools": "Collateral, battlecards.", "budget": "Spec, unbudgeted" },
-    "spellwork": ["Fact sheet, battlecard, ICP, sales training outline, lead qualification checklist, post-sale support plan."],
-    "results": [{ "value": "−15%", "label": "lead-to-customer time target" }, { "value": "90%", "label": "CSAT goal" }],
-    "lessons": ["TODO"],
-    "links": [{ "label": "The sales kit", "url": "https://docs.google.com/document/d/1DzqsLKg9u-mBY2WrLD8yWia9XMJ_os6yybs2GDNWsM8/edit?usp=sharing" }]
+    "ingredients": {
+      "audience": "Online shoppers, reward seekers, budget-conscious and tech-savvy users.",
+      "channels": "Sales team.",
+      "tools": "Collateral, battlecards.",
+      "budget": "Spec, unbudgeted"
+    },
+    "spellwork": [
+      "Fact sheet, battlecard, ICP, sales training outline, lead qualification checklist, post-sale support plan."
+    ],
+    "results": [
+      {
+        "value": "−15%",
+        "label": "lead-to-customer time target"
+      },
+      {
+        "value": "90%",
+        "label": "CSAT goal"
+      }
+    ],
+    "lessons": [
+      "TODO"
+    ],
+    "links": [
+      {
+        "label": "The sales kit",
+        "url": "https://docs.google.com/document/d/1DzqsLKg9u-mBY2WrLD8yWia9XMJ_os6yybs2GDNWsM8/edit?usp=sharing"
+      }
+    ]
   },
   {
     "slug": "airbnb-for-work",
     "title": "Airbnb for Work: corporate stays",
     "brand": "Airbnb",
-    "categories": ["spec"],
+    "categories": [
+      "spec"
+    ],
     "year": "2024",
     "summary": "An 11-slide research deck on winning India's corporate travel market.",
-    "metric": { "value": "11", "label": "slide research deck" },
+    "metric": {
+      "value": "11",
+      "label": "slide research deck"
+    },
     "idea": "Flexible stays, from a single night to extended assignments, packaged so a company and a travelling employee both say yes.",
     "why": "Corporate travel in India is big, and Airbnb wasn't the default.",
-    "visual": { "kicker": "Market research", "lines": ["Market", "Competitors", "Current status", "Recommendations"], "sign": "Business-ready stays." },
+    "visual": {
+      "kicker": "Market research",
+      "lines": [
+        "Market",
+        "Competitors",
+        "Current status",
+        "Recommendations"
+      ],
+      "sign": "Business-ready stays."
+    },
     "prophecy": "Airbnb for Business was underused in India.",
-    "ingredients": { "audience": "Companies and work travellers in India.", "channels": "TODO", "tools": "Market research, competitor analysis.", "budget": "Spec, unbudgeted" },
-    "spellwork": ["Market research, competitor analysis, current status and recommendations."],
-    "results": [{ "value": "11", "label": "slides" }],
-    "lessons": ["TODO"],
-    "links": [{ "label": "The deck", "url": "https://drive.google.com/file/d/1Ub8JGdnG2Bk-80L42XUfZ-WUu5RMj1Qx/view?usp=sharing" }]
+    "ingredients": {
+      "audience": "Companies and work travellers in India.",
+      "channels": "TODO",
+      "tools": "Market research, competitor analysis.",
+      "budget": "Spec, unbudgeted"
+    },
+    "spellwork": [
+      "Market research, competitor analysis, current status and recommendations."
+    ],
+    "results": [
+      {
+        "value": "11",
+        "label": "slides"
+      }
+    ],
+    "lessons": [
+      "TODO"
+    ],
+    "links": [
+      {
+        "label": "The deck",
+        "url": "https://drive.google.com/file/d/1Ub8JGdnG2Bk-80L42XUfZ-WUu5RMj1Qx/view?usp=sharing"
+      }
+    ]
   },
   {
     "slug": "wanderess",
     "title": "Wanderess: a startup pitch",
     "brand": "Wanderess",
-    "categories": ["spec"],
+    "categories": [
+      "spec"
+    ],
     "year": "2024",
     "summary": "A product-led travel platform for women travellers.",
     "metric": null,
-    "image": { "src": "public/assets/photos/wanderess.jpg", "alt": "Garima with two classmates at the Wanderess pitch" },
+    "image": {
+      "src": "public/assets/photos/wanderess.jpg",
+      "alt": "Garima with two classmates at the Wanderess pitch"
+    },
     "idea": "A B2C platform that solves the problems women face when travelling, told as a pitch with personas and features.",
     "why": "I'm a travel geek, and the gap was obvious.",
-    "visual": { "kicker": "Startup pitch", "lines": ["Personas", "Pain points", "Features"], "sign": "Journey beyond boundaries." },
+    "visual": {
+      "kicker": "Startup pitch",
+      "lines": [
+        "Personas",
+        "Pain points",
+        "Features"
+      ],
+      "sign": "Journey beyond boundaries."
+    },
     "prophecy": "Women travellers face problems most travel apps ignore.",
-    "ingredients": { "audience": "Women travellers.", "channels": "TODO", "tools": "TODO", "budget": "Spec" },
-    "spellwork": ["Personas, pain points and featured solutions, told as a startup pitch."],
-    "results": [{ "value": "TODO", "label": "outcome" }],
-    "lessons": ["TODO"],
-    "links": [{ "label": "Watch the pitch", "url": "https://youtu.be/KYfrrYPDFfo" }]
+    "ingredients": {
+      "audience": "Women travellers.",
+      "channels": "TODO",
+      "tools": "TODO",
+      "budget": "Spec"
+    },
+    "spellwork": [
+      "Personas, pain points and featured solutions, told as a startup pitch."
+    ],
+    "results": [
+      {
+        "value": "TODO",
+        "label": "outcome"
+      }
+    ],
+    "lessons": [
+      "TODO"
+    ],
+    "links": [
+      {
+        "label": "Watch the pitch",
+        "url": "https://youtu.be/KYfrrYPDFfo"
+      }
+    ]
   },
   {
     "slug": "scapia-pitch",
     "title": "Hey Scapia, I saw you're hiring",
     "brand": "Scapia",
-    "categories": ["spec"],
+    "categories": [
+      "spec"
+    ],
     "year": "2025",
     "summary": "A growth marketer application made as a 15-page pitch.",
-    "metric": { "value": "15", "label": "page pitch" },
+    "metric": {
+      "value": "15",
+      "label": "page pitch"
+    },
     "idea": "What I'd do for Scapia's card, slide by slide. TODO: summarise the main ideas.",
     "why": "A resume says what I did. A pitch shows what I'd do.",
-    "visual": { "kicker": "Growth marketer pitch", "lines": ["Hey Scapia,", "I saw that you are looking for a Growth Marketer"], "sign": "15 pages" },
-    "prophecy": "TODO", "ingredients": { "audience": "Scapia's hiring team", "channels": "LinkedIn", "tools": "TODO", "budget": "Spec" },
-    "spellwork": ["TODO"], "results": [{ "value": "15", "label": "pages" }], "lessons": ["TODO"],
-    "links": [{ "label": "See the pitch", "url": "https://www.linkedin.com/feed/update/urn:li:activity:7328786829246193664/" }]
+    "visual": {
+      "kicker": "Growth marketer pitch",
+      "lines": [
+        "Hey Scapia,",
+        "I saw that you are looking for a Growth Marketer"
+      ],
+      "sign": "15 pages"
+    },
+    "prophecy": "TODO",
+    "ingredients": {
+      "audience": "Scapia's hiring team",
+      "channels": "LinkedIn",
+      "tools": "TODO",
+      "budget": "Spec"
+    },
+    "spellwork": [
+      "TODO"
+    ],
+    "results": [
+      {
+        "value": "15",
+        "label": "pages"
+      }
+    ],
+    "lessons": [
+      "TODO"
+    ],
+    "links": [
+      {
+        "label": "See the pitch",
+        "url": "https://www.linkedin.com/feed/update/urn:li:activity:7328786829246193664/"
+      }
+    ]
   },
   {
     "slug": "apollo-cx",
     "title": "Apollo Hospitals: app CX design",
     "brand": "Apollo Hospitals",
-    "categories": ["spec"],
+    "categories": [
+      "spec"
+    ],
     "year": "2024",
     "summary": "Business model canvas, personas, value proposition, JTBD and empathy maps.",
     "metric": null,
     "idea": "Map the patient app experience end to end. TODO: summarise the key recommendation.",
     "why": "TODO",
-    "visual": { "kicker": "Customer experience", "lines": ["Business model canvas", "User personas", "Jobs to be done", "Empathy maps"], "sign": "Patient first." },
-    "prophecy": "TODO", "ingredients": { "audience": "Apollo app patients", "channels": "App", "tools": "Miro", "budget": "Spec" },
-    "spellwork": ["TODO"], "results": [{ "value": "TODO", "label": "outcome" }], "lessons": ["TODO"],
-    "links": [{ "label": "Open the board", "url": "https://miro.com/app/board/uXjVN85XZ2I=/" }]
+    "visual": {
+      "kicker": "Customer experience",
+      "lines": [
+        "Business model canvas",
+        "User personas",
+        "Jobs to be done",
+        "Empathy maps"
+      ],
+      "sign": "Patient first."
+    },
+    "prophecy": "TODO",
+    "ingredients": {
+      "audience": "Apollo app patients",
+      "channels": "App",
+      "tools": "Miro",
+      "budget": "Spec"
+    },
+    "spellwork": [
+      "TODO"
+    ],
+    "results": [
+      {
+        "value": "TODO",
+        "label": "outcome"
+      }
+    ],
+    "lessons": [
+      "TODO"
+    ],
+    "links": [
+      {
+        "label": "Open the board",
+        "url": "https://miro.com/app/board/uXjVN85XZ2I=/"
+      }
+    ]
   },
   {
     "slug": "ott-research",
     "title": "Personalisation and OTT subscriptions",
     "brand": "OTT research",
-    "categories": ["spec"],
+    "categories": [
+      "spec"
+    ],
     "year": "2024",
     "summary": "Research on how personalisation shapes OTT subscriptions and retention.",
     "metric": null,
     "idea": "TODO: the main finding.",
     "why": "TODO",
-    "visual": { "kicker": "Market research", "lines": ["Personalisation", "Subscriptions", "Retention"], "sign": "Research" },
-    "prophecy": "TODO", "ingredients": { "audience": "OTT subscribers", "channels": "TODO", "tools": "TODO", "budget": "Spec" },
-    "spellwork": ["TODO"], "results": [{ "value": "TODO", "label": "finding" }], "lessons": ["TODO"],
-    "links": [{ "label": "View research", "url": "https://docs.google.com/presentation/d/1uB5-sjkC8IdIJCPT4BX_VeRcSkKHqCLF/edit?usp=drive_link" }]
+    "visual": {
+      "kicker": "Market research",
+      "lines": [
+        "Personalisation",
+        "Subscriptions",
+        "Retention"
+      ],
+      "sign": "Research"
+    },
+    "prophecy": "TODO",
+    "ingredients": {
+      "audience": "OTT subscribers",
+      "channels": "TODO",
+      "tools": "TODO",
+      "budget": "Spec"
+    },
+    "spellwork": [
+      "TODO"
+    ],
+    "results": [
+      {
+        "value": "TODO",
+        "label": "finding"
+      }
+    ],
+    "lessons": [
+      "TODO"
+    ],
+    "links": [
+      {
+        "label": "View research",
+        "url": "https://docs.google.com/presentation/d/1uB5-sjkC8IdIJCPT4BX_VeRcSkKHqCLF/edit?usp=drive_link"
+      }
+    ]
   }
 ]

@@ -58,10 +58,10 @@
     {
       "id": "projects",
       "name": "The Chamber of Creations",
-      "label": "Projects & presentations",
+      "label": "Creations & presentations",
       "icon": "icons/spellbook",
       "href": "projects.html",
-      "blurb": "Live campaigns, growth work, spec concepts and the decks I have presented."
+      "blurb": "What I made on my own, and the decks I have presented."
     },
     {
       "id": "lab",

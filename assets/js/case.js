@@ -14,7 +14,7 @@
     if (i < 0) { main.innerHTML = '<div class="lost"><div>' + icon('icons/lantern', '', 'clay') + '<h1>This spellbook is missing.</h1><p><a class="btn" href="projects.html">Back to the Chamber</a></p></div></div>'; return; }
     var p = projects[i], spec = p.categories.indexOf('spec') > -1, ing = p.ingredients || {};
     var prev = projects[(i - 1 + projects.length) % projects.length], next = projects[(i + 1) % projects.length];
-    var job = career.years.filter(function (y) { return y.org.indexOf(p.brand) > -1 || p.brand.indexOf(y.org) > -1; })[0];
+    var job = career.years.filter(function (y) { return y.org === p.workex; })[0];
     var role = spec ? 'Self-initiated and unofficial: a concept I made on my own, not commissioned by ' + p.brand + '.' : job ? job.title + ' at ' + job.org + '.' : 'TODO: add your role on this project';
     var imgs = [].concat(p.image ? [p.image] : [], p.gallery || []);
     document.title = p.title + ' · Garima Sahani';

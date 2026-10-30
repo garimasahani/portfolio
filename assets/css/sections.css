@@ -302,3 +302,10 @@ section[id]{scroll-margin-top:70px}
 .deck .open{display:inline-block;margin:8px 4px 0;font:400 .9rem var(--fell);letter-spacing:.12em;text-transform:uppercase;color:var(--red-deep)}
 .deck:focus-visible{outline:3px solid var(--plum);outline-offset:6px;border-radius:14px}
 .card .try{position:relative;z-index:2;margin-top:10px;font:400 .85rem var(--fell);letter-spacing:.1em;text-transform:uppercase;color:var(--plum);text-decoration:none}
+
+/* projects inside a career book, and the case-study link on each spec mock */
+.page .workprojects{margin-top:34px;padding-top:6px;border-top:1px dashed rgba(138,90,38,.45)}
+.page .workprojects .cards{grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+.readcase{margin:0 0 14px;font:400 .95rem/1.4 var(--fell);letter-spacing:.08em;color:var(--gold-text)}
+.readcase a{color:var(--red-deep);text-decoration:none;border-bottom:1px solid rgba(184,46,36,.35)}
+.readcase a:hover{border-color:var(--red-deep)}

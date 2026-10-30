@@ -13,6 +13,16 @@
     spec: { label: 'Spec concepts', icon: 'icons/crystal', a: 'var(--plum)' }
   };
 
+  // one project card, used wherever a project is listed (work experience, the chamber, the spec lab)
+  function projectCard(p) {
+    var c = CAT[p.categories[0]] || CAT.live, spec = p.categories.indexOf('spec') > -1;
+    return '<article class="card' + (spec ? ' spec' : '') + '" style="--a:' + c.a + '"><div class="top"><div><p class="brand2">' + esc(p.brand) + '</p><span class="chip" style="margin-top:8px">' + esc(spec ? 'Spec concept' : c.label) + '</span></div>' + icon(c.icon, '', 'clay') + '</div>' +
+      '<h3>' + esc(p.title) + '</h3><p>' + t(p.summary) + '</p>' +
+      (p.metric ? '<p class="metric">' + esc(p.metric.value) + '<small>' + esc(p.metric.label) + '</small></p>' : '') +
+      '<a class="go" href="case.html#' + p.slug + '">Uncover the Magic <span aria-hidden="true">→</span><span class="sr">: ' + esc(p.title) + '</span></a>' +
+      (LAB[p.slug] ? '<a class="try" href="spec-lab.html#' + LAB[p.slug] + '">✦ Play with the live mock<span class="sr"> of ' + esc(p.title) + '</span></a>' : '') + '</article>';
+  }
+
   /* I. Entrance */
   M.loadJSON('site').then(function (site) {
     if (!$('#heroTitle')) return;
@@ -135,14 +145,15 @@
     }).join('') + '<img class="deco clay" src="' + M.A + 'icons/lantern.png" alt="" aria-hidden="true">';
     var page = $('#bookPage');
     function open(i, focus) {
-      var y = years[i], mine = projects.filter(function (p) { return y.org.indexOf(p.brand) > -1 || p.brand.indexOf(y.org) > -1; });
+      var y = years[i], mine = projects.filter(function (p) { return p.workex === y.org; });
       $$('.book').forEach(function (b) { b.setAttribute('aria-expanded', String(+b.dataset.i === i)); });
       page.classList.remove('turn'); void page.offsetWidth; page.classList.add('turn');
       page.innerHTML = '<div class="grid"><div><p class="label">Chapter ' + ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII'][i] + '</p><h3 style="margin-top:10px">' + esc(y.org) + '</h3><p class="role">' + esc(y.title) + '</p>' +
         '<h4>Key responsibilities</h4><ul>' + y.did.map(function (d) { return '<li>' + t(d) + '</li>'; }).join('') + '</ul>' +
-        (mine.length ? '<h4>Projects & achievements</h4><ul>' + mine.map(function (p) { return '<li><a href="case.html#' + p.slug + '">' + esc(p.title) + '</a></li>'; }).join('') + '</ul>' : '') + (y.photo ? gframe(y.photo, 'shot') : '') + '</div>' +
+        (y.photo ? gframe(y.photo, 'shot') : '') + '</div>' +
         '<div><h4>Measurable impact</h4><div class="impact">' + y.outcomes.map(function (o) { return '<div>' + t(o) + '</div>'; }).join('') + '</div>' +
-        '<h4>Skills used</h4><div class="tags">' + y.owls.map(function (o) { return '<span class="chip">' + esc(o) + '</span>'; }).join('') + '</div></div></div>';
+        '<h4>Skills used</h4><div class="tags">' + y.owls.map(function (o) { return '<span class="chip">' + esc(o) + '</span>'; }).join('') + '</div></div></div>' +
+        (mine.length ? '<div class="workprojects"><h4>Projects & achievements</h4><div class="cards">' + mine.map(projectCard).join('') + '</div></div>' : '');
       if (focus) page.scrollIntoView({ behavior: M.reduce ? 'auto' : 'smooth', block: 'nearest' });
     }
     $$('.book').forEach(function (b) { b.addEventListener('click', function () { open(+b.dataset.i, true); }); });
@@ -178,20 +189,16 @@
 
   /* VI. Chamber of creations */
   if ($('#cards')) M.loadJSON('projects').then(function (projects) {
+    // the chamber holds what I made on my own; job projects live in Experience and spec concepts in the Spec Lab
+    projects = projects.filter(function (p) { return !p.workex && p.categories.indexOf('spec') < 0; });
     var filter = 'all', expanded = false, LIMIT = 9;
-    var keys = ['all'].concat(Object.keys(CAT));
+    var keys = ['all'].concat(Object.keys(CAT).filter(function (k) { return projects.some(function (p) { return p.categories.indexOf(k) > -1; }); }));
+    $('#filters').style.display = projects.length <= 6 ? 'none' : '';
     $('#filters').innerHTML = keys.map(function (k) { return '<button type="button" data-k="' + k + '" aria-pressed="' + (k === 'all') + '">' + (k === 'all' ? 'All' : CAT[k].label) + '</button>'; }).join('');
     function render() {
       var list = projects.filter(function (p) { return filter === 'all' || p.categories.indexOf(filter) > -1; });
       var shown = expanded ? list : list.slice(0, LIMIT);
-      $('#cards').innerHTML = shown.map(function (p) {
-        var c = CAT[p.categories[0]] || CAT.live, spec = p.categories.indexOf('spec') > -1;
-        return '<article class="card' + (spec ? ' spec' : '') + '" style="--a:' + c.a + '"><div class="top"><div><p class="brand2">' + esc(p.brand) + '</p><span class="chip" style="margin-top:8px">' + esc(spec ? 'Spec concept' : c.label) + '</span></div>' + icon(c.icon, '', 'clay') + '</div>' +
-          '<h3>' + esc(p.title) + '</h3><p>' + t(p.summary) + '</p>' +
-          (p.metric ? '<p class="metric">' + esc(p.metric.value) + '<small>' + esc(p.metric.label) + '</small></p>' : '') +
-          '<a class="go" href="case.html#' + p.slug + '">Uncover the Magic <span aria-hidden="true">→</span><span class="sr">: ' + esc(p.title) + '</span></a>' +
-          (LAB[p.slug] ? '<a class="try" href="spec-lab.html#' + LAB[p.slug] + '">✦ Play with the live mock<span class="sr"> of ' + esc(p.title) + '</span></a>' : '') + '</article>';
-      }).join('');
+      $('#cards').innerHTML = shown.map(projectCard).join('');
       $('#more').innerHTML = list.length > LIMIT ? '<button class="btn ghost" type="button" id="moreBtn">' + (expanded ? 'Show fewer' : 'Show all ' + list.length + ' spells') + '</button>' : '';
       var mb = $('#moreBtn'); if (mb) mb.addEventListener('click', function () { expanded = !expanded; render(); if (!expanded) $('#projects').scrollIntoView(); });
     }
@@ -199,6 +206,18 @@
       b.addEventListener('click', function () { filter = b.dataset.k; expanded = false; $$('#filters button').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); }); render(); });
     });
     render();
+  });
+
+  // the spec lab: each mock links to its case study, and concepts without a mock get cards here
+  if ($('#speccards')) M.loadJSON('projects').then(function (projects) {
+    var specs = projects.filter(function (p) { return p.categories.indexOf('spec') > -1; });
+    var byKey = {};
+    specs.forEach(function (p) { if (LAB[p.slug]) (byKey[LAB[p.slug]] = byKey[LAB[p.slug]] || []).push(p); });
+    Object.keys(byKey).forEach(function (k) {
+      var panel = $('#p-' + k); if (!panel) return;
+      panel.insertAdjacentHTML('afterbegin', '<p class="readcase">Read the case study: ' + byKey[k].map(function (p) { return '<a href="case.html#' + p.slug + '">' + esc(p.title) + ' →</a>'; }).join(' · ') + '</p>');
+    });
+    $('#speccards').innerHTML = specs.filter(function (p) { return !LAB[p.slug]; }).map(projectCard).join('');
   });
 
   // presentations: the real decks, each a clay-bound slide stack
