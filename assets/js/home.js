@@ -23,6 +23,13 @@
       (LAB[p.slug] ? '<a class="try" href="spec-lab.html#' + LAB[p.slug] + '">✦ Play with the live mock<span class="sr"> of ' + esc(p.title) + '</span></a>' : '') + '</article>';
   }
 
+  // one presentation, a clay-bound slide stack that opens the real deck
+  function deckCard(d) {
+    return '<a class="deck" href="' + esc(d.url) + '" target="_blank" rel="noopener"><div class="stack" aria-hidden="true"><i></i><i></i>' +
+      '<div class="slide" style="--c1:' + d.c1 + ';--c2:' + d.c2 + '"><small>' + esc(d.type) + '</small><b>' + esc(d.title) + '</b><span><em>Garima Sahani</em><em>' + esc(d.size) + '</em></span></div></div>' +
+      '<p><span class="sr">' + esc(d.title) + '. </span>' + esc(d.text) + '</p><span class="open">' + esc(d.open) + ' ↗</span></a>';
+  }
+
   /* I. Entrance */
   M.loadJSON('site').then(function (site) {
     if (!$('#heroTitle')) return;
@@ -136,16 +143,16 @@
   }
 
   /* IV. Library */
-  Promise.all([M.loadJSON('career'), M.loadJSON('projects')]).then(function (r) {
+  Promise.all([M.loadJSON('career'), M.loadJSON('projects'), M.loadJSON('decks')]).then(function (r) {
     if (!$('#books')) return;
-    var years = r[0].years.slice().reverse(), projects = r[1];
+    var years = r[0].years.slice().reverse(), projects = r[1], alldecks = r[2];
     var COLS = ['#8E2A20', '#2F5A44', '#34508F', '#6B4A2F', '#5A3F8C', '#9C3A22', '#3B6B4F'], HTS = [300, 270, 310, 285, 260, 300, 280];
     $('#books').innerHTML = years.map(function (y, i) {
       return '<button class="book" type="button" aria-expanded="false" aria-controls="bookPage" data-i="' + i + '" style="--c:' + COLS[i % COLS.length] + ';--h:' + HTS[i % HTS.length] + 'px"><span class="s" aria-hidden="true"></span><span class="t">' + esc(y.spine || y.org) + '</span><span class="n" aria-hidden="true">' + ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII'][i] + '</span><span class="sr">: ' + esc(y.title) + '</span></button>';
     }).join('') + '<img class="deco clay" src="' + M.A + 'icons/lantern.png" alt="" aria-hidden="true">';
     var page = $('#bookPage');
     function open(i, focus) {
-      var y = years[i], mine = projects.filter(function (p) { return p.workex === y.org; });
+      var y = years[i], mine = projects.filter(function (p) { return p.workex === y.org; }), decks = alldecks.filter(function (d) { return d.workex === y.org; });
       $$('.book').forEach(function (b) { b.setAttribute('aria-expanded', String(+b.dataset.i === i)); });
       page.classList.remove('turn'); void page.offsetWidth; page.classList.add('turn');
       page.innerHTML = '<div class="grid"><div><p class="label">Chapter ' + ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII'][i] + '</p><h3 style="margin-top:10px">' + esc(y.org) + '</h3><p class="role">' + esc(y.title) + '</p>' +
@@ -153,7 +160,8 @@
         (y.photo ? gframe(y.photo, 'shot') : '') + '</div>' +
         '<div><h4>Measurable impact</h4><div class="impact">' + y.outcomes.map(function (o) { return '<div>' + t(o) + '</div>'; }).join('') + '</div>' +
         '<h4>Skills used</h4><div class="tags">' + y.owls.map(function (o) { return '<span class="chip">' + esc(o) + '</span>'; }).join('') + '</div></div></div>' +
-        (mine.length ? '<div class="workprojects"><h4>Projects & achievements</h4><div class="cards">' + mine.map(projectCard).join('') + '</div></div>' : '');
+        (mine.length ? '<div class="workprojects"><h4>Projects & achievements</h4><div class="cards">' + mine.map(projectCard).join('') + '</div></div>' : '') +
+        (decks.length ? '<div class="workprojects"><h4>Presentations</h4><div class="decks">' + decks.map(deckCard).join('') + '</div></div>' : '');
       if (focus) page.scrollIntoView({ behavior: M.reduce ? 'auto' : 'smooth', block: 'nearest' });
     }
     $$('.book').forEach(function (b) { b.addEventListener('click', function () { open(+b.dataset.i, true); }); });
@@ -222,11 +230,8 @@
 
   // presentations: the real decks, each a clay-bound slide stack
   if ($('#decks')) M.loadJSON('decks').then(function (decks) {
-    $('#decks').innerHTML = decks.map(function (d) {
-      return '<a class="deck" href="' + esc(d.url) + '" target="_blank" rel="noopener"><div class="stack" aria-hidden="true"><i></i><i></i>' +
-        '<div class="slide" style="--c1:' + d.c1 + ';--c2:' + d.c2 + '"><small>' + esc(d.type) + '</small><b>' + esc(d.title) + '</b><span><em>Garima Sahani</em><em>' + esc(d.size) + '</em></span></div></div>' +
-        '<p><span class="sr">' + esc(d.title) + '. </span>' + esc(d.text) + '</p><span class="open">' + esc(d.open) + ' ↗</span></a>';
-    }).join('');
+    // decks made for a job sit on that job's book in Experience
+    $('#decks').innerHTML = decks.filter(function (d) { return !d.workex; }).map(deckCard).join('');
   });
 
   /* VII. Pensieve */
