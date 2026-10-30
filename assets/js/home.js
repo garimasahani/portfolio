@@ -10,6 +10,8 @@
     'growth-ops': { label: 'Growth & ops', icon: 'icons/cauldron', a: 'var(--green)' },
     content: { label: 'Content', icon: 'icons/quill', a: 'var(--blue)' },
     partnerships: { label: 'Partnerships', icon: 'icons/key', a: 'var(--gold)' },
+    startup: { label: 'Startup project', icon: 'icons/crystal', a: 'var(--plum)' },
+    'ai-tool': { label: 'AI tool', icon: 'icons/cauldron', a: 'var(--green)' },
     spec: { label: 'Spec concepts', icon: 'icons/crystal', a: 'var(--plum)' }
   };
 

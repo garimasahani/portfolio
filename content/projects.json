@@ -528,7 +528,7 @@
     "title": "CRAN: a creative analytics charm",
     "brand": "Personal build",
     "categories": [
-      "growth-ops"
+      "ai-tool"
     ],
     "year": "2026",
     "summary": "A dashboard I built with Claude that shows how every ad creative performs in one view.",
@@ -561,96 +561,6 @@
       {
         "label": "The demo post on LinkedIn",
         "url": "https://www.linkedin.com/feed/update/urn:li:activity:7443181577725210624/"
-      }
-    ]
-  },
-  {
-    "slug": "linkedin-content",
-    "title": "The Daily Prophet, by me: LinkedIn",
-    "brand": "LinkedIn",
-    "categories": [
-      "content"
-    ],
-    "year": "2024–26",
-    "summary": "Observations, teardowns and lessons, written like a friend telling you what she saw today.",
-    "metric": {
-      "value": "214K+",
-      "label": "impressions"
-    },
-    "image": {
-      "src": "public/assets/photos/zepto.jpg",
-      "alt": "Garima holding a fan of Zepto playing cards"
-    },
-    "prophecy": "I wanted a public notebook for what I notice as a customer and a marketer.",
-    "ingredients": {
-      "audience": "Marketers, founders and recruiters.",
-      "channels": "LinkedIn posts, carousels and video.",
-      "tools": "TODO",
-      "budget": "None"
-    },
-    "spellwork": [
-      "Everyday rants and product observations, campaign teardowns, event takeaways and personal stories.",
-      "Campaign Chronicles: a series of campaign breakdowns."
-    ],
-    "results": [
-      {
-        "value": "214K+",
-        "label": "impressions across 26 posts"
-      },
-      {
-        "value": "70,236",
-        "label": "views on the Bangalore Airport post"
-      },
-      {
-        "value": "6,697",
-        "label": "followers"
-      }
-    ],
-    "lessons": [
-      "Specific, observed moments beat announcements.",
-      "No more running behind the reach."
-    ],
-    "links": [
-      {
-        "label": "Follow on LinkedIn",
-        "url": "https://www.linkedin.com/in/garima-sahani21/"
-      }
-    ]
-  },
-  {
-    "slug": "youtube-content",
-    "title": "Moving pictures: YouTube",
-    "brand": "YouTube",
-    "categories": [
-      "content"
-    ],
-    "year": "TODO",
-    "summary": "TODO: what you post on YouTube.",
-    "metric": null,
-    "image": null,
-    "prophecy": "TODO",
-    "ingredients": {
-      "audience": "TODO",
-      "channels": "YouTube",
-      "tools": "TODO",
-      "budget": "TODO"
-    },
-    "spellwork": [
-      "TODO"
-    ],
-    "results": [
-      {
-        "value": "TODO",
-        "label": "views or subscribers"
-      }
-    ],
-    "lessons": [
-      "TODO"
-    ],
-    "links": [
-      {
-        "label": "YouTube channel",
-        "url": "TODO: add URL"
       }
     ]
   },
@@ -884,43 +794,6 @@
       }
     ],
     "workex": "Fintech SaaS, travel apps, hospitality"
-  },
-  {
-    "slug": "print-media-teardown",
-    "title": "Campaign Chronicles: OGs of print media",
-    "brand": "Zomato (teardown)",
-    "categories": [
-      "content"
-    ],
-    "year": "2024",
-    "summary": "What Zomato's print ads teach about copy, humour and a CTA with urgency.",
-    "metric": null,
-    "image": null,
-    "prophecy": "In a digital-first world, print still packs a punch when done right.",
-    "ingredients": {
-      "audience": "Marketers",
-      "channels": "LinkedIn carousel",
-      "tools": "TODO",
-      "budget": "None"
-    },
-    "spellwork": [
-      "Killer copy, humour tuned to the audience, knowing where the ad will be seen, cross-channel fit, and a clear CTA."
-    ],
-    "results": [
-      {
-        "value": "10",
-        "label": "page teardown"
-      }
-    ],
-    "lessons": [
-      "Print isn't going anywhere when it drives action."
-    ],
-    "links": [
-      {
-        "label": "Read the teardown",
-        "url": "https://super.page/garima-sahani/cards/72837"
-      }
-    ]
   },
   {
     "slug": "airbnb-znmd",
@@ -1443,7 +1316,7 @@
     "title": "Wanderess: a startup pitch",
     "brand": "Wanderess",
     "categories": [
-      "spec"
+      "startup"
     ],
     "year": "2024",
     "summary": "A product-led travel platform for women travellers.",
@@ -1468,7 +1341,7 @@
       "audience": "Women travellers.",
       "channels": "TODO",
       "tools": "TODO",
-      "budget": "Spec"
+      "budget": "TODO"
     },
     "spellwork": [
       "Personas, pain points and featured solutions, told as a startup pitch."
@@ -1483,6 +1356,10 @@
       "TODO"
     ],
     "links": [
+      {
+        "label": "The startup project",
+        "url": "https://super.page/garima-sahani/cards/72834"
+      },
       {
         "label": "Watch the pitch",
         "url": "https://youtu.be/KYfrrYPDFfo"
