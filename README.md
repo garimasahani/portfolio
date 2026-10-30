@@ -54,4 +54,4 @@ Upload the whole folder to any static host: Netlify (drag and drop), GitHub Page
 
 ## Sound
 
-All sound effects are synthesised in the browser with the Web Audio API (`assets/js/core.js`, the `FX` table), so there are no audio files. Nothing plays until the visitor's first tap or key press, and the menu has a Sound on/off switch that is remembered.
+All sound effects are original and synthesised in the browser with the Web Audio API (`assets/js/core.js`, the `FX` table): celesta and glockenspiel twinkles, wand swishes, owl hoots and a castle bell, run through a generated stone-hall echo. There are no audio files, and none of it is taken from the films. Nothing plays until the visitor's first tap or key press, and the menu has a Sound on/off switch that is remembered.
