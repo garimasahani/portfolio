@@ -91,3 +91,7 @@ html.door-on .door{display:flex}
 
 /* browsers with aspect-ratio size the book and the tall-screen map from their height alone */
 @supports (aspect-ratio:1){.book{width:auto}@media (max-aspect-ratio:1/1){.worldstage .artmap{width:auto}}}
+
+/* live text on the ribbon (the ribbon art itself is blank) */
+.bantext{position:absolute;top:0;left:0;width:100%;height:100%;overflow:visible}
+.bantext text{font:700 19px 'Cinzel',var(--serif);letter-spacing:.04em;fill:#5A3416;paint-order:stroke;stroke:rgba(255,240,205,.45);stroke-width:.6px}

@@ -31,7 +31,7 @@
       var n = 0;
       world.innerHTML = L.map(function (e) {
         var l = places[e[4]], st = 'left:' + e[1] + '%;top:' + e[2] + '%;--s:' + e[3] + ';--d:-' + (e[1] % 5) + 's';
-        if (!l) return '<span class="el ' + e[4] + '" style="' + st + '"><img src="' + A + e[0] + '.png" alt=""></span>';
+        if (!l) return '<span class="el ' + e[4] + '" style="' + st + '"><img src="' + A + e[0] + '.png" alt="">' + (e[0] === 'banner' ? '<svg class="bantext" viewBox="0 0 636 106" role="img" aria-label="Welcome to Garima\'s Hogwarts"><path id="banpath" d="M112 56Q318 34 532 54" fill="none"/><text text-anchor="middle"><textPath href="#banpath" startOffset="50%">WELCOME TO GARIMA\'S HOGWARTS</textPath></text></svg>' : '') + '</span>';
         var sign = e[0] === 'arch' ? '<span class="scrollsign"><b>' + esc(l.name) + '</b><i>' + esc(l.label) + '</i></span>' : '';
         return '<a class="el place" href="' + esc(l.href) + '" data-id="' + l.id + '" style="' + st + ';--i:' + (n++) + '" aria-label="' + esc(l.name + ': ' + l.label) + '"><img src="' + A + e[0] + '.png" alt="">' + sign + '</a>';
       }).join('');
