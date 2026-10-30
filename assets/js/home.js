@@ -216,6 +216,9 @@
     render();
   });
 
+  // spec-work decks sit at the bottom of the Spec Lab
+  if ($('#specdecks')) M.loadJSON('decks').then(function (decks) { $('#specdecks').innerHTML = decks.filter(function (d) { return d.lab; }).map(deckCard).join(''); });
+
   // the spec lab: each mock links to its case study, and concepts without a mock get cards here
   if ($('#speccards')) M.loadJSON('projects').then(function (projects) {
     var specs = projects.filter(function (p) { return p.categories.indexOf('spec') > -1; });
@@ -230,8 +233,8 @@
 
   // presentations: the real decks, each a clay-bound slide stack
   if ($('#decks')) M.loadJSON('decks').then(function (decks) {
-    // decks made for a job sit on that job's book in Experience
-    $('#decks').innerHTML = decks.filter(function (d) { return !d.workex; }).map(deckCard).join('');
+    // decks made for a job sit on that job's book in Experience, and spec-work decks in the Spec Lab
+    $('#decks').innerHTML = decks.filter(function (d) { return !d.workex && !d.lab; }).map(deckCard).join('');
   });
 
   /* VII. Pensieve */

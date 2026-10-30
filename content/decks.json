@@ -29,7 +29,8 @@
     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7328786829246193664/",
     "open": "See the pitch",
     "c1": "#34508F",
-    "c2": "#1E3260"
+    "c2": "#1E3260",
+    "lab": true
   },
   {
     "title": "Airbnb × ZNMD launch",
@@ -39,7 +40,8 @@
     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7339602126630752256/",
     "open": "See the deck",
     "c1": "#B0413A",
-    "c2": "#6E1F1A"
+    "c2": "#6E1F1A",
+    "lab": true
   },
   {
     "title": "Airbnb for Work in India",
@@ -49,7 +51,8 @@
     "url": "https://drive.google.com/file/d/1Ub8JGdnG2Bk-80L42XUfZ-WUu5RMj1Qx/view?usp=sharing",
     "open": "Open the deck",
     "c1": "#6B4A2F",
-    "c2": "#40291A"
+    "c2": "#40291A",
+    "lab": true
   },
   {
     "title": "Siemens Healthineers InnoLabs",
@@ -70,7 +73,8 @@
     "url": "https://docs.google.com/presentation/d/1uB5-sjkC8IdIJCPT4BX_VeRcSkKHqCLF/edit?usp=drive_link",
     "open": "View the research",
     "c1": "#5A3F8C",
-    "c2": "#35245A"
+    "c2": "#35245A",
+    "lab": true
   },
   {
     "title": "Apollo Hospitals app",
@@ -80,7 +84,8 @@
     "url": "https://miro.com/app/board/uXjVN85XZ2I=/",
     "open": "Open the board",
     "c1": "#2F6F73",
-    "c2": "#1B4547"
+    "c2": "#1B4547",
+    "lab": true
   },
   {
     "title": "Wanderess",
@@ -90,7 +95,8 @@
     "url": "https://youtu.be/KYfrrYPDFfo",
     "open": "Watch the pitch",
     "c1": "#9C6A2A",
-    "c2": "#5E3E15"
+    "c2": "#5E3E15",
+    "lab": true
   },
   {
     "title": "AI hyper-personalisation in travel",

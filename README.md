@@ -62,4 +62,6 @@ Every project in `content/projects.json` appears in exactly one place:
 
 - it has a `workex` field naming a job in `content/career.json` -> shown as a card on that job's book in Experience
 - otherwise, if its categories include `spec` -> the Spec Lab (concepts with a live mock are linked from their mock's tab, the rest are cards under it)
-- otherwise -> the Chamber of Creations (Projects), which also holds the Presentations shelf
+- otherwise -> the Chamber of Creations (Projects)
+
+Decks in `content/decks.json` follow the same rule: `workex` puts a deck on that job's book, `lab` puts it in the Spec Lab, and the rest (the published paper) stay in Projects.
