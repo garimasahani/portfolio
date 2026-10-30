@@ -4,7 +4,7 @@
   var FORM_ENDPOINT = ''; // TODO: paste a Formspree (or similar) endpoint to receive letters directly; empty opens the visitor's email app
   // a photo in a sculpted gold frame with a vintage tone
   function gframe(p, cls) { return '<figure class="gframe' + (cls ? ' ' + cls : '') + '"><span class="gf-in"><img src="' + esc(p.src) + '" alt="' + esc(p.alt) + '" loading="lazy" width="480" height="600"></span>' + (p.caption ? '<figcaption>' + esc(p.caption) + '</figcaption>' : '') + '</figure>'; }
-  var LAB = { 'airbnb-znmd': 'znmd', 'sarvam-diwali': 'sarvam', 'spotify-homejam': 'spotads', 'spotify-navbeats': 'spotads', 'jiocinema-paris': 'jio', 'spotify-offline': 'spotify', 'spotify-premium': 'premium', 'supermoney-okrs': 'supermoney', 'supercard-sales': 'supercard', 'airbnb-for-work': 'airbnb' };
+  var LAB = { 'airbnb-znmd': 'znmd', 'sarvam-diwali': 'sarvam', 'spotify-homejam': 'spotads', 'spotify-navbeats': 'navbeats', 'jiocinema-paris': 'jio', 'spotify-offline': 'spotify', 'spotify-premium': 'premium', 'supermoney-okrs': 'supermoney', 'supercard-sales': 'supercard', 'airbnb-for-work': 'airbnb' };
   var CAT = {
     live: { label: 'Live campaigns', icon: 'icons/spellbook', a: 'var(--red)' },
     'growth-ops': { label: 'Growth & ops', icon: 'icons/cauldron', a: 'var(--green)' },
