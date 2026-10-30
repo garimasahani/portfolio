@@ -77,6 +77,12 @@
       if (M.reduce) { finish(); return; }
       var s = seal.getBoundingClientRect();
       M.sparks(s.left + s.width / 2, s.top + s.height / 2, 34);
+      M.play('crack'); M.play('spark');
+      setTimeout(function () { M.play('creak'); }, 120);
+      setTimeout(function () { M.play('whoosh'); }, 500);
+      setTimeout(function () { M.play('magic'); }, 900);
+      // each place pops onto the map with its own note
+      for (var k = 0; k < 7; k++) (function (k) { setTimeout(function () { M.play('pop', k); }, 1500 + k * 170); })(k);
       door.classList.add('opening');
       $('#main').classList.add('rise');
       setTimeout(function () { door.classList.add('gone'); }, 1500);

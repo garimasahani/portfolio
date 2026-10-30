@@ -51,3 +51,7 @@ Upload the whole folder to any static host: Netlify (drag and drop), GitHub Page
 - Each room is its own page: `about.html`, `experience.html`, `skills.html`, `projects.html` (with the presentations shelf), `spec-lab.html`, `common-room.html`, `contact.html`. Case studies stay in `case.html#<slug>`.
 - Map positions live in `assets/js/landing.js` (`WIDE` for landscape, `TALL` for phones); room names and links come from `locations` in `content/site.json`.
 - `public/assets/map/cover.jpg` and the pieces in `public/assets/map/els/` are cut from Garima's own reference designs; the cover's original wording was painted out and the new title is live text.
+
+## Sound
+
+All sound effects are synthesised in the browser with the Web Audio API (`assets/js/core.js`, the `FX` table), so there are no audio files. Nothing plays until the visitor's first tap or key press, and the menu has a Sound on/off switch that is remembered.
