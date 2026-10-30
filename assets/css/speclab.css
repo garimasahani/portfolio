@@ -426,3 +426,10 @@
 #lab .disclaim{font-style:italic}
 @media (max-width:980px){#lab .stage{grid-template-columns:1fr}}
 @media (max-width:620px){#lab .stage{padding:18px;border-radius:22px}#lab .demo{padding:16px 12px}#lab .stats{grid-template-columns:1fr 1fr 1fr}#lab .stat b{font-size:26px}#lab .habits,#lab .loop{grid-template-columns:1fr 1fr}#lab .loop div:last-child{grid-column:1/-1}#lab .listings{grid-template-columns:1fr 1fr}}
+
+/* originals: the real document or post, embedded */
+#lab .demo{align-items:stretch;padding:12px}
+#lab .demo:empty{display:none}
+#lab .stage:has(.demo:empty){grid-template-columns:1fr}
+#lab iframe.orig{width:100%;height:640px;height:min(78vh,720px);border:0;border-radius:14px;background:#fff}
+@media (max-width:860px){#lab .stage{grid-template-columns:1fr;padding:22px}}
