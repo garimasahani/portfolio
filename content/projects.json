@@ -735,6 +735,81 @@
     "workex": "Fintech SaaS, travel apps, hospitality"
   },
   {
+    "slug": "windowseat",
+    "title": "Windowseat: onboarding, content and brand",
+    "brand": "Windowseat",
+    "categories": [
+      "live"
+    ],
+    "year": "TODO",
+    "summary": "A travel app that connects locals with travelers, with onboarding, in-app content, nudges, marketing and branding.",
+    "metric": null,
+    "image": null,
+    "prophecy": "Travelers wanted hidden gems and a local's way of exploring a place, not another list of tourist spots.",
+    "ingredients": {
+      "audience": "Travelers, and locals who recommend places and build itineraries.",
+      "channels": "In-app content, nudges, product marketing.",
+      "tools": "Figma moodboard",
+      "budget": "TODO"
+    },
+    "spellwork": [
+      "Created the complete product onboarding workflow.",
+      "Wrote the in-app content and the nudges used across the product.",
+      "Worked on product marketing, the design mood board and the branding."
+    ],
+    "results": [
+      {
+        "value": "TODO",
+        "label": "outcome"
+      }
+    ],
+    "lessons": [
+      "TODO"
+    ],
+    "links": [
+      {
+        "label": "The moodboard in Figma",
+        "url": "https://www.figma.com/board/DTH0pymx9IzZTOchTekAG7/WS-Moodboards?node-id=0-1&t=NAHPHh3I9IO4BHOj-1"
+      }
+    ],
+    "workex": "Fintech SaaS, travel apps, hospitality"
+  },
+  {
+    "slug": "finlens",
+    "title": "Finlens: go-to-market and positioning",
+    "brand": "Finlens",
+    "categories": [
+      "live"
+    ],
+    "year": "TODO",
+    "summary": "GTM and product marketing for a Y Combinator AI platform for accounting, finance and record keeping in the United States.",
+    "metric": null,
+    "image": null,
+    "prophecy": "An AI finance product needed a sharper landing page, a clear ideal customer and a story to match.",
+    "ingredients": {
+      "audience": "Ideal customer profiles defined during the engagement.",
+      "channels": "Landing pages, website and product content.",
+      "tools": "TODO",
+      "budget": "TODO"
+    },
+    "spellwork": [
+      "Revamped the landing pages and wrote the website and product content.",
+      "Mapped product flows, user journeys and the overall customer experience.",
+      "Defined the ideal customer profiles, messaging and positioning."
+    ],
+    "results": [
+      {
+        "value": "TODO",
+        "label": "outcome"
+      }
+    ],
+    "lessons": [
+      "TODO"
+    ],
+    "links": [],
+    "workex": "Fintech SaaS, travel apps, hospitality"
+  },
+  {
     "slug": "popcorn-landing",
     "title": "Popcorn: landing page copy",
     "brand": "Popcorn",
