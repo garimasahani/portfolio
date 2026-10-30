@@ -61,7 +61,7 @@
     return Promise.all([loadJSON('site'), loadJSON('projects'), loadJSON('career'), loadJSON('decks')]).then(function (r) {
       index = r[0].locations.map(function (l) { return { t: l.name, s: l.label, h: l.href }; })
         .concat(r[2].years.map(function (y) { return { t: y.org, s: 'Experience · ' + y.title, h: 'experience.html' }; }))
-        .concat(r[3].map(function (d) { return { t: d.title, s: 'Presentation · ' + d.type, h: 'presentations.html' }; }))
+        .concat(r[3].map(function (d) { return { t: d.title, s: 'Presentation · ' + d.type, h: 'projects.html#lecture' }; }))
         .concat(r[1].map(function (p) { return { t: p.title, s: p.brand + (p.categories.indexOf('spec') > -1 ? ' · Spec concept' : ''), h: 'case.html#' + p.slug }; }));
       return index;
     });

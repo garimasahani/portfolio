@@ -7,29 +7,42 @@ body[data-page=home] .nav{position:fixed;left:auto;right:0;top:0;background:none
 body[data-page=home] .nav::after{display:none}
 body[data-page=home] .nav .wrap{max-width:none;height:auto;padding:14px 16px;gap:10px}
 
-/* ---------- the map ---------- */
-.world{position:fixed;top:0;right:0;bottom:0;left:0;overflow:hidden;background:#3A2213}
-.worldfill{position:absolute;top:-40px;right:-40px;bottom:-40px;left:-40px;background:url(../../public/assets/map/open-map.jpg) center/cover;filter:blur(26px) brightness(.62) saturate(1.1);transform:scale(1.08)}
-.worldstage{position:absolute;top:0;right:0;bottom:0;left:0;display:grid;place-items:center;overflow:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
-.worldstage::-webkit-scrollbar{display:none}
-.worldstage .artmap{width:100vw;width:min(100vw,100vh * 960 / 786);width:min(100vw,100dvh * 960 / 786);height:auto;aspect-ratio:960/786;box-shadow:0 30px 70px -10px rgba(0,0,0,.7)}
-/* tall screens: the map fills the height and slides sideways */
-@media (max-aspect-ratio:1/1){
-  .worldstage{place-items:start}
-  .worldstage .artmap{height:100vh;height:100dvh;width:calc(100vh * 960 / 786);width:calc(100dvh * 960 / 786)}
-}
-
-.artmap{position:relative;container-type:inline-size}
-.artmap>img{position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;display:block}
-.artmap .spot{position:absolute;border-radius:24px;text-decoration:none;transition:box-shadow .3s,background .3s}
-.artmap .spot:hover,.artmap .spot:focus-visible{background:rgba(255,226,150,.14);box-shadow:0 0 0 3px rgba(255,214,120,.85),0 0 34px rgba(255,200,100,.75);outline:none}
-/* plaques for the places the art doesn't name, drawn like the art's own signs */
-.artmap .plaque{position:absolute;transform:translateX(-50%);display:block;text-align:center;padding:.9cqw 2.2cqw 1cqw;border-radius:1cqw;text-decoration:none;white-space:nowrap;
-  background:radial-gradient(ellipse at 50% 40%,#F7E9C8,#EBD3A2 70%,#DDBE86);box-shadow:inset 0 0 0 1px rgba(138,90,38,.45),inset 0 0 10px rgba(150,100,40,.35),0 .6cqw 1.2cqw rgba(60,30,8,.45);transition:transform .3s var(--ease),box-shadow .3s}
-.artmap .plaque b{display:block;font:500 1.6vh/1.15 var(--serif);font-size:2.15cqw;color:#2E1F12}
-.artmap .plaque i{display:block;font:italic 500 1.2vh/1.2 var(--serif);font-size:1.55cqw;color:#5A4128;margin-top:.2cqw}
-.artmap .plaque:hover,.artmap .plaque:focus-visible{transform:translateX(-50%) translateY(-3px);box-shadow:inset 0 0 0 1px rgba(138,90,38,.45),0 0 0 3px rgba(255,214,120,.85),0 0 26px rgba(255,200,100,.7);outline:none}
-.artmap .plaque.big b{font-size:2vh;font-size:2.6cqw}
+/* ---------- the map: one parchment sheet filling the screen, built from the illustrated pieces ---------- */
+.world{position:fixed;top:0;right:0;bottom:0;left:0;overflow:hidden;--u:10px;
+  background:radial-gradient(circle at 14% 22%,rgba(140,88,32,.16) 0,transparent 13%),radial-gradient(circle at 86% 76%,rgba(140,88,32,.15) 0,transparent 15%),radial-gradient(circle at 70% 30%,rgba(255,248,225,.35) 0,transparent 30%),
+    radial-gradient(ellipse at 50% 48%,#EDCD92 0,#E2BB78 45%,#CFA060 78%,#A9763A 100%),url(../../public/assets/backgrounds/parchment.svg)}
+/* worn edges, a drawn border and the old fold */
+.world::before{content:"";position:absolute;top:0;right:0;bottom:0;left:0;pointer-events:none;z-index:1;box-shadow:inset 0 0 120px rgba(110,62,18,.55),inset 0 0 30px rgba(90,50,14,.4)}
+.world::after{content:"";position:absolute;top:14px;right:14px;bottom:14px;left:14px;pointer-events:none;z-index:1;border:2px solid rgba(92,58,24,.55);box-shadow:inset 0 0 0 4px rgba(240,215,163,.4),inset 0 0 0 5px rgba(92,58,24,.35);border-radius:6px;
+  background:linear-gradient(90deg,transparent calc(50% - 1px),rgba(110,70,28,.18) 50%,rgba(255,245,220,.25) calc(50% + 2px),transparent calc(50% + 5px))}
+.paths{position:absolute;top:0;left:0;width:100%;height:100%;z-index:2;pointer-events:none;overflow:visible}
+.paths path{fill:none;stroke:#5A3416;stroke-width:calc(var(--u) * .32);stroke-linecap:round;stroke-dasharray:0 calc(var(--u) * 1.1);opacity:.75}
+.mapworld{position:absolute;top:0;right:0;bottom:0;left:0;z-index:3}
+.el{position:absolute;display:block;width:calc(var(--u) * var(--s));transform:translate(-50%,-50%);z-index:var(--z,1)}
+.el img{display:block;width:100%;height:auto}
+.el.deco{pointer-events:none}
+.el.tree img{filter:drop-shadow(0 calc(var(--u) * .3) calc(var(--u) * .25) rgba(70,40,10,.3))}
+.el.float img{animation:float 6s ease-in-out var(--d,0s) infinite}
+.el.fly img{animation:fly 9s ease-in-out infinite}
+@keyframes fly{25%{transform:translate(4%,-10%) rotate(-3deg)}50%{transform:translate(8%,0) rotate(0)}75%{transform:translate(4%,8%) rotate(3deg)}}
+.el.cloud img{animation:drift 26s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translateX(12%)}}
+/* places: lift and glow under the wand */
+a.el{text-decoration:none;z-index:6;transition:filter .3s}
+a.el img{transition:transform .35s var(--ease),filter .35s;filter:drop-shadow(0 calc(var(--u) * .5) calc(var(--u) * .5) rgba(70,40,10,.35))}
+a.el:hover img,a.el:focus-visible img{transform:translateY(calc(var(--u) * -.6)) scale(1.04);filter:drop-shadow(0 0 calc(var(--u) * 1.2) rgba(255,214,110,.95)) drop-shadow(0 calc(var(--u) * .8) calc(var(--u) * .6) rgba(70,40,10,.35))}
+a.el:focus-visible{outline:none}
+/* a sign for the place the pieces don't name, shaped like the pieces' own scrolls */
+.scrollsign{position:relative;display:table;margin:calc(var(--u) * -1.2) auto 0;text-align:center;padding:calc(var(--u) * .7) calc(var(--u) * 1.4) calc(var(--u) * .8);border-radius:calc(var(--u) * .4);
+  background:linear-gradient(180deg,#F1DCAF,#E2C185 60%,#D4AF6D);box-shadow:inset 0 0 0 1px rgba(110,70,28,.45),inset 0 calc(var(--u) * -.3) calc(var(--u) * .5) rgba(140,90,40,.35),0 calc(var(--u) * .3) calc(var(--u) * .5) rgba(70,40,10,.4)}
+.scrollsign::before,.scrollsign::after{content:"";position:absolute;top:8%;bottom:-10%;width:calc(var(--u) * 1.1);border-radius:calc(var(--u) * .5);background:linear-gradient(90deg,#C9A060,#E9CD95 50%,#B98F52);box-shadow:inset 0 0 0 1px rgba(110,70,28,.4)}
+.scrollsign::before{left:calc(var(--u) * -.5)}.scrollsign::after{right:calc(var(--u) * -.5)}
+.scrollsign b{display:block;font:500 calc(var(--u) * 1.45)/1.1 var(--serif);color:#3A2410;white-space:nowrap}
+.scrollsign i{display:block;font:italic 500 calc(var(--u) * 1.1)/1.2 var(--serif);color:#5A3E22}
+/* the places rise onto the map one after another when it opens */
+.world.rise a.el{animation:rise .7s cubic-bezier(.3,1.5,.5,1) both;animation-delay:calc(var(--i) * .16s + .2s)}
+@keyframes rise{from{opacity:0;transform:translate(-50%,-30%) scale(.6)}to{opacity:1;transform:translate(-50%,-50%) scale(1)}}
+@media (prefers-reduced-motion:reduce){.el img{animation:none!important}.world.rise a.el{animation:none}}
 
 /* ---------- the cover ---------- */
 .door{display:none}

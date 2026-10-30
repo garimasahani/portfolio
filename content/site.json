@@ -58,23 +58,15 @@
     {
       "id": "projects",
       "name": "The Chamber of Creations",
-      "label": "Projects & campaigns",
+      "label": "Projects & presentations",
       "icon": "icons/spellbook",
       "href": "projects.html",
-      "blurb": "Live campaigns, growth work and spec concepts."
-    },
-    {
-      "id": "decks",
-      "name": "The Lecture Hall",
-      "label": "Presentations",
-      "icon": "icons/glasses",
-      "href": "presentations.html",
-      "blurb": "Decks, research and pitches I've presented."
+      "blurb": "Live campaigns, growth work, spec concepts and the decks I have presented."
     },
     {
       "id": "lab",
       "name": "The Restricted Section",
-      "label": "Spec campaigns",
+      "label": "Spec Campaigns",
       "icon": "icons/cauldron",
       "href": "spec-lab.html",
       "blurb": "Playable mocks of campaigns nobody asked for."

@@ -47,7 +47,7 @@ Upload the whole folder to any static host: Netlify (drag and drop), GitHub Page
 
 ## Pages
 
-- `index.html` is only the map. On the first visit of a session a wax-sealed leather cover ("Welcome to Magical", "Portfolio of Garima") fills the screen; tapping the seal opens it onto the illustrated map, which fills the screen (on tall phones it slides sideways). Every place on the map links to a room; the castle is Hogwarts, the about page. The top bar has only search, night mode and the menu.
-- Each room is its own page: `about.html`, `experience.html`, `skills.html`, `projects.html`, `presentations.html`, `spec-lab.html`, `common-room.html`, `contact.html`. Case studies stay in `case.html#<slug>`.
-- Map hotspots live in `assets/js/landing.js` (`SPOTS`, `PLAQUE`); room names and links come from `locations` in `content/site.json`.
-- `public/assets/map/cover.jpg` and `open-map.jpg` are cut from Garima's own reference design; the cover's original wording was painted out and the new title is live text.
+- `index.html` is only the map. On the first visit of a session a wax-sealed leather cover ("Welcome to Magical", "Portfolio of Garima") fills the screen; tapping the seal opens it onto a full-screen parchment map composed from the illustrated pieces in `public/assets/map/els/`. The Great Hall castle sits in the centre (About); the other places link to their rooms, and phones get a tall layout. The top bar has only search, night mode and the menu.
+- Each room is its own page: `about.html`, `experience.html`, `skills.html`, `projects.html` (with the presentations shelf), `spec-lab.html`, `common-room.html`, `contact.html`. Case studies stay in `case.html#<slug>`.
+- Map positions live in `assets/js/landing.js` (`WIDE` for landscape, `TALL` for phones); room names and links come from `locations` in `content/site.json`.
+- `public/assets/map/cover.jpg` and the pieces in `public/assets/map/els/` are cut from Garima's own reference designs; the cover's original wording was painted out and the new title is live text.
