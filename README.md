@@ -44,3 +44,9 @@ Upload the whole folder to any static host: Netlify (drag and drop), GitHub Page
 - Resume: put the PDF in `public/assets/` and set `resume.url` in `content/site.json`. The download link appears automatically.
 - Colours and fonts are the variables at the top of `assets/css/academy.css`.
 - Motion respects the visitor's reduced-motion setting.
+
+## Pages
+
+- `index.html` is the landing page: a folded parchment map opens once per visit (Skip, Esc or reduced motion close it at once), then the portrait with floating objects, three glance cards and the map of rooms.
+- Each room is its own page: `about.html`, `experience.html`, `skills.html`, `projects.html`, `presentations.html`, `spec-lab.html`, `common-room.html`, `contact.html`. Case studies stay in `case.html#<slug>`.
+- The landing glance cards and map rooms come from `gist` and `locations` in `content/site.json`.

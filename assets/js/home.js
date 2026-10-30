@@ -1,4 +1,4 @@
-/* Home: entrance, map, sorting ceremony, library, potions, chamber, pensieve, owlery */
+/* Room scripts: each page renders only the sections it contains (map, sorting ceremony, library, potions, chamber, decks, pensieve, owlery) */
 (function () {
   var M = window.MA, $ = M.$, $$ = M.$$, esc = M.esc, t = M.t, icon = M.icon;
   var FORM_ENDPOINT = ''; // TODO: paste a Formspree (or similar) endpoint to receive letters directly; empty opens the visitor's email app
@@ -15,21 +15,21 @@
 
   /* I. Entrance */
   M.loadJSON('site').then(function (site) {
+    if (!$('#heroTitle')) return;
     var h = site.hero;
     $('#heroKicker').textContent = h.kicker;
     $('#heroTitle').innerHTML = h.headline.map(function (l) { return '<span>' + esc(l) + '</span>'; }).join('');
-    $('#heroSub').textContent = h.sub;
     $('#heroMe').textContent = h.intro;
     renderMap(site.locations);
-    renderSocials(site);
   });
-  if (!M.reduce) {
+  M.loadJSON('site').then(function (site) { if ($('#letter')) renderSocials(site); });
+  if (!M.reduce && $('#dust')) {
     var dust = '';
     for (var i = 0; i < 26; i++) dust += '<i style="left:' + (Math.random() * 100).toFixed(1) + '%;top:' + (40 + Math.random() * 60).toFixed(1) + '%;--s:' + (3 + Math.random() * 5).toFixed(1) + 'px;--d:' + (7 + Math.random() * 8).toFixed(1) + 's;--t:-' + (Math.random() * 12).toFixed(1) + 's;--x:' + (Math.random() * 60 - 30).toFixed(0) + 'px"></i>';
     $('#dust').innerHTML = dust;
   }
   // Explore: the wand draws a golden trail down the page, then the map unrolls
-  $('#explore').addEventListener('click', function (e) {
+  if ($('#explore')) $('#explore').addEventListener('click', function (e) {
     var target = $('#map');
     if (M.reduce) return;
     e.preventDefault();
@@ -54,9 +54,10 @@
   });
 
   /* II. Map */
-  var POS = { about: [170, 150], experience: [500, 105], skills: [830, 150], projects: [170, 455], common: [500, 510], contact: [830, 455] };
+  var POS = { about: [135, 150], experience: [380, 150], skills: [620, 150], projects: [865, 150], decks: [135, 455], lab: [380, 455], common: [620, 455], contact: [865, 455] };
   var YOU = [500, 305];
   function renderMap(locs) {
+    if (!$('#mapsheet')) return;
     var roads = '', places = '';
     locs.forEach(function (l, i) {
       var p = POS[l.id], dx = p[0] - YOU[0], cx = YOU[0] + dx * 0.5 + (p[1] < YOU[1] ? -50 : 50) * (dx === 0 ? 0 : 1), cy = (YOU[1] + p[1]) / 2 + (dx === 0 ? 0 : 40) * (p[1] < YOU[1] ? 1 : -1);
@@ -66,7 +67,7 @@
     });
     $('#mapsheet').innerHTML = '<svg viewBox="0 0 1000 620" preserveAspectRatio="none" aria-hidden="true">' +
       '<path class="walls" d="M40 40h920v540H40z M40 300h120 M840 300h120 M380 40v50 M620 40v50 M380 580v-40 M620 580v-40"/>' + roads +
-      '<text class="scrawl" x="300" y="300">mind the moving staircases</text><text class="scrawl" x="720" y="330">owl post, this way</text>' +
+      '<text class="scrawl" x="250" y="318">mind the moving staircases</text><text class="scrawl" x="760" y="318">owl post, this way</text>' +
       '<circle cx="' + YOU[0] + '" cy="' + YOU[1] + '" r="6" fill="#B82E24"/><text class="you" x="' + YOU[0] + '" y="' + (YOU[1] + 30) + '">You are here</text><g id="prints"></g></svg>' + places +
       '<img src="public/assets/ornaments/compass.png" alt="" style="position:absolute;right:3%;bottom:4%;width:7%;opacity:.85">';
     $('#maplist').innerHTML = locs.map(function (l) { return '<li><a href="' + l.href + '">' + icon(l.icon, '') + '<span><b>' + esc(l.name) + '</b>' + esc(l.label) + '. ' + esc(l.blurb) + '</span></a></li>'; }).join('');
@@ -94,6 +95,10 @@
 
   /* III. Sorting ceremony */
   M.loadJSON('about').then(function (a) {
+    if ($('#story')) renderAbout(a);
+    if ($('#facts')) $('#facts').innerHTML = a.facts.map(function (f) { return '<li>' + t(f) + '</li>'; }).join('');
+  });
+  function renderAbout(a) {
     $('#aboutIntro').textContent = a.intro;
     $('#story').innerHTML = a.story.map(function (s) { return '<article class="ph">' + gframe(s.photo) + '<div><h3>' + esc(s.title) + '</h3><p>' + t(s.text) + '</p></div></article>'; }).join('');
     var COL = { gryffindor: 'var(--red)', slytherin: 'var(--green)', hufflepuff: 'var(--gold-text)', ravenclaw: 'var(--blue)' };
@@ -118,13 +123,11 @@
         }
       }, 1500);
     });
-
-    // common room facts
-    $('#facts').innerHTML = a.facts.map(function (f) { return '<li>' + t(f) + '</li>'; }).join('');
-  });
+  }
 
   /* IV. Library */
   Promise.all([M.loadJSON('career'), M.loadJSON('projects')]).then(function (r) {
+    if (!$('#books')) return;
     var years = r[0].years.slice().reverse(), projects = r[1];
     var COLS = ['#8E2A20', '#2F5A44', '#34508F', '#6B4A2F', '#5A3F8C', '#9C3A22', '#3B6B4F'], HTS = [300, 270, 310, 285, 260, 300, 280];
     $('#books').innerHTML = years.map(function (y, i) {
@@ -151,7 +154,7 @@
   var TINT = { '#B82E24': 'sepia(1) saturate(3) hue-rotate(-38deg) brightness(.92)', '#3A5BA9': 'sepia(1) saturate(2.6) hue-rotate(178deg) brightness(.95)', '#6C4BA6': 'sepia(1) saturate(2.2) hue-rotate(222deg) brightness(.95)',
     '#D4A84A': 'sepia(1) saturate(2.4) hue-rotate(4deg) brightness(1.05)', '#6B4A2F': 'sepia(1) saturate(1.4) hue-rotate(-12deg) brightness(.8)' };
   function tint(p) { return p.crystal ? 'saturate(1)' : TINT[p.color] || 'saturate(1)'; }
-  M.loadJSON('potions').then(function (pots) {
+  if ($('#potions')) M.loadJSON('potions').then(function (pots) {
     M.loadJSON('projects').then(function (projects) {
       var byslug = {}; projects.forEach(function (p) { byslug[p.slug] = p; });
       $('#potions').innerHTML = pots.map(function (p, i) {
@@ -174,7 +177,7 @@
   });
 
   /* VI. Chamber of creations */
-  M.loadJSON('projects').then(function (projects) {
+  if ($('#cards')) M.loadJSON('projects').then(function (projects) {
     var filter = 'all', expanded = false, LIMIT = 9;
     var keys = ['all'].concat(Object.keys(CAT));
     $('#filters').innerHTML = keys.map(function (k) { return '<button type="button" data-k="' + k + '" aria-pressed="' + (k === 'all') + '">' + (k === 'all' ? 'All' : CAT[k].label) + '</button>'; }).join('');
@@ -187,7 +190,7 @@
           '<h3>' + esc(p.title) + '</h3><p>' + t(p.summary) + '</p>' +
           (p.metric ? '<p class="metric">' + esc(p.metric.value) + '<small>' + esc(p.metric.label) + '</small></p>' : '') +
           '<a class="go" href="case.html#' + p.slug + '">Uncover the Magic <span aria-hidden="true">→</span><span class="sr">: ' + esc(p.title) + '</span></a>' +
-          (LAB[p.slug] ? '<a class="try" href="#' + LAB[p.slug] + '">✦ Play with the live mock<span class="sr"> of ' + esc(p.title) + '</span></a>' : '') + '</article>';
+          (LAB[p.slug] ? '<a class="try" href="spec-lab.html#' + LAB[p.slug] + '">✦ Play with the live mock<span class="sr"> of ' + esc(p.title) + '</span></a>' : '') + '</article>';
       }).join('');
       $('#more').innerHTML = list.length > LIMIT ? '<button class="btn ghost" type="button" id="moreBtn">' + (expanded ? 'Show fewer' : 'Show all ' + list.length + ' spells') + '</button>' : '';
       var mb = $('#moreBtn'); if (mb) mb.addEventListener('click', function () { expanded = !expanded; render(); if (!expanded) $('#projects').scrollIntoView(); });
@@ -199,7 +202,7 @@
   });
 
   // presentations: the real decks, each a clay-bound slide stack
-  M.loadJSON('decks').then(function (decks) {
+  if ($('#decks')) M.loadJSON('decks').then(function (decks) {
     $('#decks').innerHTML = decks.map(function (d) {
       return '<a class="deck" href="' + esc(d.url) + '" target="_blank" rel="noopener"><div class="stack" aria-hidden="true"><i></i><i></i>' +
         '<div class="slide" style="--c1:' + d.c1 + ';--c2:' + d.c2 + '"><small>' + esc(d.type) + '</small><b>' + esc(d.title) + '</b><span><em>Garima Sahani</em><em>' + esc(d.size) + '</em></span></div></div>' +
@@ -208,7 +211,7 @@
   });
 
   /* VII. Pensieve */
-  M.loadJSON('pensieve').then(function (mem) {
+  if ($('#orbs')) M.loadJSON('pensieve').then(function (mem) {
     $('#orbs').innerHTML = mem.map(function (m, i) {
       return '<li><button class="orb" type="button" aria-expanded="false" aria-controls="memory" data-i="' + i + '" style="--d:' + (4 + (i % 3)) + 's;--t:-' + (i * 0.7).toFixed(1) + 's"><span class="sr">' + esc(m.title) + '</span></button><b aria-hidden="true">' + esc(m.title) + '</b><small>' + esc(m.kind) + '</small></li>';
     }).join('');
@@ -250,13 +253,6 @@
     });
   }
 
-  // highlight the nav link for the section in view
-  var navLinks = $$('.links a');
-  addEventListener('scroll', function () {
-    var cur = '#top';
-    ['about', 'experience', 'skills', 'projects', 'contact'].forEach(function (id) { var el = document.getElementById(id); if (el && el.getBoundingClientRect().top < 140) cur = '#' + id; });
-    navLinks.forEach(function (a) { if (a.getAttribute('href') === cur) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current'); });
-  }, { passive: true });
   // content renders after load, so honour a #section link once the page has its final height
   if (location.hash.length > 1) addEventListener('load', function () { setTimeout(function () { var el = document.getElementById(location.hash.slice(1)); if (el) scrollTo({ top: el.getBoundingClientRect().top + scrollY - 70, behavior: 'instant' }); }, 300); });
 })();

@@ -36,7 +36,7 @@
       "name": "The Great Hall",
       "label": "About me",
       "icon": "icons/hat",
-      "href": "#about",
+      "href": "about.html",
       "blurb": "Who I am and how I got sorted."
     },
     {
@@ -44,7 +44,7 @@
       "name": "The Library",
       "label": "Work experience",
       "icon": "icons/books",
-      "href": "#experience",
+      "href": "experience.html",
       "blurb": "Every chapter of my career, one book each."
     },
     {
@@ -52,7 +52,7 @@
       "name": "The Potion Room",
       "label": "Skills",
       "icon": "icons/potion",
-      "href": "#skills",
+      "href": "skills.html",
       "blurb": "The magic behind my work."
     },
     {
@@ -60,15 +60,31 @@
       "name": "The Chamber of Creations",
       "label": "Projects & campaigns",
       "icon": "icons/spellbook",
-      "href": "#projects",
+      "href": "projects.html",
       "blurb": "Live campaigns, growth work and spec concepts."
     },
     {
+      "id": "decks",
+      "name": "The Lecture Hall",
+      "label": "Presentations",
+      "icon": "icons/glasses",
+      "href": "presentations.html",
+      "blurb": "Decks, research and pitches I've presented."
+    },
+    {
+      "id": "lab",
+      "name": "The Restricted Section",
+      "label": "Spec campaigns",
+      "icon": "icons/cauldron",
+      "href": "spec-lab.html",
+      "blurb": "Playable mocks of campaigns nobody asked for."
+    },
+    {
       "id": "common",
-      "name": "The House Common Room",
+      "name": "The Common Room",
       "label": "Personality & interests",
       "icon": "icons/candle",
-      "href": "#common",
+      "href": "common-room.html",
       "blurb": "Memories, milestones and the person behind the work."
     },
     {
@@ -76,7 +92,7 @@
       "name": "The Owlery",
       "label": "Contact me",
       "icon": "icons/owl",
-      "href": "#contact",
+      "href": "contact.html",
       "blurb": "Send me an owl."
     }
   ],
@@ -117,5 +133,34 @@
       "Contact",
       "#contact"
     ]
+  ],
+  "gist": [
+    {
+      "title": "What I'm about",
+      "icon": "icons/hat",
+      "text": "Product-led growth and go-to-market. I own the full funnel, from the first click to the paid plan, and I make marketing fun in tech.",
+      "href": "about.html",
+      "cta": "My story"
+    },
+    {
+      "title": "How I work",
+      "icon": "icons/wand",
+      "text": "I use AI for speed and keep the curiosity and taste for myself. When a brand hasn't asked for an idea, I sometimes make it anyway.",
+      "href": "projects.html",
+      "cta": "See the work"
+    },
+    {
+      "title": "What else I brew",
+      "icon": "icons/potion",
+      "chips": [
+        "Brand Storytelling",
+        "Customer Research",
+        "Lifecycle & CRM",
+        "Marketing Analytics",
+        "AI & Automation"
+      ],
+      "href": "skills.html",
+      "cta": "All skills"
+    }
   ]
 }

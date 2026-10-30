@@ -74,14 +74,14 @@ button{font:inherit;color:inherit}
 .nav .wrap{display:flex;align-items:center;gap:18px;height:66px}
 .brand{font-variant-ligatures:none;display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--brown-deep);font:700 1.05rem/1 var(--display);margin-right:auto;white-space:nowrap}
 .brand img{width:34px;height:34px;object-fit:contain;filter:drop-shadow(0 3px 3px rgba(74,50,32,.3))}
-.links{display:flex;gap:4px;list-style:none;margin:0;padding:0}
-.links a{display:block;padding:8px 12px;border-radius:999px;text-decoration:none;color:var(--brown);font:400 .98rem/1 var(--fell);letter-spacing:.06em;transition:background .2s,color .2s}
-.links a:hover,.links a[aria-current="true"]{background:rgba(212,168,74,.22);color:var(--brown-deep)}
+.links{display:flex;gap:2px;list-style:none;margin:0;padding:0}
+.links a{display:block;padding:8px 10px;border-radius:999px;text-decoration:none;color:var(--brown);font:400 .98rem/1 var(--fell);letter-spacing:.06em;transition:background .2s,color .2s}
+.links a:hover,.links a[aria-current]{background:rgba(212,168,74,.22);color:var(--brown-deep)}
 .navbtn{width:42px;height:42px;border:0;padding:0;background:none;cursor:pointer;border-radius:50%;flex:none;display:grid;place-items:center}
 .navbtn img{width:40px;height:40px;object-fit:contain;transition:transform .25s}
 .navbtn:hover img{transform:scale(1.08) rotate(-4deg)}
 #menuBtn{display:none}
-@media (max-width:900px){
+@media (max-width:1080px){
   #menuBtn{display:grid}
   .links{position:absolute;top:66px;left:12px;right:12px;flex-direction:column;padding:10px;background:var(--parch);border:1.5px solid var(--gold);border-radius:16px;box-shadow:0 18px 30px -16px rgba(74,50,32,.6);display:none}
   .links.open{display:flex}
@@ -141,3 +141,21 @@ button{font:inherit;color:inherit}
 html,body,#lab,#lab *{cursor:url(../../public/assets/icons/wand-cursor.png) 35 14,auto}
 a,button,summary,label,select,[role=button],[tabindex]:not([tabindex="-1"]),.book,.potion,.house,.orb,.hatbtn,.card,#lab button,#lab .ccard,#lab [onclick]{cursor:url(../../public/assets/icons/wand-cursor.png) 35 14,pointer}
 input:not([type=range]):not([type=checkbox]):not([type=radio]):not([type=submit]),textarea{cursor:text}
+
+/* subpages: a way back to the map, a next-room pager and the footer room list */
+.roomtop{padding-top:22px}
+.backmap{display:inline-block;font:400 .95rem var(--fell);letter-spacing:.14em;text-transform:uppercase;color:var(--gold-text);text-decoration:none;padding:6px 12px;border-radius:999px;border:1px solid rgba(212,168,74,.7);background:rgba(255,250,240,.6)}
+.backmap:hover{background:rgba(212,168,74,.2)}
+.roompager{margin:10px auto 70px}
+.footnav{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 14px;margin:0 auto 14px;max-width:760px}
+.footnav a{color:var(--brown);font:400 .95rem var(--fell);letter-spacing:.1em;text-transform:uppercase;text-decoration:none}
+.footnav a:hover{color:var(--red-deep);text-decoration:underline}
+main>section:first-of-type{padding-top:50px}
+
+/* the whole site sits on one old map: faint fold creases and tea stains */
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.55;mix-blend-mode:multiply;
+  background:linear-gradient(90deg,transparent calc(33.3% - 1px),rgba(120,80,35,.16) 33.3%,rgba(255,250,235,.35) calc(33.3% + 2px),transparent calc(33.3% + 4px)),
+    linear-gradient(90deg,transparent calc(66.6% - 1px),rgba(120,80,35,.16) 66.6%,rgba(255,250,235,.35) calc(66.6% + 2px),transparent calc(66.6% + 4px)),
+    linear-gradient(180deg,transparent calc(50% - 1px),rgba(120,80,35,.12) 50%,rgba(255,250,235,.3) calc(50% + 2px),transparent calc(50% + 4px)),
+    radial-gradient(circle at 8% 14%,rgba(150,95,40,.16) 0,transparent 12%),radial-gradient(circle at 92% 78%,rgba(150,95,40,.14) 0,transparent 14%),radial-gradient(circle at 70% 8%,rgba(150,95,40,.1) 0,transparent 9%)}
+:root[data-theme="night"] body::after{opacity:.25}

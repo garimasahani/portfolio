@@ -55,12 +55,13 @@
   if (themeBtn) themeBtn.addEventListener('click', function () { setTheme(root.getAttribute('data-theme') !== 'night'); });
 
   // Accio: search sections and spellbooks
-  var accio = $('#accio'), q = $('#accioQ'), out = $('#accioOut'), searchBtn = $('#searchBtn'), index = null, home = document.body.dataset.page === 'home' ? '' : 'index.html';
+  var accio = $('#accio'), q = $('#accioQ'), out = $('#accioOut'), searchBtn = $('#searchBtn'), index = null;
   function build() {
     if (index) return Promise.resolve(index);
-    return Promise.all([loadJSON('site'), loadJSON('projects'), loadJSON('career')]).then(function (r) {
-      index = r[0].locations.map(function (l) { return { t: l.name, s: l.label, h: home + l.href }; })
-        .concat(r[2].years.map(function (y) { return { t: y.org, s: 'Experience · ' + y.title, h: home + '#experience' }; }))
+    return Promise.all([loadJSON('site'), loadJSON('projects'), loadJSON('career'), loadJSON('decks')]).then(function (r) {
+      index = r[0].locations.map(function (l) { return { t: l.name, s: l.label, h: l.href }; })
+        .concat(r[2].years.map(function (y) { return { t: y.org, s: 'Experience · ' + y.title, h: 'experience.html' }; }))
+        .concat(r[3].map(function (d) { return { t: d.title, s: 'Presentation · ' + d.type, h: 'presentations.html' }; }))
         .concat(r[1].map(function (p) { return { t: p.title, s: p.brand + (p.categories.indexOf('spec') > -1 ? ' · Spec concept' : ''), h: 'case.html#' + p.slug }; }));
       return index;
     });
@@ -69,7 +70,7 @@
     build().then(function (ix) {
       term = term.trim().toLowerCase();
       var hits = ix.filter(function (x) { return !term || (x.t + ' ' + x.s).toLowerCase().indexOf(term) > -1; }).slice(0, 12);
-      out.innerHTML = hits.length ? hits.map(function (x) { return '<li><a href="' + esc(x.h) + '">' + esc(x.t) + '<small>' + esc(x.s) + '</small></a></li>'; }).join('') : '<li><a href="' + home + '#projects">Nothing answered the summons. See every project</a></li>';
+      out.innerHTML = hits.length ? hits.map(function (x) { return '<li><a href="' + esc(x.h) + '">' + esc(x.t) + '<small>' + esc(x.s) + '</small></a></li>'; }).join('') : '<li><a href="projects.html">Nothing answered the summons. See every project</a></li>';
     });
   }
   function openAccio() { accio.classList.add('open'); q.value = ''; show(''); q.focus(); }
