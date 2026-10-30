@@ -5,7 +5,7 @@
   --green:#3B6B4F; --blue:#3A5BA9; --plum:#6C4BA6;
   --brown:#6B4A2F; --brown-deep:#4A3220; --ink:#3E2A1A;
   --parch:#F6E8D6; --parch-2:#EEDCC0; --parch-3:#E4CCA6; --stone:#A8A39A;
-  --display:'Cinzel Decorative',Georgia,serif;
+  --display:'Cinzel',Georgia,serif;
   --serif:'Cormorant Garamond',Georgia,serif;
   --fell:'IM Fell English',Georgia,serif;
   --hand:'Caveat',cursive;
@@ -152,10 +152,36 @@ input:not([type=range]):not([type=checkbox]):not([type=radio]):not([type=submit]
 .footnav a:hover{color:var(--red-deep);text-decoration:underline}
 main>section:first-of-type{padding-top:50px}
 
-/* the whole site sits on one old map: faint fold creases and tea stains */
-body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.55;mix-blend-mode:multiply;
-  background:linear-gradient(90deg,transparent calc(33.3% - 1px),rgba(120,80,35,.16) 33.3%,rgba(255,250,235,.35) calc(33.3% + 2px),transparent calc(33.3% + 4px)),
-    linear-gradient(90deg,transparent calc(66.6% - 1px),rgba(120,80,35,.16) 66.6%,rgba(255,250,235,.35) calc(66.6% + 2px),transparent calc(66.6% + 4px)),
-    linear-gradient(180deg,transparent calc(50% - 1px),rgba(120,80,35,.12) 50%,rgba(255,250,235,.3) calc(50% + 2px),transparent calc(50% + 4px)),
-    radial-gradient(circle at 8% 14%,rgba(150,95,40,.16) 0,transparent 12%),radial-gradient(circle at 92% 78%,rgba(150,95,40,.14) 0,transparent 14%),radial-gradient(circle at 70% 8%,rgba(150,95,40,.1) 0,transparent 9%)}
-:root[data-theme="night"] body::after{opacity:.25}
+/* ---------- the book: a desk, a leather nav, and every section a parchment page bound in leather ---------- */
+body{background:#3A2213;background-image:radial-gradient(ellipse at 50% 0,rgba(140,90,50,.55),transparent 60%),radial-gradient(ellipse at 50% 120%,rgba(0,0,0,.45),transparent 60%),repeating-linear-gradient(90deg,rgba(0,0,0,.14) 0 2px,transparent 2px 9px,rgba(255,220,170,.04) 9px 11px,transparent 11px 23px),linear-gradient(180deg,#5A3519,#3A2213);background-attachment:fixed}
+body::before{box-shadow:inset 0 0 160px rgba(0,0,0,.55)}
+.nav{background:linear-gradient(180deg,#7A4826,#5A3318 60%,#45260F);border-bottom:2px solid #C9973F;box-shadow:0 2px 0 #2E1A0B,0 10px 20px -8px rgba(0,0,0,.6)}
+.nav::after{background:rgba(201,151,63,.45)}
+.nav .brand{color:#F3E0B5}
+.links a{color:#EBD3A0}
+.links a:hover,.links a[aria-current]{background:rgba(201,151,63,.25);color:#FFF1CF}
+@media (max-width:1080px){.links{background:linear-gradient(180deg,#6A3C1D,#4B2A13);border-color:#C9973F}}
+main>section{padding:46px 0}
+main>section>.wrap,body[data-page=case] main>.wrap,.lost>div{max-width:calc(var(--wrap) + 40px);padding:clamp(40px,6vw,72px) clamp(20px,5vw,64px);border-radius:14px;
+  background:radial-gradient(circle at 12% 10%,rgba(120,72,24,.16),transparent 14%),radial-gradient(circle at 90% 85%,rgba(120,72,24,.15),transparent 16%),radial-gradient(circle at 75% 20%,rgba(255,250,230,.4),transparent 28%),radial-gradient(ellipse at 50% 45%,#F3E2BC 0,#E8D0A0 60%,#D6B57D 100%);
+  box-shadow:inset 0 0 0 2px rgba(138,90,38,.55),inset 0 0 0 7px rgba(243,226,188,.7),inset 0 0 0 8px rgba(138,90,38,.4),inset 0 0 60px rgba(110,66,22,.35),0 0 0 4px #C9973F,0 0 0 16px #6A3C1D,0 0 0 18px #2E1A0B,0 34px 60px -22px rgba(0,0,0,.85)}
+main>section>.wrap::before,body[data-page=case] main>.wrap::before,.lost>div::before{content:"";position:absolute;inset:-14px;pointer-events:none;z-index:4;
+  background:url(../../public/assets/ornaments/corner.png) left top/52px auto no-repeat,url(../../public/assets/ornaments/corner-tr.png) right top/52px auto no-repeat}
+main>section>.wrap::after,body[data-page=case] main>.wrap::after,.lost>div::after{content:"";position:absolute;inset:-14px;pointer-events:none;z-index:4;
+  background:url(../../public/assets/ornaments/corner-bl.png) left bottom/52px auto no-repeat,url(../../public/assets/ornaments/corner-br.png) right bottom/52px auto no-repeat}
+@media (max-width:700px){main>section>.wrap{margin:0 14px;box-shadow:inset 0 0 0 2px rgba(138,90,38,.55),inset 0 0 60px rgba(110,66,22,.35),0 0 0 3px #C9973F,0 0 0 10px #6A3C1D,0 0 0 12px #2E1A0B,0 24px 40px -20px rgba(0,0,0,.85)}main>section>.wrap::before,main>section>.wrap::after{inset:-9px;background-size:36px auto}}
+/* section titles read like the map's plaques */
+.shead h2{display:table;margin-left:auto;margin-right:auto;font-family:var(--display);font-weight:700;letter-spacing:.02em;padding:.25em .9em .3em;border-radius:12px;background:linear-gradient(180deg,#F8EACB,#EBD3A0);box-shadow:inset 0 0 0 1.5px rgba(138,90,38,.55),0 6px 12px -6px rgba(60,30,8,.5)}
+.shead .label{color:#7A4A1C}
+/* things that sit on the desk, outside the pages */
+.roomtop{padding-top:26px}
+.backmap{color:#F3E0B5;border-color:rgba(201,151,63,.8);background:rgba(46,26,11,.35)}
+.backmap:hover{background:rgba(201,151,63,.25)}
+.roompager a{color:#F3E0B5}
+.roompager .btn.ghost{background:linear-gradient(180deg,#F8EACB,#EBD3A0);color:#4A3220}
+.foot{color:#E8D2A4}
+.foot p+p{color:#D9AE55}
+.footnav a{color:#EBD3A0}
+.footnav a:hover{color:#fff}
+body[data-page=case] main>.wrap{margin:40px auto}
+.lost>div{position:relative}

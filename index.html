@@ -11,51 +11,33 @@
 <link rel="icon" href="public/assets/icons/wand.png">
 <script>try{if(localStorage.getItem('ma-theme')==='night')document.documentElement.setAttribute('data-theme','night');if(!sessionStorage.getItem('ma-entered')&&!location.hash)document.documentElement.classList.add('door-on')}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Hanken+Grotesk:wght@400;500;600;700&family=Cinzel+Decorative:wght@700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=IM+Fell+English&display=swap">
-<link rel="stylesheet" href="assets/css/academy.css?v=16"><link rel="stylesheet" href="assets/css/sections.css?v=16"><link rel="stylesheet" href="assets/css/landing.css?v=16">
-<script src="assets/js/core.js?v=16" defer></script><script src="assets/js/home.js?v=16" defer></script><script src="assets/js/landing.js?v=16" defer></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Hanken+Grotesk:wght@400;500;600;700&family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=IM+Fell+English&display=swap">
+<link rel="stylesheet" href="assets/css/academy.css?v=18"><link rel="stylesheet" href="assets/css/sections.css?v=18"><link rel="stylesheet" href="assets/css/landing.css?v=18">
+<script src="assets/js/core.js?v=18" defer></script><script src="assets/js/home.js?v=18" defer></script><script src="assets/js/landing.js?v=18" defer></script>
 </head>
 <body data-page="home">
 
-<!-- The entrance: a folded parchment map that opens once per visit -->
-<div class="door" id="door" role="dialog" aria-modal="true" aria-label="The Portfolio Map of Garima Sahani">
-  <div class="door-sky" aria-hidden="true"><div class="door-dust" id="doorDust"></div></div>
-  <div class="door-stage">
-    <div class="fold" id="portal">
-      <div class="inside" aria-hidden="true">
-        <svg viewBox="0 0 300 480"><g class="ink"><rect x="16" y="30" width="268" height="430"/><rect x="22" y="36" width="256" height="418"/><path d="M60 120H240V360H60ZM68 128H232V352H68ZM150 36V120M140 36V120M150 360V454M140 360V454M22 250H60M22 240H60M240 250H278M240 240H278"/></g>
-          <rect class="box" x="92" y="196" width="116" height="96" rx="3"/><g class="boxt"><text x="150" y="222">GARIMA'S</text><text x="150" y="240">ACADEMY OF</text><text x="150" y="258">GROWTH &amp;</text><text x="150" y="276">MARKETING</text></g>
-          <g class="rooms"><text x="58" y="98">The Great Hall</text><text x="178" y="98">The Library</text><text x="74" y="160">Potion Room</text><text x="166" y="150">Chamber of</text><text x="172" y="164">Creations</text><text x="74" y="336">Lecture Hall</text><text x="170" y="322">Restricted</text><text x="176" y="336">Section</text><text x="56" y="400">Common Room</text><text x="190" y="400">The Owlery</text></g><g class="fps"><g class="fp" style="--i:0" transform="translate(150 452)"><ellipse cx="5" cy="0" rx="3" ry="5"/></g><g class="fp" style="--i:1" transform="translate(150 436)"><ellipse cx="-5" cy="0" rx="3" ry="5"/></g><g class="fp" style="--i:2" transform="translate(150 420)"><ellipse cx="5" cy="0" rx="3" ry="5"/></g><g class="fp" style="--i:3" transform="translate(150 404)"><ellipse cx="-5" cy="0" rx="3" ry="5"/></g><g class="fp" style="--i:4" transform="translate(150 388)"><ellipse cx="5" cy="0" rx="3" ry="5"/></g><g class="fp" style="--i:5" transform="translate(150 372)"><ellipse cx="-5" cy="0" rx="3" ry="5"/></g><g class="fp" style="--i:6" transform="translate(150 356)"><ellipse cx="5" cy="0" rx="3" ry="5"/></g><g class="fp" style="--i:7" transform="translate(150 340)"><ellipse cx="-5" cy="0" rx="3" ry="5"/></g><g class="fp" style="--i:8" transform="translate(150 324)"><ellipse cx="5" cy="0" rx="3" ry="5"/></g><g class="fp" style="--i:9" transform="translate(150 308)"><ellipse cx="-5" cy="0" rx="3" ry="5"/></g></g><text class="here" x="150" y="474">you are here</text></svg>
-      </div>
-      <div class="flap l"><div class="face front"><div class="cover">
-          <svg class="ribbon" viewBox="0 0 400 120" aria-hidden="true"><path class="swirl" d="M10 90c30-60 70-10 50 10s-40-30 0-55M390 90c-30-60-70-10-50 10s40-30 0-55M70 40c40-30 80 20 130 0s90-30 130 0"/><path id="ribL" d="M60 92 Q200 20 340 92" fill="none"/><path class="band" d="M52 98 Q200 22 348 98 L344 76 Q200 2 56 76Z"/><text><textPath href="#ribL" startOffset="50%" text-anchor="middle">The Growth Grimoire</textPath></text></svg>
-          <p class="ms">Ms.</p>
-          <p class="who">Garima Sahani</p>
-          <p class="role">Product Marketer, Growth Strategist<br>&amp; Curious Creator</p>
-          <p class="proud">is proud to present</p>
-          <div class="keep"><span class="flag">Garima's Academy</span><img src="public/assets/icons/castle.png" alt=""></div>
-          <div class="blot"><span>The</span><b>Portfolio</b><b>Map</b></div>
-          <p class="scrawl s1">product-led growth · go-to-market · product-led growth · go-to-market ·</p>
-          <p class="scrawl s2">owns the full funnel · from first click to paid plan · owns the full funnel ·</p>
-          <p class="scrawl s3">makes marketing fun in tech · makes marketing fun in tech · makes marketing</p>
-        </div></div><div class="face back"><svg viewBox="0 0 150 480" aria-hidden="true"><g class="ink"><path d="M150 60H40V200H150M150 70H50V190H150M40 280H150M40 290H150M60 290V430H150"/></g><g class="rooms"><text x="56" y="140">the pitch</text><text x="56" y="156">practice room</text><text x="72" y="370">secret</text><text x="72" y="386">passage</text></g></svg></div></div>
-      <div class="flap r"><div class="face front"><div class="cover" aria-hidden="true">
-          <svg class="ribbon" viewBox="0 0 400 120" aria-hidden="true"><path class="swirl" d="M10 90c30-60 70-10 50 10s-40-30 0-55M390 90c-30-60-70-10-50 10s40-30 0-55M70 40c40-30 80 20 130 0s90-30 130 0"/><path id="ribR" d="M60 92 Q200 20 340 92" fill="none"/><path class="band" d="M52 98 Q200 22 348 98 L344 76 Q200 2 56 76Z"/><text><textPath href="#ribR" startOffset="50%" text-anchor="middle">The Growth Grimoire</textPath></text></svg>
-          <p class="ms">Ms.</p>
-          <p class="who">Garima Sahani</p>
-          <p class="role">Product Marketer, Growth Strategist<br>&amp; Curious Creator</p>
-          <p class="proud">is proud to present</p>
-          <div class="keep"><span class="flag">Garima's Academy</span><img src="public/assets/icons/castle.png" alt=""></div>
-          <div class="blot"><span>The</span><b>Portfolio</b><b>Map</b></div>
-          <p class="scrawl s1">product-led growth · go-to-market · product-led growth · go-to-market ·</p>
-          <p class="scrawl s2">owns the full funnel · from first click to paid plan · owns the full funnel ·</p>
-          <p class="scrawl s3">makes marketing fun in tech · makes marketing fun in tech · makes marketing</p>
-        </div></div><div class="face back"><svg viewBox="0 0 150 480" aria-hidden="true"><g class="ink"><path d="M0 60H110V200H0M0 70H100V190H0M0 280H110M0 290H110M0 290V430H90"/></g><g class="rooms"><text x="12" y="140">the A/B</text><text x="12" y="156">tower</text><text x="12" y="370">idea</text><text x="12" y="386">cellar</text></g></svg></div></div>
+<!-- The entrance: a leather-bound map, sealed with wax, that opens to fill the page -->
+<div class="door" id="door" role="dialog" aria-modal="true" aria-label="The Marketer's Map of Garima Sahani">
+  <div class="door-dust" id="doorDust" aria-hidden="true"></div>
+  <div class="tome" id="portal">
+    <div class="spread">
+      <img class="flapart l" src="public/assets/map/flap-left.jpg" alt="" aria-hidden="true">
+      <div class="mapart"><div class="artmap" id="doorMap"></div></div>
+      <img class="flapart r" src="public/assets/map/flap-right.jpg" alt="" aria-hidden="true">
     </div>
-    <p class="fold-hint">Tap the map with your wand</p>
-    <button class="btn" id="doorOpen" type="button">Open the map <span class="arr" aria-hidden="true">→</span></button>
-    <button class="doorskip" id="doorSkip" type="button">Skip</button>
+    <div class="cover l" aria-hidden="true"><div class="cv"><span class="rim"></span><i class="crn a"></i><i class="crn b"></i><i class="crn c"></i><i class="crn d"></i><span class="glyph moon">☾</span><span class="glyph sun">☀</span>
+          <div class="panel"><svg class="ribbon" viewBox="0 0 400 90"><path class="tail" d="M8 40l40-6v40l-40 6 14-20zM392 40l-40-6v40l40 6-14-20z"/><path class="band" d="M40 30Q200 0 360 30V70Q200 40 40 70Z"/><path id="rbL" d="M50 58Q200 28 350 58" fill="none"/><text text-anchor="middle"><textPath href="#rbL" startOffset="50%">MAGICAL ACADEMY</textPath></text></svg>
+            <p class="title"><span>The</span><b>Marketer's<br>Map</b></p><p class="who">of Garima Sahani</p><p class="stars"><span>✦</span><span>✦</span></p><div class="castle"></div></div></div></div>
+    <div class="cover r" aria-hidden="true"><div class="cv"><span class="rim"></span><i class="crn a"></i><i class="crn b"></i><i class="crn c"></i><i class="crn d"></i><span class="glyph moon">☾</span><span class="glyph sun">☀</span>
+          <div class="panel"><svg class="ribbon" viewBox="0 0 400 90"><path class="tail" d="M8 40l40-6v40l-40 6 14-20zM392 40l-40-6v40l40 6-14-20z"/><path class="band" d="M40 30Q200 0 360 30V70Q200 40 40 70Z"/><path id="rbR" d="M50 58Q200 28 350 58" fill="none"/><text text-anchor="middle"><textPath href="#rbR" startOffset="50%">MAGICAL ACADEMY</textPath></text></svg>
+            <p class="title"><span>The</span><b>Marketer's<br>Map</b></p><p class="who">of Garima Sahani</p><p class="stars"><span>✦</span><span>✦</span></p><div class="castle"></div></div></div></div>
+    <div class="strap" aria-hidden="true"><i></i><i></i></div>
+    <button class="wax" id="doorOpen" type="button" aria-label="Break the seal and open the map"><span aria-hidden="true">✸</span></button>
+    <img class="wandhint" src="public/assets/icons/wand.png" alt="" aria-hidden="true">
   </div>
+  <p class="door-hint" id="doorHint">Tap the seal with your wand</p>
+  <div class="door-bar"><a class="btn" id="doorEnter" href="#main">Enter the Academy <span class="arr" aria-hidden="true">→</span></a><button class="doorskip" id="doorSkip" type="button">Skip</button></div>
 </div>
 
 <a class="skip" href="#main">Skip to content</a>
@@ -103,11 +85,12 @@
       <header class="shead">
         <p class="label"><span class="star"></span>The Map<span class="star"></span></p>
         <h2 id="mapTitle">Pick a Room</h2>
-        <p>Hover to see the footsteps. Click to step inside.</p>
+        <p>Click a room to step inside.</p>
       </header>
-      <nav class="mapwrap" aria-label="Map of the academy">
-        <div class="mapsheet" id="mapsheet"></div>
-        <ul class="maplist" id="maplist"></ul>
+      <nav class="openbook" aria-label="Map of the academy">
+        <img class="flapart l" src="public/assets/map/flap-left.jpg" alt="" aria-hidden="true">
+        <div class="mapart"><div class="artmap" id="landMap"></div></div>
+        <img class="flapart r" src="public/assets/map/flap-right.jpg" alt="" aria-hidden="true">
       </nav>
     </div>
   </section>
