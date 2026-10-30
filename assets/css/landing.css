@@ -8,40 +8,40 @@ body[data-page=home] .nav::after{display:none}
 body[data-page=home] .nav .wrap{max-width:none;height:auto;padding:14px 16px;gap:10px}
 
 /* ---------- the map ---------- */
-.world{position:fixed;inset:0;overflow:hidden;background:#3A2213}
-.worldfill{position:absolute;inset:-40px;background:url(../../public/assets/map/open-map.jpg) center/cover;filter:blur(26px) brightness(.62) saturate(1.1);transform:scale(1.08)}
-.worldstage{position:absolute;inset:0;display:grid;place-items:center;overflow:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.world{position:fixed;top:0;right:0;bottom:0;left:0;overflow:hidden;background:#3A2213}
+.worldfill{position:absolute;top:-40px;right:-40px;bottom:-40px;left:-40px;background:url(../../public/assets/map/open-map.jpg) center/cover;filter:blur(26px) brightness(.62) saturate(1.1);transform:scale(1.08)}
+.worldstage{position:absolute;top:0;right:0;bottom:0;left:0;display:grid;place-items:center;overflow:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .worldstage::-webkit-scrollbar{display:none}
-.worldstage .artmap{width:min(100vw,100dvh * 960 / 786);aspect-ratio:960/786;box-shadow:0 30px 70px -10px rgba(0,0,0,.7)}
+.worldstage .artmap{width:100vw;width:min(100vw,100vh * 960 / 786);width:min(100vw,100dvh * 960 / 786);height:auto;aspect-ratio:960/786;box-shadow:0 30px 70px -10px rgba(0,0,0,.7)}
 /* tall screens: the map fills the height and slides sideways */
 @media (max-aspect-ratio:1/1){
   .worldstage{place-items:start}
-  .worldstage .artmap{height:100dvh;width:auto}
+  .worldstage .artmap{height:100vh;height:100dvh;width:calc(100vh * 960 / 786);width:calc(100dvh * 960 / 786)}
 }
 
 .artmap{position:relative;container-type:inline-size}
-.artmap>img{position:absolute;inset:0;width:100%;height:100%;display:block}
+.artmap>img{position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;display:block}
 .artmap .spot{position:absolute;border-radius:24px;text-decoration:none;transition:box-shadow .3s,background .3s}
 .artmap .spot:hover,.artmap .spot:focus-visible{background:rgba(255,226,150,.14);box-shadow:0 0 0 3px rgba(255,214,120,.85),0 0 34px rgba(255,200,100,.75);outline:none}
 /* plaques for the places the art doesn't name, drawn like the art's own signs */
 .artmap .plaque{position:absolute;transform:translateX(-50%);display:block;text-align:center;padding:.9cqw 2.2cqw 1cqw;border-radius:1cqw;text-decoration:none;white-space:nowrap;
   background:radial-gradient(ellipse at 50% 40%,#F7E9C8,#EBD3A2 70%,#DDBE86);box-shadow:inset 0 0 0 1px rgba(138,90,38,.45),inset 0 0 10px rgba(150,100,40,.35),0 .6cqw 1.2cqw rgba(60,30,8,.45);transition:transform .3s var(--ease),box-shadow .3s}
-.artmap .plaque b{display:block;font:500 2.15cqw/1.15 var(--serif);color:#2E1F12}
-.artmap .plaque i{display:block;font:italic 500 1.55cqw/1.2 var(--serif);color:#5A4128;margin-top:.2cqw}
+.artmap .plaque b{display:block;font:500 1.6vh/1.15 var(--serif);font-size:2.15cqw;color:#2E1F12}
+.artmap .plaque i{display:block;font:italic 500 1.2vh/1.2 var(--serif);font-size:1.55cqw;color:#5A4128;margin-top:.2cqw}
 .artmap .plaque:hover,.artmap .plaque:focus-visible{transform:translateX(-50%) translateY(-3px);box-shadow:inset 0 0 0 1px rgba(138,90,38,.45),0 0 0 3px rgba(255,214,120,.85),0 0 26px rgba(255,200,100,.7);outline:none}
-.artmap .plaque.big b{font-size:2.6cqw}
+.artmap .plaque.big b{font-size:2vh;font-size:2.6cqw}
 
 /* ---------- the cover ---------- */
 .door{display:none}
 html.door-on .door{display:flex}
-.door{position:fixed;inset:0;z-index:200;flex-direction:column;align-items:center;justify-content:center;gap:8px;overflow:hidden;transition:opacity .9s ease,visibility 0s linear .9s}
-.coverfill{position:absolute;inset:-40px;background:url(../../public/assets/map/cover.jpg) center/cover;filter:blur(30px) brightness(.5);transform:scale(1.1);transition:opacity 1.2s ease .6s}
+.door{position:fixed;top:0;right:0;bottom:0;left:0;z-index:200;flex-direction:column;align-items:center;justify-content:center;gap:8px;overflow:hidden;transition:opacity .9s ease,visibility 0s linear .9s}
+.coverfill{position:absolute;top:-40px;right:-40px;bottom:-40px;left:-40px;background:url(../../public/assets/map/cover.jpg) center/cover;filter:blur(30px) brightness(.5);transform:scale(1.1);transition:opacity 1.2s ease .6s}
 .door.opening .coverfill{opacity:0}
 .door.gone{opacity:0;visibility:hidden}
-.door-dust{position:absolute;inset:0;pointer-events:none}
+.door-dust{position:absolute;top:0;right:0;bottom:0;left:0;pointer-events:none}
 .door-dust i{position:absolute;width:var(--s,4px);height:var(--s,4px);border-radius:50%;background:radial-gradient(circle,#FFE7A8,rgba(212,168,74,0) 70%);opacity:0;animation:dust var(--d,9s) linear var(--t,0s) infinite}
 
-.book{position:relative;height:min(86dvh,calc(94vw * 818 / 496));aspect-ratio:496/818;perspective:2400px;flex:none}
+.book{position:relative;height:80vh;width:calc(80vh * 496 / 818);height:min(86vh,calc(94vw * 818 / 496));height:min(86dvh,calc(94vw * 818 / 496));aspect-ratio:496/818;perspective:2400px;flex:none}
 .half{position:absolute;top:0;bottom:0;width:50%;transform-style:preserve-3d;transition:transform 1.6s cubic-bezier(.6,0,.25,1) .35s,opacity .5s ease 1.15s}
 .half.l{left:0;transform-origin:0 50%}
 .half.r{right:0;transform-origin:100% 50%}
@@ -50,13 +50,13 @@ html.door-on .door{display:flex}
 .half.l .cv{clip-path:inset(0 50% 0 0)}
 .half.r .cv{clip-path:inset(0 0 0 50%)}
 .book{filter:drop-shadow(0 30px 40px rgba(0,0,0,.6))}
-.cv>img{position:absolute;inset:0;width:100%;height:100%;display:block}
-.cv .rib{position:absolute;inset:0;width:100%;height:100%}
+.cv>img{position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;display:block}
+.cv .rib{position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%}
 .cv .rib .edge{fill:none;stroke:rgba(110,66,26,.45);stroke-width:1.6}
 .cv .rib text{font:700 19.5px 'Cinzel',var(--serif);letter-spacing:.04em;fill:#4A2A12}
 .cv .ttl{position:absolute;left:0;right:0;top:25.4%;margin:0;text-align:center;color:#5A3416;font-family:'Cinzel',var(--serif);text-shadow:0 1px 0 rgba(255,236,200,.75),0 -1px 0 rgba(70,36,10,.35)}
-.cv .ttl b{display:block;font-weight:700;font-size:7.4cqw;line-height:1;letter-spacing:.01em}
-.cv .ttl span{display:block;font:600 3.4cqw/1.2 'Cinzel',var(--serif);letter-spacing:.3em;margin:.25em 0 .1em}
+.cv .ttl b{display:block;font-weight:700;font-size:3.6vh;font-size:7.4cqw;line-height:1;letter-spacing:.01em}
+.cv .ttl span{display:block;font:600 1.7vh/1.2 'Cinzel',var(--serif);font-size:3.4cqw;letter-spacing:.3em;margin:.25em 0 .1em}
 .cv .ttl span::before,.cv .ttl span::after{content:"—";letter-spacing:0;margin:0 .35em;opacity:.7}
 /* the seal is part of the art; this invisible button sits on it */
 .wax{position:absolute;left:50%;top:51.5%;width:26%;aspect-ratio:1;transform:translate(-50%,-50%);border:0;border-radius:50%;background:none;padding:0;z-index:5;cursor:pointer;animation:sealpulse 2.2s ease-in-out infinite}
@@ -75,3 +75,6 @@ html.door-on .door{display:flex}
 
 @media (prefers-reduced-motion:reduce){.wax,.wandhint{animation:none}}
 @keyframes dust{0%{transform:translateY(20px);opacity:0}20%{opacity:.9}100%{transform:translate(var(--x,20px),-220px);opacity:0}}
+
+/* browsers with aspect-ratio size the book and the tall-screen map from their height alone */
+@supports (aspect-ratio:1){.book{width:auto}@media (max-aspect-ratio:1/1){.worldstage .artmap{width:auto}}}

@@ -9,11 +9,13 @@
 <meta property="og:description" content="Products, brought to life. Users, enchanted to stay.">
 <meta property="og:image" content="public/assets/map/open-map.jpg">
 <link rel="icon" href="public/assets/icons/wand.png">
-<script>try{if(localStorage.getItem('ma-theme')==='night')document.documentElement.setAttribute('data-theme','night');if(!sessionStorage.getItem('ma-entered'))document.documentElement.classList.add('door-on')}catch(e){}</script>
+<script>try{if(localStorage.getItem('ma-theme')==='night')document.documentElement.setAttribute('data-theme','night');if(!sessionStorage.getItem('ma-entered'))document.documentElement.classList.add('door-on')}catch(e){}
+// if the scripts never run, don't leave the cover stuck over the map
+setTimeout(function(){if(!window.MA)document.documentElement.classList.remove('door-on')},5000)</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Hanken+Grotesk:wght@400;500;600;700&family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=IM+Fell+English&display=swap">
-<link rel="stylesheet" href="assets/css/academy.css?v=20"><link rel="stylesheet" href="assets/css/landing.css?v=20">
-<script src="assets/js/core.js?v=20" defer></script><script src="assets/js/landing.js?v=20" defer></script>
+<link rel="stylesheet" href="assets/css/academy.css?v=21"><link rel="stylesheet" href="assets/css/landing.css?v=21">
+<script src="assets/js/core.js?v=21" defer></script><script src="assets/js/landing.js?v=21" defer></script>
 </head>
 <body data-page="home">
 <header class="nav" id="top">
