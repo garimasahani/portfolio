@@ -185,3 +185,12 @@ main>section>.wrap::after,body[data-page=case] main>.wrap::after,.lost>div::afte
 .footnav a:hover{color:#fff}
 body[data-page=case] main>.wrap{margin:40px auto}
 .lost>div{position:relative}
+
+/* the top bar holds only search, night mode and the menu; every room lives in the menu */
+.nav .brand{display:none}
+.nav .wrap{justify-content:flex-end}
+#menuBtn{display:grid}
+.links{position:absolute;top:calc(100% + 6px);right:12px;left:auto;width:min(290px,calc(100vw - 24px));flex-direction:column;gap:2px;padding:10px;border:1.5px solid #C9973F;border-radius:16px;
+  background:linear-gradient(180deg,#6A3C1D,#4B2A13);box-shadow:0 18px 30px -16px rgba(0,0,0,.8);display:none}
+.links.open{display:flex}
+.links a{padding:11px 14px;font-size:1.05rem}
