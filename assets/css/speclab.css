@@ -434,3 +434,5 @@
 #lab iframe.orig{width:100%;height:640px;height:min(78vh,720px);border:0;border-radius:14px;background:#fff}
 @media (max-width:860px){#lab .stage{grid-template-columns:1fr;padding:22px}}
 #lab video.orig-video{display:block;width:100%;max-height:78vh;border-radius:14px;background:#000}
+#lab img.orig-img{display:block;width:100%;height:auto;border-radius:14px}
+#lab .demo:has(img.orig-img){gap:14px}
