@@ -998,6 +998,47 @@
     ]
   },
   {
+    "slug": "jiohotstar-harry-potter",
+    "title": "JioHotstar × Harry Potter: 30 days of daily opens",
+    "brand": "JioHotstar",
+    "categories": [
+      "spec"
+    ],
+    "year": "TODO",
+    "summary": "A product-led campaign that turns HBO's Harry Potter premiere into 30 days of daily app opens on JioHotstar.",
+    "metric": null,
+    "image": null,
+    "idea": "Say \"Lumos\" to voice search to unlock a hidden Harry Potter Halloween zone inside the app, then bring users back daily with one trivia question from 1 to 30 November, a streak that a Time-Turner can save, and prizes of HBO Max subscriptions, Potter merch and an invite to the premiere screening.",
+    "why": "Nostalgia is identity, not interest, and Halloween is already canon in Harry Potter, so the theme isn't forced.",
+    "prophecy": "HBO's Harry Potter series premieres this Christmas, and JioHotstar already streams all 8 films in India: a two-month window to build a daily habit before the premiere.",
+    "ingredients": {
+      "audience": "Harry Potter fans who grew up with the films and now have their own subscriptions.",
+      "channels": "In-app voice search, screen recordings, offline trivia nights with District and Swiggy Scenes.",
+      "tools": "TODO",
+      "budget": "Spec"
+    },
+    "spellwork": [
+      "A secret spell unlocks a hidden Halloween zone, so every person who finds it tells their friends.",
+      "The feature is the ad: screen recordings of the app going dark and candles lighting up.",
+      "Daily trivia from 1 to 30 November with a streak, a Time-Turner to save it, and prizes."
+    ],
+    "results": [
+      {
+        "value": "TODO",
+        "label": "outcome"
+      }
+    ],
+    "lessons": [
+      "Strict streaks make people quit. Forgiving ones keep them going."
+    ],
+    "links": [
+      {
+        "label": "The post on LinkedIn",
+        "url": "https://lnkd.in/p/gAkWZNtj"
+      }
+    ]
+  },
+  {
     "slug": "jiocinema-paris",
     "title": "JioCinema × Paris 2024 pushes",
     "brand": "JioCinema",
