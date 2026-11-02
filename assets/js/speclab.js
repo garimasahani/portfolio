@@ -14,3 +14,8 @@ const jump=k=>{if(!tabs.some(t=>t.dataset.key===k))return false;openTab(k);$('#l
 document.addEventListener('click',e=>{const a=e.target.closest('a[href^="#"]');if(a&&jump(a.getAttribute('href').slice(1))){e.preventDefault();history.replaceState(null,'',a.getAttribute('href'))}});
 addEventListener('hashchange',()=>jump(location.hash.slice(1)));
 })();
+/* slide viewers: one slide at a time with previous and next */
+(()=>{document.querySelectorAll('[data-slides]').forEach(v=>{const im=[...v.querySelectorAll('.slides-track img')],c=v.querySelector('[data-count]');let i=0;
+ const go=n=>{i=(n+im.length)%im.length;im.forEach((x,j)=>x.hidden=j!==i);c.textContent=(i+1)+' / '+im.length};
+ v.querySelector('[data-prev]').addEventListener('click',()=>go(i-1));v.querySelector('[data-next]').addEventListener('click',()=>go(i+1));
+ v.addEventListener('keydown',e=>{if(e.key==='ArrowLeft')go(i-1);if(e.key==='ArrowRight')go(i+1)});go(0)})})();

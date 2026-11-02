@@ -22,39 +22,6 @@
     "workex": "Fintech SaaS, travel apps, hospitality"
   },
   {
-    "title": "\"Hey Scapia, I saw you're hiring\"",
-    "type": "Pitch deck",
-    "size": "15 pages",
-    "text": "A growth marketer application made as a pitch: what I'd do for Scapia's card, slide by slide.",
-    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7328786829246193664/",
-    "open": "See the pitch",
-    "c1": "#34508F",
-    "c2": "#1E3260",
-    "lab": true
-  },
-  {
-    "title": "Airbnb × ZNMD launch",
-    "type": "Spec campaign deck",
-    "size": "12 slides",
-    "text": "Launching Airbnb Experiences and Services through a ZNMD road trip.",
-    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7339602126630752256/",
-    "open": "See the deck",
-    "c1": "#B0413A",
-    "c2": "#6E1F1A",
-    "lab": true
-  },
-  {
-    "title": "Airbnb for Work in India",
-    "type": "Research deck",
-    "size": "11 slides",
-    "text": "How Airbnb for Business could win India's corporate stays.",
-    "url": "https://drive.google.com/file/d/1Ub8JGdnG2Bk-80L42XUfZ-WUu5RMj1Qx/view?usp=sharing",
-    "open": "Open the deck",
-    "c1": "#6B4A2F",
-    "c2": "#40291A",
-    "lab": true
-  },
-  {
     "title": "Siemens Healthineers InnoLabs",
     "type": "Positioning",
     "size": "Case",
@@ -64,28 +31,6 @@
     "c1": "#3A5BA9",
     "c2": "#22386E",
     "workex": "Fintech SaaS, travel apps, hospitality"
-  },
-  {
-    "title": "Personalisation and OTT subscriptions",
-    "type": "Market research",
-    "size": "Deck",
-    "text": "How personalisation shapes OTT subscription decisions and retention.",
-    "url": "https://docs.google.com/presentation/d/1uB5-sjkC8IdIJCPT4BX_VeRcSkKHqCLF/edit?usp=drive_link",
-    "open": "View the research",
-    "c1": "#5A3F8C",
-    "c2": "#35245A",
-    "lab": true
-  },
-  {
-    "title": "Apollo Hospitals app",
-    "type": "CX design board",
-    "size": "Miro",
-    "text": "Business model canvas, personas, value proposition matrix, JTBD and empathy maps.",
-    "url": "https://miro.com/app/board/uXjVN85XZ2I=/",
-    "open": "Open the board",
-    "c1": "#2F6F73",
-    "c2": "#1B4547",
-    "lab": true
   },
   {
     "title": "AI hyper-personalisation in travel",
