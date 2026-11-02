@@ -440,3 +440,32 @@
 #lab .slides-ctrl{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:12px;font-size:14px;color:var(--muted)}
 #lab .slides-ctrl button{border:1px solid var(--line);background:var(--card);border-radius:999px;width:40px;height:40px;font-size:18px;color:var(--ink)}
 #lab .slides-ctrl button:hover{background:var(--wash)}
+
+/* ---------- brand rows: every campaign visible, each expands to its original ---------- */
+#lab .camps{display:grid;gap:22px}
+#lab .brandrow{display:grid;grid-template-columns:150px minmax(0,1fr);gap:22px;align-items:start;background:color-mix(in srgb,var(--card) 70%,transparent);border:1px solid var(--line);border-radius:24px;padding:20px}
+#lab .brandrow .logo{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;padding-top:6px;position:sticky;top:84px}
+#lab .brandrow .logo img{width:56px;height:56px;object-fit:contain}
+#lab .brandrow .logo .mono{display:grid;place-items:center;width:56px;height:56px;border-radius:16px;font:700 20px var(--serif);letter-spacing:.02em}
+#lab .brandrow .logo b{font:600 15px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--ink)}
+#lab .items{display:grid;gap:12px;min-width:0}
+#lab .camp{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:box-shadow .25s}
+#lab .camp.open{box-shadow:var(--shadow)}
+#lab .camp-h{margin:0;font:inherit}
+#lab .camp-head{width:100%;display:flex;align-items:center;gap:16px;text-align:left;border:0;background:none;padding:18px 20px;color:inherit;font:inherit}
+#lab .camp-head:hover{background:color-mix(in srgb,var(--wash) 55%,transparent)}
+#lab .camp-head:focus-visible{outline:3px solid var(--sage-ink);outline-offset:-3px}
+#lab .ct{flex:1;min-width:0;display:grid;gap:4px}
+#lab .ct .tag{font:600 11.5px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--sage-ink)}
+#lab .ct b{font:600 20px/1.2 var(--serif);color:var(--ink)}
+#lab .ct .cg{font-size:15px;line-height:1.45;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+#lab .camp.open .ct .cg{display:none}
+#lab .plus{flex:none;position:relative;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:var(--wash)}
+#lab .plus::before,#lab .plus::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:2px;background:var(--sage-ink);transform:translate(-50%,-50%);transition:transform .25s}
+#lab .plus::after{transform:translate(-50%,-50%) rotate(90deg)}
+#lab .camp.open .plus::after{transform:translate(-50%,-50%) rotate(0)}
+#lab .camp-body{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:24px;padding:4px 20px 22px}
+#lab .camp-body[hidden]{display:none}
+#lab .camp-body .brief h4.bh{font:600 clamp(22px,2.4vw,28px)/1.15 var(--serif);color:var(--ink)}
+#lab .camp-body:not(:has(.demo > *)){grid-template-columns:1fr}
+@media (max-width:860px){#lab .brandrow{grid-template-columns:1fr;padding:14px}#lab .brandrow .logo{flex-direction:row;position:static;justify-content:flex-start}#lab .camp-body{grid-template-columns:1fr;padding:4px 14px 18px}#lab .camp-head{padding:14px}}

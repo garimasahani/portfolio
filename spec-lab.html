@@ -12,8 +12,8 @@
 <script>try{if(localStorage.getItem('ma-theme')==='night')document.documentElement.setAttribute('data-theme','night')}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Hanken+Grotesk:wght@400;500;600;700&family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=IM+Fell+English&display=swap">
-<link rel="stylesheet" href="assets/css/academy.css?v=45"><link rel="stylesheet" href="assets/css/sections.css?v=45"><link rel="stylesheet" href="assets/css/speclab.css?v=45">
-<script src="assets/js/core.js?v=45" defer></script><script src="assets/js/home.js?v=45" defer></script><script src="assets/js/speclab.js?v=45" defer></script>
+<link rel="stylesheet" href="assets/css/academy.css?v=46"><link rel="stylesheet" href="assets/css/sections.css?v=46"><link rel="stylesheet" href="assets/css/speclab.css?v=46">
+<script src="assets/js/core.js?v=46" defer></script><script src="assets/js/home.js?v=46" defer></script><script src="assets/js/speclab.js?v=46" defer></script>
 </head>
 <body data-page="lab">
 <a class="skip" href="#main">Skip to content</a>
@@ -34,103 +34,31 @@
       <header class="shead">
         <p class="label"><span class="star"></span>The Restricted Section<span class="star"></span></p>
         <h2 id="labTitle">Spells Nobody Asked Me to Cast</h2>
-        <p>Campaigns, research and sales kits I made for brands I love. Each one opens the original document or post.</p>
+        <p>Campaigns, research and sales kits I made for brands I love. Every campaign is here at a glance. Tap one to open the original.</p>
         <p class="disclaim" style="font-size:1rem;margin-top:10px;font-style:italic">Independent spec work. Not affiliated with or endorsed by these brands.</p>
       </header>
-<div class="tabs" role="tablist" aria-label="Spec projects">
-      <span class="tabs-label">Airbnb</span>
-      <button class="tab" role="tab" id="t-airbnb" aria-controls="p-airbnb" data-key="airbnb"><b>Airbnb for Work</b><small>Market research</small></button>
-      <span class="tabs-label">Spotify</span>
-      <button class="tab" role="tab" id="t-spotify" aria-controls="p-spotify" data-key="spotify"><b>Download for offline</b><small>GTM + A/B test</small></button>
-      <button class="tab" role="tab" id="t-premium" aria-controls="p-premium" data-key="premium"><b>Channel campaigns</b><small>Premium · consumer psychology</small></button>
-      <button class="tab" role="tab" id="t-spotads" aria-controls="p-spotads" data-key="spotads"><b>Coldplay HomeJam</b><small>OOH ad</small></button>
-      <span class="tabs-label">SuperMoney</span>
-      <button class="tab" role="tab" id="t-supermoney" aria-controls="p-supermoney" data-key="supermoney"><b>App launch</b><small>OKRs</small></button>
-      <button class="tab" role="tab" id="t-supercard" aria-controls="p-supercard" data-key="supercard"><b>SuperCard</b><small>Sales enablement</small></button>
-      <span class="tabs-label">JioCinema</span>
-      <button class="tab" role="tab" id="t-jio" aria-controls="p-jio" data-key="jio"><b>Paris 2024</b><small>Push notifications</small></button>
-      <span class="tabs-label">Product-led collaborative campaigns</span>
-      <button class="tab" role="tab" id="t-znmd" aria-controls="p-znmd" data-key="znmd"><b>Airbnb × ZNMD</b><small>Feature launch campaign</small></button>
-      <button class="tab" role="tab" id="t-sarvam" aria-controls="p-sarvam" data-key="sarvam"><b>Sarvam · Diwali</b><small>Festive voice line</small></button>
-      <button class="tab" role="tab" id="t-navbeats" aria-controls="p-navbeats" data-key="navbeats"><b>Spotify Navbeats</b><small>Navratri concept</small></button>
-      <button class="tab" role="tab" id="t-harry" aria-controls="p-harry" data-key="harry"><b>JioHotstar × Harry Potter</b><small>Collaboration concept</small></button>
-    </div>
-
-
-    <article class="stage panel" role="tabpanel" id="p-airbnb" aria-labelledby="t-airbnb" hidden>
+<div class="camps">
+  <section class="brandrow" aria-label="Airbnb campaigns">
+    <div class="logo"><img src="public/assets/brands/airbnb.svg" alt="" width="56" height="56"><b>Airbnb</b></div>
+    <div class="items">
+      <article class="camp" id="p-airbnb">
+        <h3 class="camp-h"><button type="button" class="camp-head" id="t-airbnb" aria-expanded="false" aria-controls="b-airbnb"><span class="ct"><span class="tag">Market research</span><b>Airbnb for Work: corporate stays</b><span class="cg">An 11-slide research deck on winning India's corporate travel market.</span></span><span class="plus" aria-hidden="true"></span></button></h3>
+        <div class="camp-body" id="b-airbnb" role="region" aria-labelledby="t-airbnb" hidden>
       <div class="brief">
         <div class="kicker"><span class="chip">Airbnb</span></div>
-        <h3>Airbnb for Work: corporate stays</h3>
+        <h4 class="bh">Airbnb for Work: corporate stays</h4>
         <p>An 11-slide research deck on winning India's corporate travel market.</p>
         <a class="doc-link" href="https://drive.google.com/file/d/1Ub8JGdnG2Bk-80L42XUfZ-WUu5RMj1Qx/view?usp=sharing" target="_blank" rel="noopener">Open the original ↗</a>
       </div>
       <div class="demo"><iframe class="orig" src="https://drive.google.com/file/d/1Ub8JGdnG2Bk-80L42XUfZ-WUu5RMj1Qx/preview" title="Airbnb for Work: corporate stays, original" loading="lazy" allow="fullscreen"></iframe></div>
-    </article>
-
-    <article class="stage panel" role="tabpanel" id="p-spotify" aria-labelledby="t-spotify" hidden>
-      <div class="brief">
-        <div class="kicker"><span class="chip">Spotify</span></div>
-        <h3>Spotify: Download for offline</h3>
-        <p>User research and two A/B tests to make downloads feel like a Premium perk again.</p>
-        <a class="doc-link" href="https://docs.google.com/document/d/1ka-jNIbmadhP0tv9aIbbtpSaNR2Fzd2QC7J8CZaGL6I/edit?usp=sharing" target="_blank" rel="noopener">Open the original ↗</a>
-      </div>
-      <div class="demo"><iframe class="orig" src="https://docs.google.com/document/d/1ka-jNIbmadhP0tv9aIbbtpSaNR2Fzd2QC7J8CZaGL6I/preview" title="Spotify: Download for offline, original" loading="lazy" allow="fullscreen"></iframe></div>
-    </article>
-
-    <article class="stage panel" role="tabpanel" id="p-premium" aria-labelledby="t-premium" hidden>
-      <div class="brief">
-        <div class="kicker"><span class="chip">Spotify</span></div>
-        <h3>Spotify Premium: the psychology</h3>
-        <p>Consumer psychology across before, during and after purchase.</p>
-        <a class="doc-link" href="https://docs.google.com/document/d/1fsmWK615gPCRP-gyin-de59fhnRpJkwD6nBxaqNPcgY/edit?usp=sharing" target="_blank" rel="noopener">Open the original ↗</a>
-      </div>
-      <div class="demo"><iframe class="orig" src="https://docs.google.com/document/d/1fsmWK615gPCRP-gyin-de59fhnRpJkwD6nBxaqNPcgY/preview" title="Spotify Premium: the psychology, original" loading="lazy" allow="fullscreen"></iframe></div>
-    </article>
-
-    <article class="stage panel" role="tabpanel" id="p-spotads" aria-labelledby="t-spotads" hidden>
-      <div class="brief">
-        <div class="kicker"><span class="chip">Spotify</span></div>
-        <h3>Spotify: Coldplay HomeJam</h3>
-        <p>I couldn't get Coldplay tickets this time either, so I made a Spotify ad instead: two billboards for everyone stuck in the ticket queue.</p>
-        <a class="doc-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7263568989325262848/" target="_blank" rel="noopener">Open the original ↗</a>
-      </div>
-      <div class="demo"><img class="orig-img" src="public/assets/video/coldplay-1.jpg" alt="Spotify billboard: Finallyyyy I'll attend THE COLDPLAY concert, 490279 people ahead of you"><img class="orig-img" src="public/assets/video/coldplay-2.jpg" alt="Spotify billboard: 965053 people ahead of you, but guess what, Coldplay HomeJam is just a tap away"></div>
-    </article>
-
-    <article class="stage panel" role="tabpanel" id="p-supermoney" aria-labelledby="t-supermoney" hidden>
-      <div class="brief">
-        <div class="kicker"><span class="chip">SuperMoney</span></div>
-        <h3>SuperMoney: launch OKRs</h3>
-        <p>A month-one launch scorecard with Green, Yellow, Orange and Red thresholds.</p>
-        <a class="doc-link" href="https://docs.google.com/document/d/1lfs_2FGelgm3C_41fOFf-Lk_v7tCg0Yc9p_m-Bu4BOM/edit?usp=sharing" target="_blank" rel="noopener">Open the original ↗</a>
-      </div>
-      <div class="demo"><iframe class="orig" src="https://docs.google.com/document/d/1lfs_2FGelgm3C_41fOFf-Lk_v7tCg0Yc9p_m-Bu4BOM/preview" title="SuperMoney: launch OKRs, original" loading="lazy" allow="fullscreen"></iframe></div>
-    </article>
-
-    <article class="stage panel" role="tabpanel" id="p-supercard" aria-labelledby="t-supercard" hidden>
-      <div class="brief">
-        <div class="kicker"><span class="chip">SuperMoney</span></div>
-        <h3>SuperCard: sales enablement kit</h3>
-        <p>A fact sheet, battlecard, ICP, training outline and lead checklist for a credit card.</p>
-        <a class="doc-link" href="https://docs.google.com/document/d/1DzqsLKg9u-mBY2WrLD8yWia9XMJ_os6yybs2GDNWsM8/edit?usp=sharing" target="_blank" rel="noopener">Open the original ↗</a>
-      </div>
-      <div class="demo"><iframe class="orig" src="https://docs.google.com/document/d/1DzqsLKg9u-mBY2WrLD8yWia9XMJ_os6yybs2GDNWsM8/preview" title="SuperCard: sales enablement kit, original" loading="lazy" allow="fullscreen"></iframe></div>
-    </article>
-
-    <article class="stage panel" role="tabpanel" id="p-jio" aria-labelledby="t-jio" hidden>
-      <div class="brief">
-        <div class="kicker"><span class="chip">JioCinema</span></div>
-        <h3>JioCinema × Paris 2024 pushes</h3>
-        <p>A push notification I didn't tap, rewritten so I would.</p>
-        <a class="doc-link" href="https://super.page/garima-sahani/cards/72831" target="_blank" rel="noopener">Open the original ↗</a>
-      </div>
-      <div class="demo"></div>
-    </article>
-
-    <article class="stage panel" role="tabpanel" id="p-znmd" aria-labelledby="t-znmd" hidden>
+    </div>
+      </article>
+      <article class="camp" id="p-znmd">
+        <h3 class="camp-h"><button type="button" class="camp-head" id="t-znmd" aria-expanded="false" aria-controls="b-znmd"><span class="ct"><span class="tag">Product-led collaboration</span><b>Airbnb × ZNMD</b><span class="cg">What if Airbnb collaborated with Zindagi Na Milegi Dobara for a big feature launch? Airbnb Experiences and Services, blended into a modern-day ZNMD-style road trip.</span></span><span class="plus" aria-hidden="true"></span></button></h3>
+        <div class="camp-body" id="b-znmd" role="region" aria-labelledby="t-znmd" hidden>
       <div class="brief">
         <div class="kicker"><span class="chip">Airbnb</span></div>
-        <h3>Airbnb × ZNMD</h3>
+        <h4 class="bh">Airbnb × ZNMD</h4>
         <p>What if Airbnb collaborated with Zindagi Na Milegi Dobara for a big feature launch? Airbnb Experiences and Services, blended into a modern-day ZNMD-style road trip.</p>
         <div class="hyp">
           <div><b>The idea.</b> A launch where people don't just see the feature, they feel it: nostalgia, aspiration and feature-led storytelling.</div>
@@ -138,26 +66,55 @@
         <a class="doc-link" href="https://lnkd.in/p/dMH5DdpC" target="_blank" rel="noopener">Open the original ↗</a>
       </div>
       <div class="demo"><div class="slides" data-slides><div class="slides-track"><img src="public/assets/decks/znmd/01.jpg" alt="Airbnb × ZNMD launch deck, slide 1 of 12"><img src="public/assets/decks/znmd/02.jpg" alt="Airbnb × ZNMD launch deck, slide 2 of 12" loading="lazy"><img src="public/assets/decks/znmd/03.jpg" alt="Airbnb × ZNMD launch deck, slide 3 of 12" loading="lazy"><img src="public/assets/decks/znmd/04.jpg" alt="Airbnb × ZNMD launch deck, slide 4 of 12" loading="lazy"><img src="public/assets/decks/znmd/05.jpg" alt="Airbnb × ZNMD launch deck, slide 5 of 12" loading="lazy"><img src="public/assets/decks/znmd/06.jpg" alt="Airbnb × ZNMD launch deck, slide 6 of 12" loading="lazy"><img src="public/assets/decks/znmd/07.jpg" alt="Airbnb × ZNMD launch deck, slide 7 of 12" loading="lazy"><img src="public/assets/decks/znmd/08.jpg" alt="Airbnb × ZNMD launch deck, slide 8 of 12" loading="lazy"><img src="public/assets/decks/znmd/09.jpg" alt="Airbnb × ZNMD launch deck, slide 9 of 12" loading="lazy"><img src="public/assets/decks/znmd/10.jpg" alt="Airbnb × ZNMD launch deck, slide 10 of 12" loading="lazy"><img src="public/assets/decks/znmd/11.jpg" alt="Airbnb × ZNMD launch deck, slide 11 of 12" loading="lazy"><img src="public/assets/decks/znmd/12.jpg" alt="Airbnb × ZNMD launch deck, slide 12 of 12" loading="lazy"></div><div class="slides-ctrl"><button type="button" data-prev aria-label="Previous slide">←</button><span data-count aria-live="polite">1 / 12</span><button type="button" data-next aria-label="Next slide">→</button></div></div></div>
-    </article>
-
-    <article class="stage panel" role="tabpanel" id="p-sarvam" aria-labelledby="t-sarvam" hidden>
-      <div class="brief">
-        <div class="kicker"><span class="chip">Sarvam</span></div>
-        <h3>Sarvam: a Diwali voice line</h3>
-        <p>SaaS brands don't do Diwali. Sarvam should: its customers walk into the Diwali sales rush, and India screams Diwali.</p>
-        <div class="hyp">
-          <div><b>The line.</b> "Launch your Diwali sale voice line in 24 hours": delayed-order calls, offer reminders and lead qualification, all in the customer's own language.</div>
-          <div><b>The creators.</b> A second cohort: one Diwali reel, dubbed into 11 languages.</div>
-        </div>
-        <a class="doc-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7519289032623734786/" target="_blank" rel="noopener">Open the original ↗</a>
-      </div>
-      <div class="demo"><video class="orig-video" controls playsinline preload="metadata" aria-label="Sarvam Diwali voice line video"><source src="public/assets/video/sarvam-diwali.mp4" type="video/mp4"></video></div>
-    </article>
-
-    <article class="stage panel" role="tabpanel" id="p-navbeats" aria-labelledby="t-navbeats" hidden>
+    </div>
+      </article>
+    </div>
+  </section>
+  <section class="brandrow" aria-label="Spotify campaigns">
+    <div class="logo"><img src="public/assets/brands/spotify.svg" alt="" width="56" height="56"><b>Spotify</b></div>
+    <div class="items">
+      <article class="camp" id="p-spotify">
+        <h3 class="camp-h"><button type="button" class="camp-head" id="t-spotify" aria-expanded="false" aria-controls="b-spotify"><span class="ct"><span class="tag">Go-to-market</span><b>Spotify: Download for offline</b><span class="cg">User research and two A/B tests to make downloads feel like a Premium perk again.</span></span><span class="plus" aria-hidden="true"></span></button></h3>
+        <div class="camp-body" id="b-spotify" role="region" aria-labelledby="t-spotify" hidden>
       <div class="brief">
         <div class="kicker"><span class="chip">Spotify</span></div>
-        <h3>Spotify: Navbeats</h3>
+        <h4 class="bh">Spotify: Download for offline</h4>
+        <p>User research and two A/B tests to make downloads feel like a Premium perk again.</p>
+        <a class="doc-link" href="https://docs.google.com/document/d/1ka-jNIbmadhP0tv9aIbbtpSaNR2Fzd2QC7J8CZaGL6I/edit?usp=sharing" target="_blank" rel="noopener">Open the original ↗</a>
+      </div>
+      <div class="demo"><iframe class="orig" src="https://docs.google.com/document/d/1ka-jNIbmadhP0tv9aIbbtpSaNR2Fzd2QC7J8CZaGL6I/preview" title="Spotify: Download for offline, original" loading="lazy" allow="fullscreen"></iframe></div>
+    </div>
+      </article>
+      <article class="camp" id="p-premium">
+        <h3 class="camp-h"><button type="button" class="camp-head" id="t-premium" aria-expanded="false" aria-controls="b-premium"><span class="ct"><span class="tag">Channel campaigns</span><b>Spotify Premium: the psychology</b><span class="cg">Consumer psychology across before, during and after purchase.</span></span><span class="plus" aria-hidden="true"></span></button></h3>
+        <div class="camp-body" id="b-premium" role="region" aria-labelledby="t-premium" hidden>
+      <div class="brief">
+        <div class="kicker"><span class="chip">Spotify</span></div>
+        <h4 class="bh">Spotify Premium: the psychology</h4>
+        <p>Consumer psychology across before, during and after purchase.</p>
+        <a class="doc-link" href="https://docs.google.com/document/d/1fsmWK615gPCRP-gyin-de59fhnRpJkwD6nBxaqNPcgY/edit?usp=sharing" target="_blank" rel="noopener">Open the original ↗</a>
+      </div>
+      <div class="demo"><iframe class="orig" src="https://docs.google.com/document/d/1fsmWK615gPCRP-gyin-de59fhnRpJkwD6nBxaqNPcgY/preview" title="Spotify Premium: the psychology, original" loading="lazy" allow="fullscreen"></iframe></div>
+    </div>
+      </article>
+      <article class="camp" id="p-spotads">
+        <h3 class="camp-h"><button type="button" class="camp-head" id="t-spotads" aria-expanded="false" aria-controls="b-spotads"><span class="ct"><span class="tag">Out-of-home ad</span><b>Spotify: Coldplay HomeJam</b><span class="cg">I couldn't get Coldplay tickets this time either, so I made a Spotify ad instead: two billboards for everyone stuck in the ticket queue.</span></span><span class="plus" aria-hidden="true"></span></button></h3>
+        <div class="camp-body" id="b-spotads" role="region" aria-labelledby="t-spotads" hidden>
+      <div class="brief">
+        <div class="kicker"><span class="chip">Spotify</span></div>
+        <h4 class="bh">Spotify: Coldplay HomeJam</h4>
+        <p>I couldn't get Coldplay tickets this time either, so I made a Spotify ad instead: two billboards for everyone stuck in the ticket queue.</p>
+        <a class="doc-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7263568989325262848/" target="_blank" rel="noopener">Open the original ↗</a>
+      </div>
+      <div class="demo"><img class="orig-img" src="public/assets/video/coldplay-1.jpg" alt="Spotify billboard: Finallyyyy I'll attend THE COLDPLAY concert, 490279 people ahead of you"><img class="orig-img" src="public/assets/video/coldplay-2.jpg" alt="Spotify billboard: 965053 people ahead of you, but guess what, Coldplay HomeJam is just a tap away"></div>
+    </div>
+      </article>
+      <article class="camp" id="p-navbeats">
+        <h3 class="camp-h"><button type="button" class="camp-head" id="t-navbeats" aria-expanded="false" aria-controls="b-navbeats"><span class="ct"><span class="tag">Product-led collaboration</span><b>Spotify: Navbeats</b><span class="cg">Music was everywhere this Navratri. Spotify's own moment wasn't. I treated it as a product marketing problem: how do you turn an offline cultural moment into app opens, saves and next-day returns?</span></span><span class="plus" aria-hidden="true"></span></button></h3>
+        <div class="camp-body" id="b-navbeats" role="region" aria-labelledby="t-navbeats" hidden>
+      <div class="brief">
+        <div class="kicker"><span class="chip">Spotify</span></div>
+        <h4 class="bh">Spotify: Navbeats</h4>
         <p>Music was everywhere this Navratri. Spotify's own moment wasn't. I treated it as a product marketing problem: how do you turn an offline cultural moment into app opens, saves and next-day returns?</p>
         <div class="hyp">
           <div><b>Navbeats.</b> A concept that meets people on the dance floor and gives them a reason to open the app after.</div>
@@ -166,12 +123,60 @@
         <a class="doc-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7517574345196662784/" target="_blank" rel="noopener">Open the original ↗</a>
       </div>
       <div class="demo"><video class="orig-video" controls playsinline preload="metadata" aria-label="Spotify Navbeats video pitch"><source src="public/assets/video/navbeats.mp4" type="video/mp4"></video></div>
-    </article>
-
-    <article class="stage panel" role="tabpanel" id="p-harry" aria-labelledby="t-harry" hidden>
+    </div>
+      </article>
+    </div>
+  </section>
+  <section class="brandrow" aria-label="SuperMoney campaigns">
+    <div class="logo"><span class="mono" style="background:#141B3D;color:#C7F24B" aria-hidden="true">SM</span><b>SuperMoney</b></div>
+    <div class="items">
+      <article class="camp" id="p-supermoney">
+        <h3 class="camp-h"><button type="button" class="camp-head" id="t-supermoney" aria-expanded="false" aria-controls="b-supermoney"><span class="ct"><span class="tag">Launch OKRs</span><b>SuperMoney: launch OKRs</b><span class="cg">A month-one launch scorecard with Green, Yellow, Orange and Red thresholds.</span></span><span class="plus" aria-hidden="true"></span></button></h3>
+        <div class="camp-body" id="b-supermoney" role="region" aria-labelledby="t-supermoney" hidden>
+      <div class="brief">
+        <div class="kicker"><span class="chip">SuperMoney</span></div>
+        <h4 class="bh">SuperMoney: launch OKRs</h4>
+        <p>A month-one launch scorecard with Green, Yellow, Orange and Red thresholds.</p>
+        <a class="doc-link" href="https://docs.google.com/document/d/1lfs_2FGelgm3C_41fOFf-Lk_v7tCg0Yc9p_m-Bu4BOM/edit?usp=sharing" target="_blank" rel="noopener">Open the original ↗</a>
+      </div>
+      <div class="demo"><iframe class="orig" src="https://docs.google.com/document/d/1lfs_2FGelgm3C_41fOFf-Lk_v7tCg0Yc9p_m-Bu4BOM/preview" title="SuperMoney: launch OKRs, original" loading="lazy" allow="fullscreen"></iframe></div>
+    </div>
+      </article>
+      <article class="camp" id="p-supercard">
+        <h3 class="camp-h"><button type="button" class="camp-head" id="t-supercard" aria-expanded="false" aria-controls="b-supercard"><span class="ct"><span class="tag">Sales enablement</span><b>SuperCard: sales enablement kit</b><span class="cg">A fact sheet, battlecard, ICP, training outline and lead checklist for a credit card.</span></span><span class="plus" aria-hidden="true"></span></button></h3>
+        <div class="camp-body" id="b-supercard" role="region" aria-labelledby="t-supercard" hidden>
+      <div class="brief">
+        <div class="kicker"><span class="chip">SuperMoney</span></div>
+        <h4 class="bh">SuperCard: sales enablement kit</h4>
+        <p>A fact sheet, battlecard, ICP, training outline and lead checklist for a credit card.</p>
+        <a class="doc-link" href="https://docs.google.com/document/d/1DzqsLKg9u-mBY2WrLD8yWia9XMJ_os6yybs2GDNWsM8/edit?usp=sharing" target="_blank" rel="noopener">Open the original ↗</a>
+      </div>
+      <div class="demo"><iframe class="orig" src="https://docs.google.com/document/d/1DzqsLKg9u-mBY2WrLD8yWia9XMJ_os6yybs2GDNWsM8/preview" title="SuperCard: sales enablement kit, original" loading="lazy" allow="fullscreen"></iframe></div>
+    </div>
+      </article>
+    </div>
+  </section>
+  <section class="brandrow" aria-label="JioHotstar campaigns">
+    <div class="logo"><span class="mono" style="background:#D9008D;color:#fff" aria-hidden="true">JH</span><b>JioHotstar</b></div>
+    <div class="items">
+      <article class="camp" id="p-jio">
+        <h3 class="camp-h"><button type="button" class="camp-head" id="t-jio" aria-expanded="false" aria-controls="b-jio"><span class="ct"><span class="tag">Push notifications</span><b>JioCinema × Paris 2024 pushes</b><span class="cg">A push notification I didn't tap, rewritten so I would.</span></span><span class="plus" aria-hidden="true"></span></button></h3>
+        <div class="camp-body" id="b-jio" role="region" aria-labelledby="t-jio" hidden>
+      <div class="brief">
+        <div class="kicker"><span class="chip">JioCinema</span></div>
+        <h4 class="bh">JioCinema × Paris 2024 pushes</h4>
+        <p>A push notification I didn't tap, rewritten so I would.</p>
+        <a class="doc-link" href="https://super.page/garima-sahani/cards/72831" target="_blank" rel="noopener">Open the original ↗</a>
+      </div>
+      <div class="demo"></div>
+    </div>
+      </article>
+      <article class="camp" id="p-harry">
+        <h3 class="camp-h"><button type="button" class="camp-head" id="t-harry" aria-expanded="false" aria-controls="b-harry"><span class="ct"><span class="tag">Product-led collaboration</span><b>JioHotstar × Harry Potter</b><span class="cg">HBO's Harry Potter series premieres this Christmas, and JioHotstar already streams all 8 films. This spec campaign uses the two months before it to build a daily habit.</span></span><span class="plus" aria-hidden="true"></span></button></h3>
+        <div class="camp-body" id="b-harry" role="region" aria-labelledby="t-harry" hidden>
       <div class="brief">
         <div class="kicker"><span class="chip">JioHotstar</span><span class="chip">Product-led growth</span></div>
-        <h3>Harry Potter can give JioHotstar <em>30 days of daily users</em></h3>
+        <h4 class="bh">Harry Potter can give JioHotstar <em>30 days of daily users</em></h4>
         <p>HBO's Harry Potter series premieres this Christmas, and JioHotstar already streams all 8 films. This spec campaign uses the two months before it to build a daily habit.</p>
         <div class="hyp">
           <div><b>The spell.</b> Open JioHotstar, tap voice search and say "Lumos" to unlock a hidden Harry Potter Halloween zone inside the app.</div>
@@ -181,7 +186,32 @@
         <a class="doc-link" href="https://lnkd.in/p/gAkWZNtj" target="_blank" rel="noopener">See the original post ↗</a>
       </div>
       <div class="demo"><video class="orig-video" controls playsinline preload="metadata" aria-label="JioHotstar × Harry Potter campaign video"><source src="public/assets/video/harry-hotstar.mp4" type="video/mp4"></video></div>
-    </article>
+    </div>
+      </article>
+    </div>
+  </section>
+  <section class="brandrow" aria-label="Sarvam campaigns">
+    <div class="logo"><span class="mono" style="background:#E8590C;color:#fff" aria-hidden="true">S</span><b>Sarvam</b></div>
+    <div class="items">
+      <article class="camp" id="p-sarvam">
+        <h3 class="camp-h"><button type="button" class="camp-head" id="t-sarvam" aria-expanded="false" aria-controls="b-sarvam"><span class="ct"><span class="tag">Product-led collaboration</span><b>Sarvam: a Diwali voice line</b><span class="cg">SaaS brands don't do Diwali. Sarvam should: its customers walk into the Diwali sales rush, and India screams Diwali.</span></span><span class="plus" aria-hidden="true"></span></button></h3>
+        <div class="camp-body" id="b-sarvam" role="region" aria-labelledby="t-sarvam" hidden>
+      <div class="brief">
+        <div class="kicker"><span class="chip">Sarvam</span></div>
+        <h4 class="bh">Sarvam: a Diwali voice line</h4>
+        <p>SaaS brands don't do Diwali. Sarvam should: its customers walk into the Diwali sales rush, and India screams Diwali.</p>
+        <div class="hyp">
+          <div><b>The line.</b> "Launch your Diwali sale voice line in 24 hours": delayed-order calls, offer reminders and lead qualification, all in the customer's own language.</div>
+          <div><b>The creators.</b> A second cohort: one Diwali reel, dubbed into 11 languages.</div>
+        </div>
+        <a class="doc-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7519289032623734786/" target="_blank" rel="noopener">Open the original ↗</a>
+      </div>
+      <div class="demo"><video class="orig-video" controls playsinline preload="metadata" aria-label="Sarvam Diwali voice line video"><source src="public/assets/video/sarvam-diwali.mp4" type="video/mp4"></video></div>
+    </div>
+      </article>
+    </div>
+  </section>
+</div>
       </div>
   </section>
 
