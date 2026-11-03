@@ -372,3 +372,7 @@ body[data-page=common] .facts li{background:linear-gradient(180deg,#FBEFD6,#F3DD
 .beliefs{max-width:760px;margin:0 auto}
 .letterlite .lead{font:1.35rem/1.5 var(--serif);color:var(--brown-deep);margin:8px 0 6px}
 .letterlite .send{margin-top:30px}
+.reach{display:grid;justify-items:center;gap:14px;text-align:center;padding:10px 0 20px}
+.reach .label{margin-top:14px}
+.reach .mail{font:700 clamp(1.3rem,3.5vw,2rem) var(--display);color:var(--red-deep);text-decoration-thickness:2px;word-break:break-all}
+.reach .socials{margin-top:4px}
