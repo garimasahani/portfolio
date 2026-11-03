@@ -127,7 +127,7 @@
     function pick(h) {
       $$('.house').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.id === h.id)); });
       verdict.hidden = false; verdict.style.setProperty('--hc', COL[h.id]);
-      verdict.innerHTML = '<h3>' + esc(h.house) + ' · ' + esc(h.trait) + '</h3><p>' + esc(h.line) + '</p><p class="proof">' + esc(h.proof) + '</p>';
+      verdict.innerHTML = '<h3>' + esc(h.house) + ' · ' + esc(h.trait) + '</h3><p>' + esc(h.line) + '</p>';
     }
     $$('.house').forEach(function (b, i) { b.addEventListener('click', function () { if (!running) { pick(a.houses[i]); say.innerHTML = 'Hmm. <b>' + esc(a.houses[i].house) + '</b>, you say?'; } }); });
     var STRONG = { gryffindor: 1 };
