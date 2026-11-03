@@ -24,7 +24,7 @@
       research: (p.why ? '<p>' + t(p.why) + '</p>' : '') + '<div class="facts2">' + [['Audience', ing.audience], ['Channels', ing.channels], ['Tools', ing.tools], ['Budget', ing.budget]]
         .map(function (r) { return '<div><b>' + r[0] + '</b>' + t(r[1] || 'TODO') + '</div>'; }).join('') + '</div>',
       strategy: '<p>' + t(p.idea || p.summary) + '</p>' + (p.quote ? '<p class="quote">“' + esc(p.quote) + '”</p>' : ''),
-      execution: list(p.spellwork) + (imgs.length ? '<div class="gallery">' + imgs.map(function (im) { return '<figure class="photo"><img src="' + esc(im.src) + '" alt="' + esc(im.alt) + '" loading="lazy"><figcaption>' + esc(im.alt) + '</figcaption></figure>'; }).join('') + '</div>' : ''),
+      execution: list(p.spellwork) + (imgs.length ? '<div class="gallery">' + imgs.map(function (im) { return '<figure class="photo"><img src="' + esc(im.src) + '" alt="' + esc(im.alt) + '" loading="lazy">' + (im.caption === false ? '' : '<figcaption>' + esc(im.alt) + '</figcaption>') + '</figure>'; }).join('') + '</div>' : ''),
       results: (p.results && p.results.length ? '<div class="results">' + p.results.map(function (r) { return '<div><b>' + t(r.value) + '</b>' + t(r.label) + '</div>'; }).join('') + '</div>' : '') +
         (spec ? '<p class="spec-note">This is a spec concept, so these are targets, research figures or post reach, not live campaign results.</p>' : '') +
         '<h3 style="margin-top:22px;font:400 .95rem var(--fell);letter-spacing:.2em;text-transform:uppercase;color:var(--gold-text)">What I learned</h3>' + list(p.lessons) +

@@ -1312,7 +1312,8 @@
     "metric": null,
     "image": {
       "src": "public/assets/photos/wanderess.jpg",
-      "alt": "Garima with two classmates at the Wanderess pitch"
+      "alt": "Garima with two classmates at the Wanderess pitch",
+      "caption": false
     },
     "idea": "A B2C platform that solves the problems women face when travelling, told as a pitch with personas and features.",
     "why": "I'm a travel geek, and the gap was obvious.",
