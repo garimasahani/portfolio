@@ -16,12 +16,12 @@
   };
 
   // one project card, used wherever a project is listed (work experience, the chamber, the spec lab)
-  function projectCard(p) {
+  function projectCard(p, nolink) {
     var c = CAT[p.categories[0]] || CAT.live, spec = p.categories.indexOf('spec') > -1;
     return '<article class="card' + (spec ? ' spec' : '') + '" style="--a:' + c.a + '"><div class="top"><div><p class="brand2">' + esc(p.brand) + '</p><span class="chip" style="margin-top:8px">' + esc(spec ? 'Spec concept' : c.label) + '</span></div>' + icon(c.icon, '', 'clay') + '</div>' +
       '<h3>' + esc(p.title) + '</h3><p>' + t(p.summary) + '</p>' +
       (p.metric ? '<p class="metric">' + esc(p.metric.value) + '<small>' + esc(p.metric.label) + '</small></p>' : '') +
-      (p.categories.indexOf('publication') > -1 ? '<a class="go" href="' + esc(p.links[0].url) + '" target="_blank" rel="noopener">Read the paper <span aria-hidden="true">↗</span><span class="sr">: ' + esc(p.title) + '</span></a>' : '<a class="go" href="' + (p.page || 'case.html#' + p.slug) + '">Uncover the Magic <span aria-hidden="true">→</span><span class="sr">: ' + esc(p.title) + '</span></a>') +
+      (nolink ? '' : p.categories.indexOf('publication') > -1 ? '<a class="go" href="' + esc(p.links[0].url) + '" target="_blank" rel="noopener">Read the paper <span aria-hidden="true">↗</span><span class="sr">: ' + esc(p.title) + '</span></a>' : '<a class="go" href="' + (p.page || 'case.html#' + p.slug) + '">Uncover the Magic <span aria-hidden="true">→</span><span class="sr">: ' + esc(p.title) + '</span></a>') +
       (LAB[p.slug] ? '<a class="try" href="spec-lab.html#' + LAB[p.slug] + '">✦ Play with the live mock<span class="sr"> of ' + esc(p.title) + '</span></a>' : '') + '</article>';
   }
 
@@ -170,7 +170,7 @@
         (y.photo ? gframe(y.photo, 'shot') : '') + '</div>' +
         '<div><h4>Measurable impact</h4><div class="impact">' + y.outcomes.map(function (o) { return '<div>' + t(o) + '</div>'; }).join('') + '</div>' +
         '<h4>Skills used</h4><div class="tags">' + y.owls.map(function (o) { return '<span class="chip">' + esc(o) + '</span>'; }).join('') + '</div></div></div>' +
-        (mine.length ? '<div class="workprojects"><h4>Projects & achievements</h4><div class="cards">' + mine.map(projectCard).join('') + '</div></div>' : '') +
+        (mine.length ? '<div class="workprojects"><h4>Projects & achievements</h4><div class="cards">' + mine.map(function (p) { return projectCard(p, true); }).join('') + '</div></div>' : '') +
         (decks.length ? '<div class="workprojects"><h4>Presentations</h4><div class="decks">' + decks.map(deckCard).join('') + '</div></div>' : '');
       if (focus) page.scrollIntoView({ behavior: M.reduce ? 'auto' : 'smooth', block: 'nearest' });
     }
