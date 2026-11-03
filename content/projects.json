@@ -1039,58 +1039,6 @@
     ]
   },
   {
-    "slug": "jiocinema-paris",
-    "title": "JioCinema × Paris 2024 pushes",
-    "brand": "JioCinema",
-    "categories": [
-      "spec"
-    ],
-    "year": "2024",
-    "summary": "A push notification I didn't tap, rewritten so I would.",
-    "metric": {
-      "value": "4",
-      "label": "push principles"
-    },
-    "idea": "Tie every push to a moment, an athlete and the viewer's own history: name the event and the minute it starts, lead with the athlete, personalise from what they watched, and turn a missed event into a highlights tap.",
-    "why": "I'm a big sports fan and the generic push still didn't land.",
-    "visual": {
-      "kicker": "Campaign Chronicles · Ep 1",
-      "lines": [
-        "Before: Watch live matches of #ParisOlympics2024",
-        "After: name the moment, the athlete, the minute"
-      ],
-      "sign": "Moments over menus."
-    },
-    "prophecy": "Generic pushes during the Olympics weren't pulling fans to the stream.",
-    "ingredients": {
-      "audience": "Sports fans in India.",
-      "channels": "Push notifications.",
-      "tools": "TODO",
-      "budget": "Spec, unbudgeted"
-    },
-    "spellwork": [
-      "Moments over menus.",
-      "Faces over formats.",
-      "Use what you know.",
-      "Recover the miss."
-    ],
-    "results": [
-      {
-        "value": "4",
-        "label": "page breakdown"
-      }
-    ],
-    "lessons": [
-      "TODO"
-    ],
-    "links": [
-      {
-        "label": "The original post",
-        "url": "https://super.page/garima-sahani/cards/72831"
-      }
-    ]
-  },
-  {
     "slug": "spotify-offline",
     "title": "Spotify: Download for offline",
     "brand": "Spotify",
