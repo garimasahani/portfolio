@@ -287,7 +287,10 @@
         if (!FORM_ENDPOINT) setTimeout(function () {
           location.href = 'mailto:' + site.email + '?subject=' + encodeURIComponent('An owl from ' + name) + '&body=' + encodeURIComponent(msg + '\n\n' + name + '\n' + email);
         }, M.reduce ? 0 : 1600);
-      }).catch(function () { err.textContent = 'The owl got lost. Please email ' + site.email + ' instead.'; });
+      }).catch(function () {
+        err.textContent = 'The owl got lost, so your email app is opening instead. Or write to ' + site.email + '.';
+        setTimeout(function () { location.href = 'mailto:' + site.email + '?subject=' + encodeURIComponent('An owl from ' + name) + '&body=' + encodeURIComponent(msg + '\n\n' + name + '\n' + email); }, 1200);
+      });
     });
   }
 
