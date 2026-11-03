@@ -325,3 +325,36 @@ section[id]{scroll-margin-top:70px}
 .metric2{display:inline-block;margin:0 0 14px;padding:10px 18px;border-left:4px solid var(--gold,#D4A84A);background:rgba(255,255,255,.55);border-radius:0 12px 12px 0;font-size:1.1rem}
 .metric2 b{font-size:1.6rem;color:#7A1F1F;margin-right:6px}
 #cran .cs{margin-top:30px}
+
+/* ---------- Common Room: the Gryffindor look ---------- */
+body[data-page=common]{--red:#A4231B;--gold:#D9A93E;--gold-text:#7A4A12;
+  background-image:radial-gradient(ellipse at 50% 0,rgba(255,236,200,.75),transparent 60%),radial-gradient(ellipse at 50% 120%,rgba(164,35,27,.16),transparent 60%),url(../../public/assets/backgrounds/parchment.svg)}
+.crhead .crest{width:96px;margin:0 auto 10px;filter:var(--clay)}
+body[data-page=common] .shead h2{color:#7E1D16}
+body[data-page=common] .facts li{background:linear-gradient(180deg,#FBEFD6,#F3DDB0);border:1px solid rgba(164,35,27,.45);color:#5A1812}
+.crsec{margin:0 0 64px}
+.crh{font:700 1.5rem var(--display);color:#7E1D16;text-align:center;margin-bottom:26px}
+.crh::after{content:"";display:block;width:90px;height:3px;margin:12px auto 0;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.crsplit{display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:34px;align-items:center}
+.crsplit.rev{grid-template-columns:minmax(0,1fr) minmax(0,320px)}
+.crtext{display:grid;gap:14px;font-size:1.2rem;line-height:1.65}
+.cphoto{margin:0;padding:8px;border-radius:18px;background:#FFF8EA;border:2px solid var(--gold);box-shadow:0 0 0 3px rgba(164,35,27,.35),0 14px 28px -14px rgba(74,50,32,.6);transform:rotate(-1.2deg)}
+.crsplit.rev .cphoto,.crsplit.rev .crpics{transform:rotate(1.2deg)}
+.cphoto img{width:100%;border-radius:11px;aspect-ratio:4/5;object-fit:cover}
+.cphoto.small{max-width:240px}
+.cphoto figcaption{margin-top:8px;text-align:center;font:1.2rem/1.2 var(--hand);color:#5A1812}
+.cphoto.slot div{aspect-ratio:4/5;display:grid;place-items:center;text-align:center;padding:14px;border-radius:11px;border:2px dashed rgba(108,75,166,.45)}
+.crpics{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.beliefs{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.beliefs li{padding:16px 20px;border-radius:14px;background:rgba(255,248,232,.85);border:1px solid rgba(217,169,62,.7);border-left:6px solid #A4231B;box-shadow:var(--shadow)}
+.beliefs h3{font:400 1.05rem/1 var(--fell);letter-spacing:.2em;text-transform:uppercase;color:#7E1D16;margin-bottom:6px}
+.dc .crtext p{font:1.8rem/1.25 var(--hand);color:#5A1812}
+@media (max-width:820px){.crsplit,.crsplit.rev{grid-template-columns:1fr}.crsplit .cphoto{max-width:300px;margin:0 auto}.crsplit.rev .crtext{order:2}}
+@media (prefers-reduced-motion:reduce){.cphoto{transform:none}}
+.match{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:8px}
+.match li{display:grid;grid-template-columns:96px 1fr auto;gap:10px;align-items:center;font:400 .8rem/1.2 var(--fell);letter-spacing:.1em;text-transform:uppercase;color:var(--gold-text)}
+.match i{display:block;height:9px;border-radius:9px;background:linear-gradient(90deg,var(--c) 38%,rgba(120,90,50,.15) 38%)}
+.match li.top i{background:var(--c)}
+.match li.top{color:#7E1D16}
+.match em{font-style:normal;letter-spacing:.04em;text-transform:none;font-size:.95rem}
+@media (max-width:520px){.match li{grid-template-columns:80px 1fr}.match em{display:none}}

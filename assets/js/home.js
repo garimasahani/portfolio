@@ -130,18 +130,26 @@
       verdict.innerHTML = '<h3>' + esc(h.house) + ' · ' + esc(h.trait) + '</h3><p>' + esc(h.line) + '</p><p class="proof">' + esc(h.proof) + '</p>';
     }
     $$('.house').forEach(function (b, i) { b.addEventListener('click', function () { if (!running) { pick(a.houses[i]); say.innerHTML = 'Hmm. <b>' + esc(a.houses[i].house) + '</b>, you say?'; } }); });
+    var STRONG = { gryffindor: 1 };
+    function meter() {
+      return '<ul class="match" aria-label="House match">' + a.houses.map(function (h) { return '<li class="' + (STRONG[h.id] ? 'top' : '') + '" style="--c:' + COL[h.id] + '"><span>' + esc(h.house) + '</span><i aria-hidden="true"></i><em>' + (STRONG[h.id] ? 'Strongest match' : 'A touch of ' + esc(h.trait.toLowerCase())) + '</em></li>'; }).join('') + '</ul>';
+    }
+    function sorted() {
+      pick(a.houses[0]); verdict.insertAdjacentHTML('beforeend', meter());
+      say.innerHTML = '<b>GRYFFINDOR!</b> With a bit of every other house.';
+    }
     hat.addEventListener('click', function () {
       if (running) return;
-      if (M.reduce) { pick(a.houses[0]); say.innerHTML = 'A bit of every house. Pick a crest to see why.'; return; }
+      if (M.reduce) { sorted(); return; }
       running = true; hat.classList.add('talk'); say.textContent = 'Hmm. Difficult. Very difficult…';
-      var i = 0;
+      var order = [1, 2, 3], i = 0;
       var tick = setInterval(function () {
-        pick(a.houses[i]); say.innerHTML = 'Plenty of ' + esc(a.houses[i].trait.toLowerCase()) + '… <b>' + esc(a.houses[i].house) + '</b>?';
-        if (++i >= a.houses.length) {
+        var h = a.houses[order[i]]; pick(h); say.innerHTML = 'Plenty of ' + esc(h.trait.toLowerCase()) + '… <b>' + esc(h.house) + '</b>?';
+        if (++i >= order.length) {
           clearInterval(tick);
-          setTimeout(function () { hat.classList.remove('talk'); say.innerHTML = '<b>All four!</b> The hat couldn\'t choose. Pick a crest to see why.'; running = false; }, 1500);
+          setTimeout(function () { hat.classList.remove('talk'); sorted(); running = false; }, 1500);
         }
-      }, 1500);
+      }, 1300);
     });
   }
 
