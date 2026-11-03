@@ -469,3 +469,4 @@
 #lab .camp-body .brief h4.bh{font:600 clamp(22px,2.4vw,28px)/1.15 var(--serif);color:var(--ink)}
 #lab .camp-body:not(:has(.demo > *)){grid-template-columns:1fr}
 @media (max-width:860px){#lab .brandrow{grid-template-columns:1fr;padding:14px}#lab .brandrow .logo{flex-direction:row;position:static;justify-content:flex-start}#lab .camp-body{grid-template-columns:1fr;padding:4px 14px 18px}#lab .camp-head{padding:14px}}
+#lab .brandrow .logo img.wide{width:auto;max-width:130px;height:auto;max-height:44px}
