@@ -358,3 +358,15 @@ body[data-page=common] .facts li{background:linear-gradient(180deg,#FBEFD6,#F3DD
 .match li.top{color:#7E1D16}
 .match em{font-style:normal;letter-spacing:.04em;text-transform:none;font-size:.95rem}
 @media (max-width:520px){.match li{grid-template-columns:80px 1fr}.match em{display:none}}
+/* floating pictures in golden frames around the one-liners */
+.floatstage{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr) minmax(0,1fr);gap:28px;align-items:center;margin:0 0 70px}
+.floatstage .facts{flex-direction:column;align-items:center;margin:0;gap:14px}
+.fcol{display:grid;gap:26px;justify-items:center}
+.flo{margin:0;width:min(100%,230px);padding:7px;border-radius:14px;background:linear-gradient(135deg,#F6DA8A,#C9972E 50%,#F2D27A);box-shadow:0 0 0 2px rgba(122,74,18,.55),0 16px 26px -12px rgba(74,50,32,.65);animation:flo 6s ease-in-out var(--d,0s) infinite alternate}
+.flo img{width:100%;border-radius:8px;object-fit:cover;aspect-ratio:3/4;display:block}
+.flo.l img{aspect-ratio:4/3}
+.fcol .flo:nth-child(odd){transform:rotate(-2.5deg)}.fcol .flo:nth-child(even){transform:rotate(2.5deg)}
+@keyframes flo{to{translate:0 -10px}}
+@media (prefers-reduced-motion:reduce){.flo{animation:none}}
+@media (max-width:860px){.floatstage{grid-template-columns:1fr 1fr;gap:18px}.floatstage .facts{grid-column:1/-1;order:-1}.fcol{gap:18px}}
+.beliefs{max-width:760px;margin:0 auto}
