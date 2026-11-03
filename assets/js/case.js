@@ -1,7 +1,7 @@
 /* Case study: one project from content/projects.json, picked by the URL hash, with page-turn navigation */
 (function () {
   var M = window.MA, $ = M.$, esc = M.esc, t = M.t, icon = M.icon;
-  var SECTIONS = [['challenge', 'The Challenge', 'icons/map'], ['role', 'My Role', 'icons/hat'], ['research', 'Research & Insights', 'icons/glasses'],
+  var SECTIONS = [['challenge', 'The Challenge', 'icons/map'], ['research', 'Research & Insights', 'icons/glasses'],
     ['strategy', 'Strategy', 'icons/spellbook'], ['execution', 'Execution', 'icons/wand'], ['results', 'Results & Learnings', 'icons/crystal']];
   function list(items) { return items && items.length ? '<ul>' + items.map(function (x) { return '<li>' + t(x) + '</li>'; }).join('') + '</ul>' : ''; }
   function links(ls) { return (ls || []).filter(function (l) { return !M.isTodo(l.url); }).map(function (l) { return '<a href="' + esc(l.url) + '" target="_blank" rel="noopener">' + esc(l.label) + ' ↗</a>'; }).join(' · '); }
