@@ -320,3 +320,8 @@ section[id]{scroll-margin-top:70px}
 .wlinks{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px 14px;justify-content:center}
 .h2like{font:inherit}
 @media (max-width:700px){.wander{grid-template-columns:1fr;justify-items:center}.wander .wlogo{max-width:200px}}
+.wvideo.vid{aspect-ratio:auto}
+.wvideo.vid video{display:block;width:100%;max-height:78vh;background:#000}
+.metric2{display:inline-block;margin:0 0 14px;padding:10px 18px;border-left:4px solid var(--gold,#D4A84A);background:rgba(255,255,255,.55);border-radius:0 12px 12px 0;font-size:1.1rem}
+.metric2 b{font-size:1.6rem;color:#7A1F1F;margin-right:6px}
+#cran .cs{margin-top:30px}

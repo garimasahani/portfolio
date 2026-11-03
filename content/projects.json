@@ -562,7 +562,8 @@
         "label": "The demo post on LinkedIn",
         "url": "https://www.linkedin.com/feed/update/urn:li:activity:7443181577725210624/"
       }
-    ]
+    ],
+    "page": "cran.html"
   },
   {
     "slug": "nutralis-gtm",
