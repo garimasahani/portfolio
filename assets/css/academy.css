@@ -162,12 +162,12 @@ body::before{box-shadow:inset 0 0 160px rgba(0,0,0,.55)}
 .links a:hover,.links a[aria-current]{background:rgba(201,151,63,.25);color:#FFF1CF}
 @media (max-width:1080px){.links{background:linear-gradient(180deg,#6A3C1D,#4B2A13);border-color:#C9973F}}
 main>section{padding:46px 0}
-main>section>.wrap,body[data-page=case] main>.wrap,.lost>div{max-width:calc(var(--wrap) + 40px);padding:clamp(40px,6vw,72px) clamp(20px,5vw,64px);border-radius:14px;
+main>section>.wrap,body[data-page=case] main>.wrap:not(.roomtop),.lost>div{max-width:calc(var(--wrap) + 40px);padding:clamp(40px,6vw,72px) clamp(20px,5vw,64px);border-radius:14px;
   background:radial-gradient(circle at 12% 10%,rgba(120,72,24,.16),transparent 14%),radial-gradient(circle at 90% 85%,rgba(120,72,24,.15),transparent 16%),radial-gradient(circle at 75% 20%,rgba(255,250,230,.4),transparent 28%),radial-gradient(ellipse at 50% 45%,#F3E2BC 0,#E8D0A0 60%,#D6B57D 100%);
   box-shadow:inset 0 0 0 2px rgba(138,90,38,.55),inset 0 0 0 7px rgba(243,226,188,.7),inset 0 0 0 8px rgba(138,90,38,.4),inset 0 0 60px rgba(110,66,22,.35),0 0 0 4px #C9973F,0 0 0 16px #6A3C1D,0 0 0 18px #2E1A0B,0 34px 60px -22px rgba(0,0,0,.85)}
-main>section>.wrap::before,body[data-page=case] main>.wrap::before,.lost>div::before{content:"";position:absolute;inset:-14px;pointer-events:none;z-index:4;
+main>section>.wrap::before,body[data-page=case] main>.wrap:not(.roomtop)::before,.lost>div::before{content:"";position:absolute;inset:-14px;pointer-events:none;z-index:4;
   background:url(../../public/assets/ornaments/corner.png) left top/52px auto no-repeat,url(../../public/assets/ornaments/corner-tr.png) right top/52px auto no-repeat}
-main>section>.wrap::after,body[data-page=case] main>.wrap::after,.lost>div::after{content:"";position:absolute;inset:-14px;pointer-events:none;z-index:4;
+main>section>.wrap::after,body[data-page=case] main>.wrap:not(.roomtop)::after,.lost>div::after{content:"";position:absolute;inset:-14px;pointer-events:none;z-index:4;
   background:url(../../public/assets/ornaments/corner-bl.png) left bottom/52px auto no-repeat,url(../../public/assets/ornaments/corner-br.png) right bottom/52px auto no-repeat}
 @media (max-width:700px){main>section>.wrap{margin:0 14px;box-shadow:inset 0 0 0 2px rgba(138,90,38,.55),inset 0 0 60px rgba(110,66,22,.35),0 0 0 3px #C9973F,0 0 0 10px #6A3C1D,0 0 0 12px #2E1A0B,0 24px 40px -20px rgba(0,0,0,.85)}main>section>.wrap::before,main>section>.wrap::after{inset:-9px;background-size:36px auto}}
 /* section titles read like the map's plaques */
@@ -183,7 +183,7 @@ main>section>.wrap::after,body[data-page=case] main>.wrap::after,.lost>div::afte
 .foot p+p{color:#D9AE55}
 .footnav a{color:#EBD3A0}
 .footnav a:hover{color:#fff}
-body[data-page=case] main>.wrap{margin:40px auto}
+body[data-page=case] main>.wrap:not(.roomtop){margin:40px auto}
 .lost>div{position:relative}
 
 /* the top bar holds only search, night mode and the menu; every room lives in the menu */
@@ -197,3 +197,4 @@ body[data-page=case] main>.wrap{margin:40px auto}
 
 .soundtoggle{display:block;width:100%;text-align:left;border:0;background:none;padding:11px 14px;border-radius:999px;color:#EBD3A0;font:400 1.05rem/1 var(--fell);letter-spacing:.06em;cursor:pointer;border-top:1px solid rgba(201,151,63,.3);border-radius:0 0 12px 12px;margin-top:4px}
 .soundtoggle:hover{background:rgba(201,151,63,.25);color:#FFF1CF}
+@media (max-width:700px){body[data-page=case] main>.wrap:not(.roomtop){margin:24px 14px;box-shadow:inset 0 0 0 2px rgba(138,90,38,.55),inset 0 0 60px rgba(110,66,22,.35),0 0 0 3px #C9973F,0 0 0 10px #6A3C1D,0 0 0 12px #2E1A0B,0 24px 40px -20px rgba(0,0,0,.85)}body[data-page=case] main>.wrap:not(.roomtop)::before,body[data-page=case] main>.wrap:not(.roomtop)::after{inset:-9px;background-size:36px auto}}

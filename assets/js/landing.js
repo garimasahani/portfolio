@@ -19,7 +19,7 @@
     ['clouds1', 18, 5, 16, 'deco cloud'], ['banner', 50, 12, 50, 'deco'], ['owlfly', 50, 20.5, 11, 'deco fly'],
     ['tree1', 5, 42, 5.5, 'deco tree'], ['tree3', 95, 42, 5.5, 'deco tree'], ['tree9', 53, 85, 6, 'deco tree'], ['tree2', 5, 76, 3.6, 'deco tree'],
     ['lantern1', 40, 74, 2.8, 'deco'], ['lantern2', 62, 75, 2.8, 'deco'],
-    ['greathall', 50, 52, 28, 'about'], ['library', 26, 30, 19, 'experience'], ['potion', 75, 29, 18, 'skills'], ['arch', 16, 63, 13, 'lab'],
+    ['greathall', 50, 52, 28, 'about'], ['library', 26, 30, 19, 'experience'], ['potion', 75, 29, 18, 'skills'], ['arch', 18, 63, 15, 'lab'],
     ['chamber', 84, 61, 15, 'projects'], ['common', 27, 86, 19, 'common'], ['owlery', 77, 86, 12, 'contact']
   ];
   var world = $('#world'), stage = $('#main'), paths = $('#paths'), places = {}, mode = '';

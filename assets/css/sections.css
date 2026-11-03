@@ -357,7 +357,7 @@ body[data-page=common] .facts li{background:linear-gradient(180deg,#FBEFD6,#F3DD
 .match li.top i{background:var(--c)}
 .match li.top{color:#7E1D16}
 .match em{font-style:normal;letter-spacing:.04em;text-transform:none;font-size:.95rem}
-@media (max-width:520px){.match li{grid-template-columns:80px 1fr}.match em{display:none}}
+@media (max-width:520px){.match li{grid-template-columns:96px minmax(0,1fr);font-size:.7rem;letter-spacing:.04em}.match em{display:none}}
 /* floating pictures in golden frames around the one-liners */
 .floatstage{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr) minmax(0,1fr);gap:28px;align-items:center;margin:0 0 70px}
 .floatstage .facts{flex-direction:column;align-items:center;margin:0;gap:14px}
@@ -376,3 +376,12 @@ body[data-page=common] .facts li{background:linear-gradient(180deg,#FBEFD6,#F3DD
 .reach .label{margin-top:14px}
 .reach .mail{font:700 clamp(1.3rem,3.5vw,2rem) var(--display);color:var(--red-deep);text-decoration-thickness:2px;word-break:break-all}
 .reach .socials{margin-top:4px}
+
+/* ---------- phone safety: grid tracks may shrink, long words wrap ---------- */
+.houses{grid-template-columns:repeat(4,minmax(0,1fr))}
+.story,.story article.ph>div,.hatbox,.verdict{min-width:0}
+.story h3,.story p,.verdict p{overflow-wrap:anywhere}
+@media (max-width:900px){.sorting{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:520px){.house span{font-size:.62rem;letter-spacing:.06em}.house img{max-width:72px}}
+@media (max-width:520px){.shead h2{font-size:clamp(1.45rem,6.6vw,2rem);padding:.25em .6em .3em}}
+@media (max-width:520px){.story article.ph{grid-template-columns:minmax(0,1fr);justify-items:center;text-align:center}.story article.ph .gframe{width:150px}}

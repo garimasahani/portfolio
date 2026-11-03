@@ -92,3 +92,5 @@ html.door-on .door{display:flex}
 /* live text on the ribbon (the ribbon art itself is blank) */
 .bantext{position:absolute;top:0;left:0;width:100%;height:100%;overflow:visible}
 .bantext text{font:700 19px 'Cinzel',var(--serif);letter-spacing:.04em;fill:#5A3416;paint-order:stroke;stroke:rgba(255,240,205,.45);stroke-width:.6px}
+/* tall (phone) map: the sign matches the larger library scroll */
+@media (max-aspect-ratio:21/20){.scrollsign{width:calc(var(--u) * 17)}.scrollsign b{font-size:calc(var(--u) * 1.3)}.scrollsign i{font-size:calc(var(--u) * 1.05)}}
