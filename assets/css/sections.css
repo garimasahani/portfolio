@@ -370,3 +370,5 @@ body[data-page=common] .facts li{background:linear-gradient(180deg,#FBEFD6,#F3DD
 @media (prefers-reduced-motion:reduce){.flo{animation:none}}
 @media (max-width:860px){.floatstage{grid-template-columns:1fr 1fr;gap:18px}.floatstage .facts{grid-column:1/-1;order:-1}.fcol{gap:18px}}
 .beliefs{max-width:760px;margin:0 auto}
+.letterlite .lead{font:1.35rem/1.5 var(--serif);color:var(--brown-deep);margin:8px 0 6px}
+.letterlite .send{margin-top:30px}
