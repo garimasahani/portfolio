@@ -1,7 +1,7 @@
 /* Room scripts: each page renders only the sections it contains (map, sorting ceremony, library, potions, chamber, decks, pensieve, owlery) */
 (function () {
   var M = window.MA, $ = M.$, $$ = M.$$, esc = M.esc, t = M.t, icon = M.icon;
-  var FORM_ENDPOINT = ''; // TODO: paste a Formspree (or similar) endpoint to receive letters directly; empty opens the visitor's email app
+  var FORM_ENDPOINT = 'https://formsubmit.co/ajax/work.garimasahani@gmail.com'; // letters go straight to this inbox via FormSubmit; empty opens the visitor's email app
   // a photo in a sculpted gold frame with a vintage tone
   function gframe(p, cls) { return '<figure class="gframe' + (cls ? ' ' + cls : '') + '"><span class="gf-in"><img src="' + esc(p.src) + '" alt="' + esc(p.alt) + '" loading="lazy" width="480" height="600"></span>' + (p.caption ? '<figcaption>' + esc(p.caption) + '</figcaption>' : '') + '</figure>'; }
   var LAB = { 'airbnb-znmd': 'znmd', 'sarvam-diwali': 'sarvam', 'spotify-homejam': 'spotads', 'spotify-navbeats': 'navbeats', 'jiohotstar-harry-potter': 'harry', 'jiocinema-paris': 'jio', 'spotify-offline': 'spotify', 'spotify-premium': 'premium', 'supermoney-okrs': 'supermoney', 'supercard-sales': 'supercard', 'airbnb-for-work': 'airbnb' };
@@ -279,7 +279,7 @@
       if (!name || !msg || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { err.textContent = 'The owl needs your name, a valid email and a message.'; (!name ? fn : !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email) ? fe : fm).focus(); return; }
       err.textContent = '';
       var go = FORM_ENDPOINT
-        ? fetch(FORM_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify({ name: name, email: email, message: msg }) }).then(function (r) { if (!r.ok) throw 0; })
+        ? fetch(FORM_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify({ name: name, email: email, message: msg, _subject: 'An owl from ' + name + ' (portfolio)', _replyto: email, _template: 'table', _captcha: 'false' }) }).then(function (r) { if (!r.ok) throw 0; })
         : Promise.resolve();
       go.then(function () {
         desk.classList.add('sealed'); sent.hidden = false;

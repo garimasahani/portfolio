@@ -11,5 +11,5 @@ Every item below shows on the site as a purple `TODO:` placeholder until you fil
 - `site.json` → resume PDF (use a version without your phone number).
 
 ## Setup
-- `assets/js/home.js` → `FORM_ENDPOINT` for the contact form.
+- `assets/js/home.js` → `FORM_ENDPOINT` is set to FormSubmit for work.garimasahani@gmail.com (confirm the activation email once).
 - Higher-resolution clay art: the icons are cut from a 1448 × 1086 brand board, so each is about 100–180 px. They look soft above that size, especially the hero castle. Export larger PNGs from the original artwork to replace the files in `public/assets/` (same names).
