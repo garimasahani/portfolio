@@ -12,6 +12,7 @@
     partnerships: { label: 'Partnerships', icon: 'icons/key', a: 'var(--gold)' },
     startup: { label: 'Startup project', icon: 'icons/crystal', a: 'var(--plum)' },
     'ai-tool': { label: 'AI tool', icon: 'icons/cauldron', a: 'var(--green)' },
+    publication: { label: 'Published paper', icon: 'icons/quill', a: 'var(--blue)' },
     spec: { label: 'Spec concepts', icon: 'icons/crystal', a: 'var(--plum)' }
   };
 
@@ -21,7 +22,7 @@
     return '<article class="card' + (spec ? ' spec' : '') + '" style="--a:' + c.a + '"><div class="top"><div><p class="brand2">' + esc(p.brand) + '</p><span class="chip" style="margin-top:8px">' + esc(spec ? 'Spec concept' : c.label) + '</span></div>' + icon(c.icon, '', 'clay') + '</div>' +
       '<h3>' + esc(p.title) + '</h3><p>' + t(p.summary) + '</p>' +
       (p.metric ? '<p class="metric">' + esc(p.metric.value) + '<small>' + esc(p.metric.label) + '</small></p>' : '') +
-      '<a class="go" href="case.html#' + p.slug + '">Uncover the Magic <span aria-hidden="true">→</span><span class="sr">: ' + esc(p.title) + '</span></a>' +
+      (p.categories.indexOf('publication') > -1 ? '<a class="go" href="' + esc(p.links[0].url) + '" target="_blank" rel="noopener">Read the paper <span aria-hidden="true">↗</span><span class="sr">: ' + esc(p.title) + '</span></a>' : '<a class="go" href="case.html#' + p.slug + '">Uncover the Magic <span aria-hidden="true">→</span><span class="sr">: ' + esc(p.title) + '</span></a>') +
       (LAB[p.slug] ? '<a class="try" href="spec-lab.html#' + LAB[p.slug] + '">✦ Play with the live mock<span class="sr"> of ' + esc(p.title) + '</span></a>' : '') + '</article>';
   }
 

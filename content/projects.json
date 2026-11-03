@@ -1498,5 +1498,42 @@
         "url": "https://docs.google.com/presentation/d/1uB5-sjkC8IdIJCPT4BX_VeRcSkKHqCLF/edit?usp=drive_link"
       }
     ]
+  },
+  {
+    "slug": "igi-paper",
+    "title": "AI hyper-personalisation in travel",
+    "brand": "IGI Global",
+    "categories": [
+      "publication"
+    ],
+    "year": "TODO",
+    "summary": "Published research on how tailored recommendations and itineraries lift engagement and loyalty in travel.",
+    "metric": null,
+    "image": null,
+    "prophecy": "TODO",
+    "ingredients": {
+      "audience": "TODO",
+      "channels": "Published paper",
+      "tools": "TODO",
+      "budget": "TODO"
+    },
+    "spellwork": [
+      "TODO"
+    ],
+    "results": [
+      {
+        "value": "TODO",
+        "label": "outcome"
+      }
+    ],
+    "lessons": [
+      "TODO"
+    ],
+    "links": [
+      {
+        "label": "Read the paper",
+        "url": "https://lnkd.in/dxfm6V6r"
+      }
+    ]
   }
 ]
